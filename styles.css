@@ -71,7 +71,7 @@ h1 {
     text-align: center; /* Center the text within the container */
     margin: 0 auto; /* Center container within its parent */
     padding: 10px 0; /* Padding around the counter */
-    background-color: #000; /* Match the background */
+    background-color: #111; /* Match the background */
     color: #ff0000; /* Red text to match the theme */
 }
 
