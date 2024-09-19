@@ -9,6 +9,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 </head>
 <body>
+    <div class="counter-container">
+        <span id="recording-count">Total Recordings: 0</span>
+    </div>
     <h1>KEANE BOOTLEGS</h1>
     <table>
   <thead>
@@ -317,4 +320,12 @@
     </tr>
   </tbody>
 </table>
+<script>
+        // JavaScript to count the number of rows and update the counter
+        document.addEventListener('DOMContentLoaded', function() {
+            const rowCount = document.querySelectorAll('tbody tr').length;
+            document.getElementById('recording-count').textContent = `Total Recordings: ${rowCount}`;
+        });
+    </script>
+</body>
 </html>
