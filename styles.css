@@ -62,3 +62,17 @@ h1 {
     letter-spacing: 5px; /* Spread it wide */
     text-shadow: 3px 3px 0 #333; /* Bold shadow effect */
 }
+
+/* Counter container styling */
+.counter-container {
+    text-align: center; /* Center the text within the container */
+    margin-bottom: 20px; /* Space between the counter and the table */
+}
+
+#recording-count {
+    font-size: 1.5em; /* Larger font size for emphasis */
+    color: #ff0000; /* Matching red color for consistency with headers */
+    font-weight: bold; /* Bold text for prominence */
+    text-shadow: 2px 2px 0 #333; /* Subtle shadow for added impact */
+    margin: 0; /* Remove default margin */
+}
