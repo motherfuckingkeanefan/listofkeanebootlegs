@@ -1,0 +1,64 @@
+/* Reset margins and paddings */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Oswald', sans-serif; /* Bold, aggressive font */
+    background-color: #111; /* Dark, commanding background */
+    color: #fff; /* White text for high contrast */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #ff0000; /* Aggressive red border */
+    background-color: #000; /* Black table background */
+}
+
+/* Table header styling */
+thead th {
+    background-color: #ff0000; /* Bold red header */
+    color: #fff; /* White text */
+    font-size: 1.3em; /* Large, aggressive text size */
+    text-transform: uppercase; /* MAKE IT LOUD */
+    padding: 16px;
+    border-bottom: 5px solid #333; /* Heavy bottom border for added boldness */
+    text-align: center; /* Center-align header text */
+}
+
+/* Table body styling */
+tbody td {
+    border: 2px solid #333; /* Dark borders between cells */
+    padding: 12px;
+    font-size: 1.1em; /* Large enough to be clear and bold */
+    background-color: #111; /* Dark background for body rows */
+    color: #f5f5f5; /* White text */
+}
+
+/* Zebra striping for rows */
+tbody tr:nth-child(even) {
+    background-color: #222; /* Slightly lighter black for alternate rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #111; /* Standard black for odd rows */
+}
+
+/* Hover effect */
+tbody tr:hover {
+    background-color: #ff0000; /* Red hover to scream attention */
+    color: #fff; /* Keep text readable */
+}
+
+/* Make h1 extra aggressive */
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #ff0000; /* Red for intensity */
+    text-transform: uppercase; /* SHOUT IT OUT LOUD */
+    margin: 20px 0;
+    letter-spacing: 5px; /* Spread it wide */
+    text-shadow: 3px 3px 0 #333; /* Bold shadow effect */
+}
