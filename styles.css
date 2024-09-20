@@ -87,13 +87,13 @@ h1 {
     display: inline-block;
     background-color: #ff0000; /* Bold red background */
     color: #fff; /* White text */
-    font-size: 0.9em; /* Slightly smaller text for the sticker */
+    font-size: 0.8em; /* Slightly smaller text for the sticker */
     font-weight: bold; /* Bold text */
-    padding: 4px 8px; /* Padding to make it look like a button */
-    border-radius: 12px; /* Rounded corners for a 'sticker' feel */
-    margin-left: 10px; /* Small space from the recording name */
+    padding: 3px 6px; /* Reduced padding to make it smaller */
+    border-radius: 10px; /* Slightly smaller rounded corners */
+    margin-left: 8px; /* Reduced space from the recording name */
     text-transform: uppercase; /* Make the text uppercase */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Adjusted shadow for smaller size */
     letter-spacing: 1px; /* Slight letter spacing for style */
     animation: blink 1.5s infinite; /* Optional blinking animation */
 }
