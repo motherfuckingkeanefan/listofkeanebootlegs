@@ -82,3 +82,23 @@ h1 {
     text-shadow: 2px 2px 0 #333; /* Subtle shadow for added impact */
     margin: 0; /* Remove default margin */
 }
+
+.new-sticker {
+    display: inline-block;
+    background-color: #ff0000; /* Bold red background */
+    color: #fff; /* White text */
+    font-size: 0.9em; /* Slightly smaller text for the sticker */
+    font-weight: bold; /* Bold text */
+    padding: 4px 8px; /* Padding to make it look like a button */
+    border-radius: 12px; /* Rounded corners for a 'sticker' feel */
+    margin-left: 10px; /* Small space from the recording name */
+    text-transform: uppercase; /* Make the text uppercase */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    letter-spacing: 1px; /* Slight letter spacing for style */
+    animation: blink 1.5s infinite; /* Optional blinking animation */
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
