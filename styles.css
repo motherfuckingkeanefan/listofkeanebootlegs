@@ -52,17 +52,15 @@ tbody tr:hover {
     color: #fff; /* Keep text readable */
 }
 
-/* Simplified, bold, and clean h1 styling */
+/* Make h1 extra aggressive */
 h1 {
-    font-size: 4em; /* Large but not overwhelming */
+    font-size: 4em;
     text-align: center;
-    color: #ff0000; /* Dominant red */
-    text-transform: uppercase; /* Strong presence */
-    margin: 30px 0; /* More breathing room around the header */
-    letter-spacing: 3px; /* Subtle, balanced spacing */
-    font-weight: 900; /* Extra bold */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Subtle shadow for depth */
-    padding-bottom: 10px; /* Minimal padding for clean separation */
+    color: #ff0000; /* Red for intensity */
+    text-transform: uppercase; /* SHOUT IT OUT LOUD */
+    margin: 30px 0;
+    letter-spacing: 5px; /* Spread it wide */
+    text-shadow: 3px 3px 0 #333; /* Bold shadow effect */
 }
 
 /* Counter container styling */
