@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keanebootlegs.com - Index</title>
-    <meta name="description" content="Your go-to source for @keaneofficial live recordings.">
+    <meta name="description" content="Your go-to source for Keane live recordings and bootlegs.">
+    <meta name="keywords" content="Keane, bootlegs, live recordings, music, concerts, fan site">
     <meta name="author" content="Pieteker">
-    <meta name="keywords" content="Keane, bootlegs, live recordings, @keaneofficial, music, concerts, fan site">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"> <!-- Import Oswald font -->
-    <link rel="stylesheet" href="styles.css"> <!-- Custom CSS link -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <title>Keane Bootlegs - Live Recordings Archive</title>
+    
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
 </head>
+
 <body>
-    <div class="counter-container">
-        <span id="recording-count">Total Recordings: 0</span>
-    </div>
-    <h1>KEANE BOOTLEGS</h1>
-    <table>
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>City</th>
-      <th>Venue</th>
-      <th>Quality</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-      <tr>
+    <!-- Main container -->
+    <header>
+        <h1>Keane Bootlegs</h1>
+        <p class="tagline">Your go-to source for live recordings</p>
+    </header>
+
+    <!-- Recording Counter -->
+    <section class="counter-section">
+        <div class="counter-container">
+            <span id="recording-count">Total Recordings: 0</span>
+        </div>
+    </section>
+
+    <!-- Table of Recordings -->
+    <main>
+        <table class="recording-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>City</th>
+                    <th>Venue</th>
+                    <th>Quality</th>
+                    <th>Source</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
       <td>2003-10-13</td>
       <td>London</td>
       <td>ICA</td>
@@ -468,20 +487,17 @@
       <td>EX AUD</td>
       <td>Church Audio CA-11c &gt; Ugly Battery Box &gt; Roland R-05 // markeano <span class="new-sticker">MASTER</span></td>
     </tr>
-  </tbody>
-</table>
-    <div class="trade-container" style="text-align: center; margin: 40px 0;">
-    <h2 style="font-size: 2.5em; color: #ff0000; text-transform: uppercase; letter-spacing: 3px; text-shadow: 2px 2px 0 #333;">We Want Your Keane Recordings!</h2>
-    <p style="font-size: 1.5em; color: #f5f5f5; margin: 10px 0;">Attention, live music tapers and archivists! If you have rare recordings of Keane, let’s make a trade! <strong>Hit me up!</strong></p>
-    <a href="mailto:pietekerliverecordings@gmail.com" style="display: inline-block; background-color: #ff0000; color: #fff; padding: 15px 30px; font-size: 1.2em; text-transform: uppercase; text-decoration: none; border-radius: 5px; box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);">Contact Me!</a>
-</div>
+            </tbody>
+        </table>
+    </main>
 
-<script>
-        // JavaScript to count the number of rows and update the counter
-        document.addEventListener('DOMContentLoaded', function() {
-            const rowCount = document.querySelectorAll('tbody tr').length;
-            document.getElementById('recording-count').textContent = `Total Recordings: ${rowCount}`;
-        });
-    </script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Keane Bootlegs. Designed by Pieteker</p>
+    </footer>
+
+    <!-- Script for dynamic recording count -->
+    <script src="scripts.js"></script>
 </body>
+
 </html>
