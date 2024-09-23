@@ -101,7 +101,7 @@ tbody tr:hover {
 /* Highlight new recordings */
 .new-sticker {
     display: inline-block;
-    background-color: #ff0000; /* Bright, aggressive red */
+    background-color: #ff4500; /* Bright, aggressive red */
     color: white;
     font-size: 0.9rem;
     padding: 5px 8px;
