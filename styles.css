@@ -125,3 +125,30 @@ footer {
         font-size: 1.2rem;
     }
 }
+
+.floating-button {
+    position: fixed;
+    bottom: 30px; /* Adjust for vertical position */
+    right: 30px; /* Adjust for horizontal position */
+    z-index: 1000; /* Ensure it appears above other elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Circular button */
+    width: 60px; /* Size of the button */
+    height: 60px; /* Size of the button */
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Enhanced shadow for depth */
+    background-color: #ff4500; /* Keane Bootlegs aggressive red */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.floating-button:hover {
+    background-color: #e63c00; /* Darker red on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+.email-icon {
+    width: 28px; /* Set the width for the icon */
+    height: 28px; /* Set the height for the icon */
+}
