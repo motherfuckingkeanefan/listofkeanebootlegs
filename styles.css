@@ -116,3 +116,13 @@ tbody tr:hover {
         font-size: 1.2rem;
     }
 }
+
+footer {
+    background-color: #111; /* Dark background for an aggressive feel */
+    color: #ff4500; /* Aggressive red for strong contrast */
+    padding: 15px 0; /* Vertical padding */
+    text-align: center; /* Centered text */
+    font-size: 1rem; /* Standard font size */
+    font-weight: bold; /* Bold text */
+    border-top: 3px solid #ff4500; /* Thick top border for emphasis */
+}
