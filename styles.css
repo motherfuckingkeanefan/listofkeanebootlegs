@@ -98,15 +98,6 @@ tbody tr:hover {
     color: #fff;
 }
 
-/* Footer */
-footer {
-    margin-top: 40px;
-    text-align: center;
-    color: #888;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     h1 {
@@ -136,13 +127,13 @@ footer {
     border-top: 3px solid #ff4500; /* Thick top border for emphasis */
 }
 
-.email-link {
+.email-link, .twitter-link {
     color: #ff4500; /* Set link color to aggressive red */
     text-decoration: none; /* Remove underline */
     font-weight: bold; /* Make link bold */
 }
 
-.email-link:hover {
+.email-link:hover, .twitter-link:hover {
     text-decoration: underline; /* Underline on hover for interaction */
     color: #e63c00; /* Darker red on hover */
 }
