@@ -853,45 +853,6 @@
 </footer>
 
     <script src="/scripts/scripts.js"></script>
-
-    <div id="mobile-warning" class="modal">
-      <div class="modal-content">
-          <span class="close" onclick="closeModal()">&times;</span>
-          <h2>This site is best viewed on a desktop</h2>
-          <p>Please visit us on a larger screen for the best experience.</p>
-      </div>
-  </div>
-
-  <script>
-    function isMobile() {
-        return /Mobi|Android/i.test(navigator.userAgent);
-    }
-
-    function showModal() {
-        const modal = document.getElementById("mobile-warning");
-        modal.style.display = "block";
-    }
-
-    function closeModal() {
-        const modal = document.getElementById("mobile-warning");
-        modal.style.display = "none";
-    }
-
-    window.onload = function() {
-        if (isMobile()) {
-            showModal();
-        }
-    };
-
-    // Close modal when clicking outside of the modal content
-    window.onclick = function(event) {
-        const modal = document.getElementById("mobile-warning");
-        if (event.target === modal) {
-            closeModal();
-        }
-    };
-</script>
-
 </body>
 
 </html>
