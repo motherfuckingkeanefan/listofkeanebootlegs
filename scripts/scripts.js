@@ -12,12 +12,13 @@ function filterTable() {
         const date = row.cells[0].textContent.trim(); // Get the date value
         const quality = row.cells[3].textContent.trim(); // Get the quality value (which contains the source identifier)
 
-        // Extracting the source from the quality column
-        const source = quality.split(' ').pop(); // Assumes that the source is the last word in the quality string
-
+        // Check the year from the date
         const year = date.split('-')[0]; // Extract the year from the date
         const matchesYear = (yearFilter === 'all' || year === yearFilter); // Check year match
-        const matchesSource = (sourceFilter === 'all' || source.toLowerCase().includes(sourceFilter.toLowerCase())); // Check source match
+
+        // Check for matches in the quality column
+        const source = quality.toLowerCase(); // Convert to lowercase for case-insensitive comparison
+        const matchesSource = (sourceFilter === 'all' || source.includes(sourceFilter.toLowerCase())); // Check source match
 
         // Show or hide the row based on whether it matches both filters
         if (matchesYear && matchesSource) {
