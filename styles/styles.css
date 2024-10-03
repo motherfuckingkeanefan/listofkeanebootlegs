@@ -1,87 +1,77 @@
+/* Universal reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Basic body styling */
 body {
-    font-family: 'Oswald', sans-serif;
-    line-height: 1.6;
+    font-family: sans-serif;
     background-color: #111;
     color: #f5f5f5;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 10px;
+    text-align: center;
 }
 
+/* Header styling */
 header {
-    text-align: center;
     margin-bottom: 20px;
 }
 
+/* Simplified heading */
 h1 {
-    font-family: 'Impact', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: #ff4500;
-    margin-bottom: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    text-shadow: 2px 2px #000;
 }
 
+/* Tagline */
 .tagline {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #bbb;
-    font-weight: bold;
 }
 
+/* Counter section */
 .counter-section {
-    width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
+/* Counter container */
 .counter-container {
     background-color: #ff4500;
     color: #fff;
-    padding: 15px 30px;
-    font-size: 1.5rem;
-    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
     font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
 }
 
+/* Table styling */
 table {
     width: 100%;
-    max-width: 1000px;
     border-collapse: collapse;
-    margin-bottom: 50px;
-    border: 3px solid #ff4500;
+    margin-bottom: 30px;
+    border: 2px solid #ff4500;
 }
 
 thead {
     background-color: #222;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 thead th {
-    padding: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    border-bottom: 2px solid #ff4500;
+    padding: 10px;
+    border-bottom: 1px solid #ff4500;
 }
 
 tbody td {
-    padding: 15px;
+    padding: 10px;
     border-bottom: 1px solid #444;
     text-align: center;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #f5f5f5;
 }
 
 tbody tr:nth-child(even) {
@@ -93,136 +83,54 @@ tbody tr:hover {
     color: #fff;
 }
 
-/* Styles for ICA 2003 show details */
-.recording-details {
-    max-width: 800px;
-    background-color: #222;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
 
-h2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 1.8rem;
-    color: #ff4500; /* Accent color for section headings */
-    border-bottom: 2px solid #ff4500; /* Bottom border for separation */
-    padding-bottom: 5px;
-}
 
-p {
-    margin-bottom: 15px; /* Add spacing below paragraphs */
-    font-size: 1.1rem;
-}
-
-.tracklist {
-    background-color: #333;
-    border-radius: 8px;
-    padding: 15px;
-    margin-top: 10px;
-}
-
-.tracklist ul {
-    list-style: none;
-    padding: 0;
-    margin: 0; /* Remove default margin */
-}
-
-.tracklist li {
-    padding: 10px;
-    border-bottom: 1px solid #444;
-    color: #f5f5f5;
-}
-
-.tracklist li:last-child {
-    border-bottom: none;
-}
-
-.download-link {
-    display: inline-block;
-    background-color: #ff4500;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 15px;
-    text-decoration: none; /* Remove underline */
-}
-
-.download-link:hover {
-    background-color: #e63900; /* Darker shade on hover */
-}
-
-footer {
-    background-color: #111;
-    color: #ff4500;
-    padding: 15px 0;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    border-top: 3px solid #ff4500;
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    table {
-        font-size: 1rem;
-    }
-
-    thead th,
-    tbody td {
-        padding: 10px;
-    }
-
-    .counter-container {
-        font-size: 1.2rem;
-    }
-
-    .recording-details,
-    .tracklist,
-    .notes {
-        padding: 15px;
-    }
-}
-
+/* Links */
 a {
     color: #ff4500;
     text-decoration: none;
 }
 
+
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #ff4500;
+    padding: 10px 0;
+    border-top: 2px solid #ff4500;
+    font-size: 0.9rem;
+}
+
+/* Filter section (unchanged) */
 .filter-section {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-  }
+}
   
-  .filter-container {
+.filter-container {
     display: flex;
     gap: 20px;
     align-items: center;
-  }
+}
   
-  .filter-dropdown {
+.filter-dropdown {
     background-color: #222;
     color: #f5f5f5;
     padding: 10px;
     border: 2px solid #ff4500;
     border-radius: 8px;
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
     font-size: 1rem;
-  }
+}
   
-  label {
+label {
     color: #ff4500;
     font-weight: bold;
     font-size: 1.1rem;
-  }
+}
   
-  .hidden {
-    display: none; /* CSS to hide rows */
+.hidden {
+    display: none;
 }
