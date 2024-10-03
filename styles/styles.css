@@ -98,7 +98,7 @@ footer {
     background-color: #111;
     color: #ff4500;
     padding: 10px 0;
-    border-top: 2px solid #ff4500;
+    border-top: 2px solid transparant;
     font-size: 0.9rem;
 }
 
