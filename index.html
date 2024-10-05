@@ -7,24 +7,23 @@
     <meta name="keywords" content="Keane, bootlegs, live recordings, music, concerts, fan site">
     <meta name="author" content="Pieteker">
     <title>The Keane Live Recordings Archive</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/shared.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-    <a href="/">
+    <a href="/" class="logo">
         <h1>Keane Live</h1>
     </a>
     <p class="tagline">Your go-to source for Keane live recordings</p>
-</header>
 
-<section class="filter-section">
     <div class="filter-container">
-        <label for="yearFilter">Filter by Year:</label>
+        <label for="yearFilter">Year:</label>
         <select id="yearFilter" class="filter-dropdown">
             <option value="all">All Years</option>
         </select>
-        
-        <label for="sourceFilter">Filter by Source:</label>
+
+        <label for="sourceFilter">Source:</label>
         <select id="sourceFilter" class="filter-dropdown">
             <option value="all">All Sources</option>
             <option value="Audience">AUD</option>
@@ -34,8 +33,8 @@
             <option value="IEM">IEM</option>
         </select>
     </div>
-</section>
-  
+</header>
+
 <section class="counter-section">
     <div class="counter-container">
         <span id="recording-count">Total Recordings: 0</span>
@@ -54,964 +53,959 @@
             </tr>
         </thead>
         <tbody>
-             <tr>
-      <td>2003-05-02</td>
-      <td>London</td>
-      <td>XFM Studios</td>
-      <td>Excellent (Soundboard)</td>
-      <td>CDR &gt; FLAC</td>
-    </tr>
-    <tr>
-        <td>2003-10-13</td>
-        <td>London</td>
-        <td>ICA</td>
-        <td>Good (Audience)</td>
-        <td>AUD > FLAC</td>
-    </tr>
-    <tr>
-        <td>2003-11-11</td>
-        <td>Santa Monica</td>
-        <td>KCRW Studios</td>
-        <td>Excellent (FM)</td>
-        <td>FM > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-02-05</td>
-        <td>London</td>
-        <td>Astoria Theatre</td>
-        <td>Very Good+ (Audience)</td>
-        <td>Sony ECM-TS125 > Sharp IM-DR420H</td>
-    </tr>
-    <tr>
-        <td>2004-02-05</td>
-        <td>London</td>
-        <td>Villiers Theatre</td>
-        <td>Very Good+ (Audience)</td>
-        <td>Sony ECM-TS125 > Sharp IM-DR420H</td>
-    </tr>
-    <tr>
-        <td>2004-02-10</td>
-        <td>Northampton</td>
-        <td>Soundhaus</td>
-        <td>Excellent (Soundboard)</td>
-        <td>SBD > CDR > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-02-12</td>
-        <td>Sheffield</td>
-        <td>Coffee Revolution - University Union</td>
-        <td>Very Good (Audience)</td>
-        <td>AUD > CDR > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-02-26</td>
-        <td>London</td>
-        <td>The Basement Club</td>
-        <td>Very Good+ (Audience)</td>
-        <td>Sony ECM-TS125 > Sharp IM-DR420H</td>
-    </tr>
-             <tr>
-      <td>2004-03-03</td>
-      <td>Birmingham</td>
-      <td>TC's</td>
-       <td>Excellent (Soundboard)</td>
-  <td>SBD > Logic Pro X > FLAC</td>
-    </tr>
+            <tr>
+                <td>2003-10-13</td>
+                <td>London</td>
+                <td>ICA</td>
+                <td>Good (Audience)</td>
+                <td>AUD > FLAC</td>
+            </tr>
+            <tr>
+                <td>2003-11-11</td>
+                <td>Santa Monica</td>
+                <td>KCRW Studios</td>
+                <td>Excellent (FM)</td>
+                <td>FM > FLAC</td>
+            </tr>
+            <tr>
+                <td>2004-02-05</td>
+                <td>London</td>
+                <td>Astoria Theatre</td>
+                <td>Very Good+ (Audience)</td>
+                <td>Sony ECM-TS125 > Sharp IM-DR420H</td>
+            </tr>
+            <tr>
+                <td>2004-02-05</td>
+                <td>London</td>
+                <td>Villiers Theatre</td>
+                <td>Very Good+ (Audience)</td>
+                <td>Sony ECM-TS125 > Sharp IM-DR420H</td>
+            </tr>
+            <tr>
+                <td>2004-02-10</td>
+                <td>Northampton</td>
+                <td>Soundhaus</td>
+                <td>Excellent (Soundboard)</td>
+                <td>SBD > CDR > FLAC</td>
+            </tr>
+            <tr>
+                <td>2004-02-12</td>
+                <td>Sheffield</td>
+                <td>Coffee Revolution - University Union</td>
+                <td>Very Good (Audience)</td>
+                <td>AUD > CDR > FLAC</td>
+            </tr>
+            <tr>
+                <td>2004-02-26</td>
+                <td>London</td>
+                <td>The Basement Club</td>
+                <td>Very Good+ (Audience)</td>
+                <td>Sony ECM-TS125 > Sharp IM-DR420H</td>
+            </tr>
                      <tr>
-      <td>2004-03-03</td>
-      <td>Birmingham</td>
-      <td>TC's</td>
-       <td>Very Good (Audience)</td>
-        <td>AUD > CDR > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-03-09</td>
-        <td>London</td>
-        <td>ULU</td>
-        <td>Very Good+ (Audience)</td>
-        <td>AUD > CDR > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-03-28</td>
-        <td>London</td>
-        <td>Hammersmith Apollo</td>
-        <td>Very Good+ (Audience)</td>
-        <td>AUD > CDR > FLAC</td>
-    </tr>
-             <tr>
-      <td>2004-04-05</td>
-      <td>London</td>
-      <td>Maida Vale Studios</td>
-      <td>Excellent (FM)</td>
-      <td>Digital Satellite Receiver > CDR > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-04-23</td>
-        <td>Liverpool</td>
-        <td>Academy 4</td>
-        <td>Very Good+ (Audience)</td>
-        <td>AUD > CDR > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-04-24</td>
-        <td>Leeds</td>
-        <td>Metropolitan University</td>
-        <td>Very Good+ (Audience)</td>
-        <td>Sony ECM-TS125 > Sharp IM-DR420H</td>
-    </tr>
-    <tr>
-        <td>2004-04-28</td>
-        <td>Newcastle</td>
-        <td>Newcastle University</td>
-        <td>Excellent (Audience)</td>
-        <td>AUD > CDR > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-05-08</td>
-        <td>Eastbourne</td>
-        <td>Winter Gardens</td>
-        <td>Very Good+ (Audience)</td>
-        <td>AUD > CDR > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-05-09</td>
-        <td>London</td>
-        <td>Virgin Megastore</td>
-        <td>Very Good+ (Audience)</td>
-        <td>Sony ECM-TS125 > Sharp IM-DR420H</td>
-    </tr>
-    <tr>
-        <td>2004-05-10</td>
-        <td>London</td>
-        <td>Forum Kentish Town</td>
-        <td>Very Good+ (Audience)</td>
-        <td>Sony ECM-TS125 > Sharp IM-DR420H</td>
-    </tr>
-    <tr>
-        <td>2004-05-19</td>
-        <td>Berlin</td>
-        <td>Columbia Fritz</td>
-        <td>Excellent (FM)</td>
-        <td>FM > CDR > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-06-01</td>
-        <td>San Francisco</td>
-        <td>Cafe Du Nord</td>
-        <td>Excellent (Audience)</td>
-        <td>Sonic Studio mics > Sony TCD-D100</td>
-    </tr>
-    <tr>
-        <td>2004-06-02</td>
-        <td>Los Angeles</td>
-        <td>KCRW Studios</td>
-        <td>Excellent (FM)</td>
-        <td>FM > FLAC</td>
-    </tr>
+              <td>2004-03-03</td>
+              <td>Birmingham</td>
+              <td>TC's</td>
+               <td>Excellent (Soundboard)</td>
+          <td>SBD > Logic Pro X > FLAC</td>
+            </tr>
+                             <tr>
+              <td>2004-03-03</td>
+              <td>Birmingham</td>
+              <td>TC's</td>
+               <td>Very Good (Audience)</td>
+                <td>AUD > CDR > FLAC</td>
+            </tr>
             <tr>
-      <td>2004-06-24</td>
-      <td>New York</td>
-      <td>WXRK Studios</td>
-      <td>Excellent (FM)</td>
-      <td>FM > WAV > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-06-26</td>
-        <td>Pilton</td>
-        <td>Glastonbury Festival</td>
-        <td>Excellent (FM)</td>
-        <td>Digital Satellite Receiver > CDR > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-07-04</td>
-        <td>Herzogenrath</td>
-        <td>Eins Live Konigstreffen</td>
-        <td>Excellent (FM)</td>
-        <td>FM > DAT > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-07-11</td>
-        <td>Punchestown</td>
-        <td>Oxegen Festival</td>
-        <td>Poor (Audience)</td>
-        <td>AUD > CDR > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-07-11</td>
-        <td>Punchestown</td>
-        <td>Oxegen Festival</td>
-        <td>Excellent (FM)</td>
-        <td>FM > CDR > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-07-16</td>
-        <td>Arvika</td>
-        <td>Arvikafestivalen</td>
-        <td>Excellent (FM)</td>
-        <td>Analogue Cable FM > WAV > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-08-07</td>
-        <td>Rees-Haldern</td>
-        <td>Haldern Pop-Festival</td>
-        <td>Excellent (Audience)</td>
-        <td>DPA 4060 > MPS6020 > Sony TCD-D100</td>
-    </tr>
+                <td>2004-03-09</td>
+                <td>London</td>
+                <td>ULU</td>
+                <td>Very Good+ (Audience)</td>
+                <td>AUD > CDR > FLAC</td>
+            </tr>
             <tr>
-      <td>2004-08-14</td>
-      <td>Salzburg</td>
-      <td>Frequency Festival</td>
-      <td>Excellent (FM)</td>
-      <td>Digital Satellite Receiver > CDR > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-08-18</td>
-        <td>Battle</td>
-        <td>Battle Memorial Hall</td>
-        <td>Very Good+ (Audience)</td>
-        <td>Sony ECM-TS125 > Sharp IM-DR420H</td>
-    </tr>
-    <tr>
-        <td>2004-08-18</td>
-        <td>Battle</td>
-        <td>Battle Memorial Hall</td>
-        <td>Excellent (FM)</td>
-        <td>FM > CDR > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-08-19</td>
-        <td>Hasselt-Kiewit</td>
-        <td>Pukkelpop Festival</td>
-        <td>Excellent (FM)</td>
-        <td>Digital Satellite Receiver > CDR > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-08-20</td>
-        <td>Biddinghuizen</td>
-        <td>Lowlands Festival</td>
-        <td>Excellent (SBD)</td>
-        <td>SBD / Webcast > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-08-21</td>
-        <td>Chelmsford</td>
-        <td>V Festival</td>
-        <td>Excellent (FM)</td>
-        <td>Digital Satellite Receiver > CDR > FLAC</td>
-    </tr>
-    <tr>
-        <td>2004-08-26</td>
-        <td>Inverness</td>
-        <td>Up Close Festival</td>
-        <td>Excellent (FM)</td>
-        <td>FM > CDR > FLAC</td>
-    </tr>
-           <tr>
-    <td>2004-08-29</td>
-    <td>Dublin</td>
-    <td>HMV</td>
-    <td>Excellent (Audience)</td>
-    <td>AT831b > Sony MZ-G75</td>
-</tr>
-<tr>
-    <td>2004-08-29</td>
-    <td>Dublin</td>
-    <td>Olympia Theatre</td>
-    <td>Excellent (Audience)</td>
-    <td>AT831b > Sony MZ-G755</td>
-</tr>
-<tr>
-    <td>2004-09-08</td>
-    <td>Portland</td>
-    <td>Berbati's Pan</td>
-    <td>Excellent (Soundboard)</td>
-    <td>SBD > CDR > FLAC</td>
-</tr>
-<tr>
-    <td>2004-09-11</td>
-    <td>West Hollywood</td>
-    <td>Virgin Megastore</td>
-    <td>Excellent (Audience)</td>
-    <td>Built-in Mics > Sony DCR-TRV22 > Master MiniDV</td>
-</tr>
-<tr>
-    <td>2004-10-16</td>
-    <td>Stuttgart</td>
-    <td>Villa Berg</td>
-    <td>Excellent (FM)</td>
-    <td>Digital Satellite Receiver > CDR > FLAC</td>
-</tr>
-<tr>
-    <td>2004-10-17</td>
-    <td>Cologne</td>
-    <td>Live Music Hall</td>
-    <td>Excellent (Audience)</td>
-    <td>Soundman OKM II Rock > A3 Adapter > Sony MZ-N910</td>
-</tr>
-<tr>
-    <td>2004-11-08</td>
-    <td>Nottingham</td>
-    <td>Rock City</td>
-    <td>Excellent (Audience)</td>
-    <td>AUD > CDR > FLAC</td>
-</tr>
-<tr>
-    <td>2004-11-16</td>
-    <td>London</td>
-    <td>The Hub</td>
-    <td>Excellent (FM)</td>
-    <td>Digital Satellite Receiver > CDR > FLAC</td>
-</tr>
-<tr>
-    <td>2004-11-17</td>
-    <td>London</td>
-    <td>Brixton Academy</td>
-    <td>Excellent (FM)</td>
-    <td>Digital Satellite Receiver > CDR > FLAC</td>
-</tr>
-             <tr>
-      <td>2004-11-19</td>
-      <td>Lyon</td>
-      <td>Hall Tony Garnier</td>
-      <td>Excellent (FM)</td>
-      <td>Digital Satellite Receiver > CDR > FLAC</td>
-    </tr>
+                <td>2004-03-28</td>
+                <td>London</td>
+                <td>Hammersmith Apollo</td>
+                <td>Very Good+ (Audience)</td>
+                <td>AUD > CDR > FLAC</td>
+            </tr>
+                     <tr>
+              <td>2004-04-05</td>
+              <td>London</td>
+              <td>Maida Vale Studios</td>
+              <td>Excellent (FM)</td>
+              <td>Digital Satellite Receiver > CDR > FLAC</td>
+            </tr>
             <tr>
-      <td>2004-12-11</td>
-      <td>Los Angeles</td>
-      <td>Gibson Amphitheater</td>
-      <td>Excellent (Audience)</td>
-      <td>Sonic Studios DSM6s > PA-6LC > Sony D8 DAT</td>
-    </tr>
+                <td>2004-04-23</td>
+                <td>Liverpool</td>
+                <td>Academy 4</td>
+                <td>Very Good+ (Audience)</td>
+                <td>AUD > CDR > FLAC</td>
+            </tr>
             <tr>
-      <td>2004-12-11</td>
-      <td>Los Angeles</td>
-      <td>Gibson Amphitheater</td>
-      <td>Excellent (FM)</td>
-      <td>FM > FLAC</td>
-    </tr>
-<tr>
-    <td>2005-02-17</td>
-    <td>Chicago</td>
-    <td>Riviera Theater</td>
-    <td>Excellent (FM)</td>
-    <td>FM > Onkyo TX8511 > SoundBlaster > FLAC</td>
-</tr>
-<tr>
-    <td>2005-02-25</td>
-    <td>Atlanta</td>
-    <td>99X</td>
-    <td>Excellent (FM)</td>
-    <td>FM > CDR > FLAC</td>
-</tr>
+                <td>2004-04-24</td>
+                <td>Leeds</td>
+                <td>Metropolitan University</td>
+                <td>Very Good+ (Audience)</td>
+                <td>Sony ECM-TS125 > Sharp IM-DR420H</td>
+            </tr>
             <tr>
-      <td>2004-03-08</td>
-      <td>London</td>
-      <td>Islington Academy</td>
-      <td>Excellent (SBD)</td>
-      <td>SBD / Webcast > FLAC</td>
-    </tr>
-<tr>
-    <td>2005-03-19</td>
-    <td>Vienna</td>
-    <td>Gasometer</td>
-    <td>Very Good+ (Audience)</td>
-    <td>AUD > CDR > FLAC</td>
-</tr>
-<tr>
-    <td>2005-03-22</td>
-    <td>Paris</td>
-    <td>L'Olympia</td>
-    <td>Excellent (Audience)</td>
-    <td>AT831b > Sony MZ-G755</td>
-</tr>
-<tr>
-    <td>2005-03-23</td>
-    <td>Amsterdam</td>
-    <td>Heineken Music Hall</td>
-    <td>Excellent (Soundboard)</td>
-    <td>SBD / Webcast > FLAC</td>
-</tr>
-<tr>
-    <td>2005-04-30</td>
-    <td>Indio</td>
-    <td>Coachella Festival</td>
-    <td>Excellent (Audience)</td>
-    <td>AT853 > Denecke PS-2 > Nomad JB3</td>
-</tr>
-<tr>
-    <td>2005-05-09</td>
-    <td>Seattle</td>
-    <td>Paramount Theatre</td>
-    <td>Excellent (Audience)</td>
-    <td>AUD > FLAC</td>
-</tr>
-<tr>
-    <td>2005-06-29</td>
-    <td>London</td>
-    <td>Wireless Festival</td>
-    <td>Excellent (FM)</td>
-    <td>Digital Satellite Receiver > Yamaha CDR1500 > FLAC</td>
-</tr>
-<tr>
-    <td>2005-07-03</td>
-    <td>Werchter</td>
-    <td>Werchter Festival</td>
-    <td>Excellent (FM)</td>
-    <td>Denon FM Tuner > FLAC</td>
-</tr>
-<tr>
-    <td>2005-07-10</td>
-    <td>Naas</td>
-    <td>Oxegen Festival</td>
-    <td>Excellent (FM)</td>
-    <td>Digital Satellite Receiver > Yamaha CDR1500 > FLAC</td>
-</tr>
-<tr>
-    <td>2005-08-01</td>
-    <td>Cornwall</td>
-    <td>Eden Project</td>
-    <td>Very Good+ (Audience)</td>
-    <td>AUD > CDR > FLAC</td>
-</tr>
-<tr>
-    <td>2005-08-05</td>
-    <td>Nice</td>
-    <td>Stade Charles-Ehrmann</td>
-    <td>Very Good+ (Audience)</td>
-    <td>Sony ECM-719 > Sony MZ-NH900</td>
-</tr>
-<tr>
-    <td>2005-09-23</td>
-    <td>Austin</td>
-    <td>ACL Music Festival</td>
-    <td>Very Good+ (Audience)</td>
-    <td>Sony MD RZ-70 > FLAC</td>
-</tr>
-<tr>
-    <td>2006-05-14</td>
-    <td>Dundee</td>
-    <td>Camperdown Park</td>
-    <td>Excellent (FM)</td>
-    <td>Digital Satellite Receiver > Yamaha CDR1500 > FLAC</td>
-</tr>
-<tr>
-    <td>2006-05-16</td>
-    <td>Cologne</td>
-    <td>Kulturkirche</td>
-    <td>Excellent (FM)</td>
-    <td>FM > WAV > FLAC</td>
-</tr>
-<tr>
-    <td>2006-05-17</td>
-    <td>Berlin</td>
-    <td>Kesselhaus</td>
-    <td>Excellent (FM)</td>
-    <td>FM > Sony DAT DTC-60ES w/ SBM > FLAC</td>
-</tr>
-<tr>
-    <td>2006-05-23</td>
-    <td>Paris</td>
-    <td>Le Trabendo</td>
-    <td>Excellent (Audience)</td>
-    <td>Sony ECM-719 > Sony MZ-NH900</td>
-</tr>
-             <tr>
-      <td>2006-05-25</td>
-      <td>Hilversum</td>
-      <td>3FM Studios</td>
-      <td>Excellent (FM)</td>
-      <td>Digital Satellite Receiver > Yamaha CDR1500 > FLAC</td>
-    </tr>
-<tr>
-    <td>2006-05-26</td>
-    <td>Amsterdam</td>
-    <td>Paradiso</td>
-    <td>Excellent (Audience)</td>
-    <td>MM-MCSM-4 cardioids > MM-EBM-1 > Nomad Jukebox 3</td>
-</tr>
-<tr>
-    <td>2006-05-27</td>
-    <td>Oslo</td>
-    <td>Sentrum Scene</td>
-    <td>Excellent (Audience)</td>
-    <td>Sony ECM-TS125 > Sharp IM-DR420H</td>
-</tr>
-<tr>
-    <td>2006-06-04</td>
-    <td>Nürburg</td>
-    <td>Rock am Ring</td>
-    <td>Excellent (FM)</td>
-    <td>FM > CD Spin Doctor > FLAC</td>
-</tr>
-<tr>
-    <td>2006-06-05</td>
-    <td>Landgraaf</td>
-    <td>Pinkpop Festival</td>
-    <td>Excellent (SBD)</td>
-    <td>SBD / Webcast > FLAC</td>
-</tr>
-<tr>
-    <td>2006-06-09</td>
-    <td>London</td>
-    <td>Astoria</td>
-    <td>Excellent (FM)</td>
-    <td>Digital Satellite Receiver > Yamaha CDR1500 > FLAC</td>
-</tr>
-<tr>
-    <td>2006-06-22</td>
-    <td>Los Angeles</td>
-    <td>KCRW Studios</td>
-    <td>Excellent (FM)</td>
-    <td>FM > CDR > FLAC</td>
-</tr>
-<tr>
-    <td>2006-07-15</td>
-    <td>Barcelona</td>
-    <td>Parc del Fòrum</td>
-    <td>Excellent (Audience)</td>
-    <td>Sonic Studios DSM6s &gt; PA-6LC &gt; iRiver H-340</td>
-</tr>
-<tr>
-    <td>2006-08-18</td>
-    <td>Kiewit</td>
-    <td>Pukkelpop Festival</td>
-    <td>Excellent (FM)</td>
-    <td>Digital Satellite Receiver &gt; Yamaha CDR1500 &gt; FLAC</td>
-</tr>
-<tr>
-    <td>2006-08-19</td>
-    <td>Chelmsford</td>
-    <td>V Festival</td>
-    <td>Excellent (FM)</td>
-    <td>Digital Satellite Receiver &gt; Yamaha CDR1500 &gt; FLAC</td>
-</tr>
-<tr>
-    <td>2006-11-07</td>
-    <td>Rotterdam</td>
-    <td>Ahoy</td>
-    <td>Good (Audience)</td>
-    <td>Panasonic NV-GS17 &gt; MiniDV-M &gt; FLAC </td>
-</tr>
-<tr>
-    <td>2006-11-15</td>
-    <td>Berlin</td>
-    <td>Tempodrom</td>
-    <td>Excellent (Audience)</td>
-    <td>Soundman OKM II Rock &gt; A3 Adapter &gt; M-AUDIO Microtrack</td>
-</tr>
-<tr>
-    <td>2007-01-23</td>
-    <td>Paris</td>
-    <td>L'Olympia</td>
-    <td>Excellent (FM)</td>
-    <td>FM &gt; Stereo Receiver &gt; FLAC // svp</td>
-</tr>
-<tr>
-    <td>2007-02-23</td>
-    <td>Birmingham</td>
-    <td>NEC Arena</td>
-    <td>Excellent (Audience)</td>
-    <td>SP-CMC-8 &gt; SP-SPSB-7 &gt; Sony MZ-RH10</td>
-</tr>
-<tr>
-    <td>2007-03-08</td>
-    <td>Edinburgh</td>
-    <td>Liquid Room</td>
-    <td>Excellent (FM)</td>
-    <td>Digital Satellite Receiver &gt; Yamaha CDR1500 &gt; FLAC</td>
-</tr>
-<tr>
-    <td>2007-04-15</td>
-    <td>Santiago</td>
-    <td>Club Hípico</td>
-    <td>Excellent (Audience)</td>
-    <td>AUD &gt; CDR &gt; FLAC</td>
-</tr>
-             <tr>
-      <td>2007-06-10</td>
-      <td>Newport</td>
-      <td>Isle of Wight Festival</td>
-      <td>Excellent (FM)</td>
-      <td>Digital Satellite Receiver > Yamaha CDR1500 > FLAC</td>
-    </tr
-<tr>
-    <td>2007-06-30</td>
-    <td>Werchter</td>
-    <td>Werchter Festival</td>
-    <td>Excellent (FM)</td>
-    <td>Denon FM Tuner &gt; FLAC</td>
-</tr>
-<tr>
-    <td>2008-11-15</td>
-    <td>London</td>
-    <td>Union Chapel</td>
-    <td>Good (Audience)</td>
-    <td>Sony ECM-TS125 &gt; Sharp IM-DR420H</td>
-</tr>
-<tr>
-    <td>2008-11-20</td>
-    <td>Paris</td>
-    <td>Le Zénith</td>
-    <td>Excellent (Audience)</td>
-    <td>SP-CMC-4 &gt; SP-SPSB-1 &gt; Edirol R-09</td>
-</tr>
-<tr>
-    <td>2008-12-04</td>
-    <td>Los Angeles</td>
-    <td>KCRW Studios</td>
-    <td>Excellent (FM)</td>
-    <td>FM &gt; Harman Kardon AVR30</td>
-</tr>
-<tr>
-    <td>2008-12-16</td>
-    <td>London</td>
-    <td>The Hub</td>
-    <td>Excellent (FM)</td>
-    <td>Digital Satellite Receiver &gt; Yamaha CDR1500 &gt; FLAC</td>
-</tr>
-<tr>
-    <td>2009-02-12</td>
-    <td>London</td>
-    <td>O2 Arena</td>
-    <td>Very Good+ (Audience)</td>
-    <td>Sony ECM-TS125 &gt; Sharp IM-DR420H</td>
-</tr>
-<tr>
-    <td>2009-04-24</td>
-    <td>Koto</td>
-    <td>Studio Coast</td>
-    <td>Excellent- (Audience)</td>
-    <td>DPA mics &gt; 9V battery &gt; Sony PCM-D50</td>
-</tr>
-<tr>
-    <td>2009-05-20</td>
-    <td>Philadelphia</td>
-    <td>World Cafe Live</td>
-    <td>Excellent (FM)</td>
-    <td>Pre-FM &gt; FLAC</td>
-</tr>
-<tr>
-    <td>2009-06-17</td>
-    <td>Berlin</td>
-    <td>Kesselhaus</td>
-    <td>Excellent (FM)</td>
-    <td>Pre-FM &gt; CDR &gt; FLAC</td>
-</tr>
-<tr>
-    <td>2009-06-19</td>
-    <td>Neuhausen ob Eck</td>
-    <td>Southside Festival</td>
-    <td>Excellent (FM)</td>
-    <td>Digital Satellite Receiver &gt; Yamaha CDR1500 &gt; FLAC</td>
-</tr>
-<tr>
-    <td>2009-07-10</td>
-    <td>Punchestown</td>
-    <td>Oxegen Festival</td>
-    <td>Excellent (FM)</td>
-    <td>FM &gt; Videoton RT7300 &gt; Fostex FR2LE &gt; FLAC</td>
-</tr>
-<tr>
-    <td>2009-08-11</td>
-    <td>Hong Kong</td>
-    <td>HITEC Star Hall</td>
-    <td>Excellent (Audience)</td>
-    <td>Sony ECM-719 &gt; Sony MZ-NH1 (Hi-SP)</td>
-</tr>
-<tr>
-    <td>2009-09-10</td>
-    <td>Seattle</td>
-    <td>The Moore Theater</td>
-    <td>Excellent (Audience)</td>
-    <td>AT853 &gt; SP-SBSP-11 &gt; iRiver iHP-120</td>
-</tr>
-             <tr>
-      <td>2010-05-12</td>
-      <td>London</td>
-      <td>The Fridge</td>
-       <td>Excellent (Audience)</td>
-  <td>Sony ECM-125 &gt; Roland R-09</td>
-    </tr>
-<tr>
-    <td>2010-05-15</td>
-    <td>London</td>
-    <td>BBC Radio Theatre</td>
-    <td>Excellent (FM)</td>
-    <td>FM &gt; Sansui T60 &gt; Sony MZ-RH1</td>
-</tr>
-<tr>
-    <td>2010-06-15</td>
-    <td>London</td>
-    <td>Roundhouse</td>
-    <td>Very Good+ (Audience)</td>
-    <td>Built-in Mics &gt; Zoom H2 &gt; FLAC</td>
-</tr>
-<tr>
-    <td>2010-06-27</td>
-    <td>Pilton</td>
-    <td>Glastonbury Festival</td>
-    <td>Excellent (Audience)</td>
-    <td>DPA 4061 &gt; Edirol R-09</td>
-</tr>
-<tr>
-    <td>2010-08-07</td>
-    <td>Philadelphia</td>
-    <td>The Mann Center</td>
-    <td>Very Good+ (Audience)</td>
-    <td>Built-in Mics &gt; Edirol R-09</td>
-</tr>
-<tr>
-    <td>2010-08-10</td>
-    <td>New York</td>
-    <td>The Living Room</td>
-    <td>Excellent (FM)</td>
-    <td>FM &gt; FLAC</td>
-</tr>
-<tr>
-  <td>2012-03-09</td>
-  <td>Bexhill-On-Sea</td>
-  <td>De La Warr Pavilion</td>
-  <td>Excellent (Audience)</td>
-  <td>Sony ECM-125 &gt; Roland R-05</td>
-</tr>
-<tr>
-  <td>2012-03-15</td>
-  <td>Austin</td>
-  <td>KCRW Studios</td>
-  <td>Excellent (FM)</td>
-  <td>FM &gt; Onkyo HT-R520 &gt; Zoom H4n</td>
-</tr>
-<tr>
-  <td>2012-05-09</td>
-  <td>London</td>
-  <td>BBC Radio Theatre</td>
-  <td>Excellent (FM)</td>
-  <td>FM &gt; PCTV NanoStick T2 &gt; FLAC</td>
-</tr>
-<tr>
-  <td>2012-06-02</td>
-  <td>Nürburg</td>
-  <td>Rock am Ring</td>
-  <td>Excellent (FM)</td>
-  <td>Digital Satellite Receiver &gt; Yamaha CDR1500 &gt; FLAC</td>
-</tr>
-<tr>
-  <td>2012-06-04</td>
-  <td>Folkestone</td>
-  <td>Leas Cliff Hall</td>
-  <td>Excellent (Audience)</td>
-  <td>Sony ECM-125 &gt; Roland R-09</td>
-</tr>
-<tr>
-  <td>2012-09-03</td>
-  <td>Vancouver</td>
-  <td>The Centre in Vancouver for Performing Arts</td>
-  <td>Excellent (Audience)</td>
-  <td>SP-CMC-8 &gt; SP-SPSB-7 battery box &gt; Edirol R-09</td>
-</tr>
-<tr>
-  <td>2012-10-15</td>
-  <td>Offenbach</td>
-  <td>Capitol</td>
-  <td>Excellent (Audience)</td>
-  <td>CA-14(c) &gt; Ugly Battery Box &gt; Sony PCM-M10</td>
-</tr>
-<tr>
-  <td>2013-01-09</td>
-  <td>Boise</td>
-  <td>Knitting Factory</td>
-  <td>Excellent (Matrix)</td>
-  <td>AUD 1: Sonic Studios DSM6s &gt; PA-6LC &gt; iRiver H120<br>AUD 2: Countryman B3 Omnidirectional &gt; SP-SPSB-8 &gt; Sony PCM-M10</td>
-</tr>
-<tr>
-  <td>2013-01-23</td>
-  <td>Nashville</td>
-  <td>Ryman Auditorium</td>
-  <td>Excellent (Audience)</td>
-  <td>Church-Audio Cardoid Mics &gt; STC-9200 Preamp &gt; Edirol R-09</td>
-</tr>
-<tr>
-  <td>2013-01-31</td>
-  <td>New York</td>
-  <td>Radio City Music Hall</td>
-  <td>Excellent (Audience)</td>
-  <td>DPA-4060 &gt; Sony PCM-M10</td>
-</tr>
-<tr>
-  <td>2013-07-13</td>
-  <td>Werchter</td>
-  <td>TW Classic Festival</td>
-  <td>Excellent (FM)</td>
-  <td>FM &gt; Pioneer F-Z93L &gt; Edirol R-09HR</td>
-</tr>
-<tr>
-  <td>2013-11-14</td>
-  <td>London</td>
-  <td>Under the Bridge</td>
-  <td>Excellent (FM)</td>
-  <td>Digital Satellite Receiver &gt; Yamaha CDR1500 &gt; FLAC</td>
-</tr>
-             <tr>
-      <td>2013-11-16</td>
-      <td>London</td>
-      <td>BBC Radio 2 Studios</td>
-       <td>Excellent (FM)</td>
-  <td>Digital Satellite Broadcast > DVB-S > TBS 6984</td>
-    </tr>
-<tr>
-  <td>2019-09-07</td>
-  <td>The Hague</td>
-  <td>Noorderstrand</td>
-  <td>Very Good (Audience)</td>
-  <td>Soundman OKM II &gt; Roland R-07</td>
-</tr>
-<tr>
-  <td>2019-10-12</td>
-  <td>London</td>
-  <td>BBC Radio 2 Studios</td>
-  <td>Excellent (FM)</td>
-  <td>FM Broadcast &gt; Harmon Kardon TU980 tuner &gt; TEAC CDRW890 standalone CD recorder</td>
-</tr>
-<tr>
-  <td>2020-02-11</td>
-  <td>Amsterdam</td>
-  <td>AFAS Live</td>
-  <td>Excellent (Audience)</td>
-  <td>CA-11(o) &gt; Tascam DR-2d</td>
-</tr>
-<tr>
-  <td>2022-06-10</td>
-  <td>Tetbury</td>
-  <td>Westonbirt Arboretum</td>
-  <td>Very Good (Audience)</td>
-  <td>Motorola G7 Power (Internal Mics) &gt; Parrot Audio Recorder Pro</td>
-</tr>
-<tr>
-  <td>2022-07-03</td>
-  <td>Werchter</td>
-  <td>Werchter Festival</td>
-  <td>Excellent (FM)</td>
-  <td>Marantz M-CR610 &gt; Edirol R-09</td>
-</tr>
-<tr>
-  <td>2024-02-20</td>
-  <td>London</td>
-  <td>Shepherd's Bush Empire</td>
-  <td>Excellent (Matrix)</td>
-  <td>AUD 1: SP-CMC-2 &gt; SP-SPSB-10 &gt; Tascam DR-2d<br>AUD 2: CA-11(c) &gt; Ugly Battery Box &gt; Tascam DR-2d</td>
-</tr>
-<tr>
-  <td>2024-04-19</td>
-  <td>Amsterdam</td>
-  <td>AFAS Live</td>
-  <td>Excellent (Audience)</td>
-  <td>DPA 4061 &gt; SP-SPSB-10 &gt; Tascam DR-2d</td>
-</tr>
-<tr>
-  <td>2024-04-19</td>
-  <td>Amsterdam</td>
-  <td>AFAS Live</td>
-  <td>Excellent (Audience)</td>
-  <td>Schoeps MK41 &gt; Active Cables &gt; Zoom F3</td>
-</tr>
-<tr>
-  <td>2024-04-19</td>
-  <td>Amsterdam</td>
-  <td>AFAS Live</td>
-  <td>Excellent (Audience)</td>
-  <td>CA-11(c) &gt; Ugly Battery Box &gt; Roland R-05</td>
-</tr>
-<tr>
-  <td>2024-04-21</td>
-  <td>Cologne</td>
-  <td>Palladium</td>
-  <td>Excellent (Audience)</td>
-  <td>AT853 &gt; SP-SPSB-10 &gt; Roland R-05</td>
-</tr>
-<tr>
-  <td>2024-04-21</td>
-  <td>Cologne</td>
-  <td>Palladium</td>
-  <td>Excellent (Audience)</td>
-  <td>CA-11(c) &gt; Ugly Battery Box &gt; Roland R-05</td>
-</tr>
-<tr>
-  <td>2024-04-26</td>
-  <td>Paris</td>
-  <td>L’Olympia</td>
-  <td>Excellent (Audience)</td>
-  <td>AT853 &gt; SP-SPSB-10 &gt; Roland R-05</td>
-</tr>
-<tr>
-  <td>2024-05-03</td>
-  <td>Leeds</td>
-  <td>First Direct Arena</td>
-  <td>Very Good (Audience)</td>
-  <td>Built-in Mics &gt; Tascam DR-2d</td>
-</tr>
-<tr>
-  <td>2024-05-04</td>
-  <td>Birmingham</td>
-  <td>Utilita Arena</td>
-  <td>Excellent (Audience)</td>
-  <td>AT943 &gt; SP-SPSB-1 &gt; Roland R-05</td>
-</tr>
-<tr>
-  <td>2024-05-11</td>
-  <td>London</td>
-  <td>02 Arena</td>
-  <td>Excellent (Audience)</td>
-  <td>CA-11(c) &gt; Ugly Battery Box &gt; Edirol R-05</td>
-</tr>
-<tr>
-  <td>2024-05-11</td>
-  <td>London</td>
-  <td>02 Arena</td>
-  <td>Excellent (IEM)</td>
-  <td>Receiver &gt; Tascam DR-2d</td>
-</tr>
-<tr>
-  <td>2024-05-11</td>
-  <td>London</td>
-  <td>02 Arena</td>
-  <td>Excellent (Matrix)</td>
-  <td>AUD: CA-11(c) &gt; Ugly Battery Box &gt; Edirol R-05<br>IEM: Receiver &gt; Tascam DR-2d</td>
-</tr>
-<tr>
-  <td>2024-07-20</td>
-  <td>Nieuwpoort</td>
-  <td>Beach Festival</td>
-  <td>Excellent (Audience)</td>
-  <td>AT853 &gt; SP-SPSB-10 &gt; Roland R-05</td>
-</tr>
-<tr>
-  <td>2024-07-20</td>
-  <td>Nieuwpoort</td>
-  <td>Beach Festival</td>
-  <td>Excellent (Audience)</td>
-  <td>AT831 &gt; Tascam DR-2d</td>
-</tr>
-<tr>
-  <td>2024-07-20</td>
-  <td>Nieuwpoort</td>
-  <td>Beach Festival</td>
-  <td>Excellent (Matrix)</td>
-  <td>AUD 1: AT853 &gt; SP-SPSB-10 &gt; Roland R-05<br>AUD 2: AT831 &gt; Tascam DR-2d</td>
-</tr>
-<tr>
-  <td>2024-08-07</td>
-  <td>Bonn</td>
-  <td>Kunst!rasen</td>
-  <td>Excellent (Audience)</td>
-  <td>Church Audio CA-11(c) &gt; Ugly Battery Box &gt; Roland R-05</td>
-</tr>
-                </tbody>
-                </table>
-                </main>
-                <footer>
-                <p>&copy; 2024 Keane Live</p>
-                </footer>
-                <script src=/scripts/scripts.js></script>
-                </body>
-                </html>
+                <td>2004-04-28</td>
+                <td>Newcastle</td>
+                <td>Newcastle University</td>
+                <td>Excellent (Audience)</td>
+                <td>AUD > CDR > FLAC</td>
+            </tr>
+            <tr>
+                <td>2004-05-08</td>
+                <td>Eastbourne</td>
+                <td>Winter Gardens</td>
+                <td>Very Good+ (Audience)</td>
+                <td>AUD > CDR > FLAC</td>
+            </tr>
+            <tr>
+                <td>2004-05-09</td>
+                <td>London</td>
+                <td>Virgin Megastore</td>
+                <td>Very Good+ (Audience)</td>
+                <td>Sony ECM-TS125 > Sharp IM-DR420H</td>
+            </tr>
+            <tr>
+                <td>2004-05-10</td>
+                <td>London</td>
+                <td>Forum Kentish Town</td>
+                <td>Very Good+ (Audience)</td>
+                <td>Sony ECM-TS125 > Sharp IM-DR420H</td>
+            </tr>
+            <tr>
+                <td>2004-05-19</td>
+                <td>Berlin</td>
+                <td>Columbia Fritz</td>
+                <td>Excellent (FM)</td>
+                <td>FM > CDR > FLAC</td>
+            </tr>
+            <tr>
+                <td>2004-06-01</td>
+                <td>San Francisco</td>
+                <td>Cafe Du Nord</td>
+                <td>Excellent (Audience)</td>
+                <td>Sonic Studio mics > Sony TCD-D100</td>
+            </tr>
+            <tr>
+                <td>2004-06-02</td>
+                <td>Los Angeles</td>
+                <td>KCRW Studios</td>
+                <td>Excellent (FM)</td>
+                <td>FM > FLAC</td>
+            </tr>
+                    <tr>
+              <td>2004-06-24</td>
+              <td>New York</td>
+              <td>WXRK Studios</td>
+              <td>Excellent (FM)</td>
+              <td>FM > WAV > FLAC</td>
+            </tr>
+            <tr>
+                <td>2004-06-26</td>
+                <td>Pilton</td>
+                <td>Glastonbury Festival</td>
+                <td>Excellent (FM)</td>
+                <td>Digital Satellite Receiver > CDR > FLAC</td>
+            </tr>
+            <tr>
+                <td>2004-07-04</td>
+                <td>Herzogenrath</td>
+                <td>Eins Live Konigstreffen</td>
+                <td>Excellent (FM)</td>
+                <td>FM > DAT > FLAC</td>
+            </tr>
+            <tr>
+                <td>2004-07-11</td>
+                <td>Punchestown</td>
+                <td>Oxegen Festival</td>
+                <td>Poor (Audience)</td>
+                <td>AUD > CDR > FLAC</td>
+            </tr>
+            <tr>
+                <td>2004-07-11</td>
+                <td>Punchestown</td>
+                <td>Oxegen Festival</td>
+                <td>Excellent (FM)</td>
+                <td>FM > CDR > FLAC</td>
+            </tr>
+            <tr>
+                <td>2004-07-16</td>
+                <td>Arvika</td>
+                <td>Arvikafestivalen</td>
+                <td>Excellent (FM)</td>
+                <td>Analogue Cable FM > WAV > FLAC</td>
+            </tr>
+            <tr>
+                <td>2004-08-07</td>
+                <td>Rees-Haldern</td>
+                <td>Haldern Pop-Festival</td>
+                <td>Excellent (Audience)</td>
+                <td>DPA 4060 > MPS6020 > Sony TCD-D100</td>
+            </tr>
+                    <tr>
+              <td>2004-08-14</td>
+              <td>Salzburg</td>
+              <td>Frequency Festival</td>
+              <td>Excellent (FM)</td>
+              <td>Digital Satellite Receiver > CDR > FLAC</td>
+            </tr>
+            <tr>
+                <td>2004-08-18</td>
+                <td>Battle</td>
+                <td>Battle Memorial Hall</td>
+                <td>Very Good+ (Audience)</td>
+                <td>Sony ECM-TS125 > Sharp IM-DR420H</td>
+            </tr>
+            <tr>
+                <td>2004-08-18</td>
+                <td>Battle</td>
+                <td>Battle Memorial Hall</td>
+                <td>Excellent (FM)</td>
+                <td>FM > CDR > FLAC</td>
+            </tr>
+            <tr>
+                <td>2004-08-19</td>
+                <td>Hasselt-Kiewit</td>
+                <td>Pukkelpop Festival</td>
+                <td>Excellent (FM)</td>
+                <td>Digital Satellite Receiver > CDR > FLAC</td>
+            </tr>
+            <tr>
+                <td>2004-08-20</td>
+                <td>Biddinghuizen</td>
+                <td>Lowlands Festival</td>
+                <td>Excellent (SBD)</td>
+                <td>SBD / Webcast > FLAC</td>
+            </tr>
+            <tr>
+                <td>2004-08-21</td>
+                <td>Chelmsford</td>
+                <td>V Festival</td>
+                <td>Excellent (FM)</td>
+                <td>Digital Satellite Receiver > CDR > FLAC</td>
+            </tr>
+            <tr>
+                <td>2004-08-26</td>
+                <td>Inverness</td>
+                <td>Up Close Festival</td>
+                <td>Excellent (FM)</td>
+                <td>FM > CDR > FLAC</td>
+            </tr>
+                   <tr>
+            <td>2004-08-29</td>
+            <td>Dublin</td>
+            <td>HMV</td>
+            <td>Excellent (Audience)</td>
+            <td>AT831b > Sony MZ-G75</td>
+        </tr>
+        <tr>
+            <td>2004-08-29</td>
+            <td>Dublin</td>
+            <td>Olympia Theatre</td>
+            <td>Excellent (Audience)</td>
+            <td>AT831b > Sony MZ-G755</td>
+        </tr>
+        <tr>
+            <td>2004-09-08</td>
+            <td>Portland</td>
+            <td>Berbati's Pan</td>
+            <td>Excellent (Soundboard)</td>
+            <td>SBD > CDR > FLAC</td>
+        </tr>
+        <tr>
+            <td>2004-09-11</td>
+            <td>West Hollywood</td>
+            <td>Virgin Megastore</td>
+            <td>Excellent (Audience)</td>
+            <td>Built-in Mics > Sony DCR-TRV22 > Master MiniDV</td>
+        </tr>
+        <tr>
+            <td>2004-10-16</td>
+            <td>Stuttgart</td>
+            <td>Villa Berg</td>
+            <td>Excellent (FM)</td>
+            <td>Digital Satellite Receiver > CDR > FLAC</td>
+        </tr>
+        <tr>
+            <td>2004-10-17</td>
+            <td>Cologne</td>
+            <td>Live Music Hall</td>
+            <td>Excellent (Audience)</td>
+            <td>Soundman OKM II Rock > A3 Adapter > Sony MZ-N910</td>
+        </tr>
+        <tr>
+            <td>2004-11-08</td>
+            <td>Nottingham</td>
+            <td>Rock City</td>
+            <td>Excellent (Audience)</td>
+            <td>AUD > CDR > FLAC</td>
+        </tr>
+        <tr>
+            <td>2004-11-16</td>
+            <td>London</td>
+            <td>The Hub</td>
+            <td>Excellent (FM)</td>
+            <td>Digital Satellite Receiver > CDR > FLAC</td>
+        </tr>
+        <tr>
+            <td>2004-11-17</td>
+            <td>London</td>
+            <td>Brixton Academy</td>
+            <td>Excellent (FM)</td>
+            <td>Digital Satellite Receiver > CDR > FLAC</td>
+        </tr>
+                     <tr>
+              <td>2004-11-19</td>
+              <td>Lyon</td>
+              <td>Hall Tony Garnier</td>
+              <td>Excellent (FM)</td>
+              <td>Digital Satellite Receiver > CDR > FLAC</td>
+            </tr>
+                    <tr>
+              <td>2004-12-11</td>
+              <td>Los Angeles</td>
+              <td>Gibson Amphitheater</td>
+              <td>Excellent (Audience)</td>
+              <td>Sonic Studios DSM6s > PA-6LC > Sony D8 DAT</td>
+            </tr>
+                    <tr>
+              <td>2004-12-11</td>
+              <td>Los Angeles</td>
+              <td>Gibson Amphitheater</td>
+              <td>Excellent (FM)</td>
+              <td>FM > FLAC</td>
+            </tr>
+        <tr>
+            <td>2005-02-17</td>
+            <td>Chicago</td>
+            <td>Riviera Theater</td>
+            <td>Excellent (FM)</td>
+            <td>FM > Onkyo TX8511 > SoundBlaster > FLAC</td>
+        </tr>
+        <tr>
+            <td>2005-02-25</td>
+            <td>Atlanta</td>
+            <td>99X</td>
+            <td>Excellent (FM)</td>
+            <td>FM > CDR > FLAC</td>
+        </tr>
+                    <tr>
+              <td>2004-03-08</td>
+              <td>London</td>
+              <td>Islington Academy</td>
+              <td>Excellent (SBD)</td>
+              <td>SBD / Webcast > FLAC</td>
+            </tr>
+        <tr>
+            <td>2005-03-19</td>
+            <td>Vienna</td>
+            <td>Gasometer</td>
+            <td>Very Good+ (Audience)</td>
+            <td>AUD > CDR > FLAC</td>
+        </tr>
+        <tr>
+            <td>2005-03-22</td>
+            <td>Paris</td>
+            <td>L'Olympia</td>
+            <td>Excellent (Audience)</td>
+            <td>AT831b > Sony MZ-G755</td>
+        </tr>
+        <tr>
+            <td>2005-03-23</td>
+            <td>Amsterdam</td>
+            <td>Heineken Music Hall</td>
+            <td>Excellent (Soundboard)</td>
+            <td>SBD / Webcast > FLAC</td>
+        </tr>
+        <tr>
+            <td>2005-04-30</td>
+            <td>Indio</td>
+            <td>Coachella Festival</td>
+            <td>Excellent (Audience)</td>
+            <td>AT853 > Denecke PS-2 > Nomad JB3</td>
+        </tr>
+        <tr>
+            <td>2005-05-09</td>
+            <td>Seattle</td>
+            <td>Paramount Theatre</td>
+            <td>Excellent (Audience)</td>
+            <td>AUD > FLAC</td>
+        </tr>
+        <tr>
+            <td>2005-06-29</td>
+            <td>London</td>
+            <td>Wireless Festival</td>
+            <td>Excellent (FM)</td>
+            <td>Digital Satellite Receiver > Yamaha CDR1500 > FLAC</td>
+        </tr>
+        <tr>
+            <td>2005-07-03</td>
+            <td>Werchter</td>
+            <td>Werchter Festival</td>
+            <td>Excellent (FM)</td>
+            <td>Denon FM Tuner > FLAC</td>
+        </tr>
+        <tr>
+            <td>2005-07-10</td>
+            <td>Naas</td>
+            <td>Oxegen Festival</td>
+            <td>Excellent (FM)</td>
+            <td>Digital Satellite Receiver > Yamaha CDR1500 > FLAC</td>
+        </tr>
+        <tr>
+            <td>2005-08-01</td>
+            <td>Cornwall</td>
+            <td>Eden Project</td>
+            <td>Very Good+ (Audience)</td>
+            <td>AUD > CDR > FLAC</td>
+        </tr>
+        <tr>
+            <td>2005-08-05</td>
+            <td>Nice</td>
+            <td>Stade Charles-Ehrmann</td>
+            <td>Very Good+ (Audience)</td>
+            <td>Sony ECM-719 > Sony MZ-NH900</td>
+        </tr>
+        <tr>
+            <td>2005-09-23</td>
+            <td>Austin</td>
+            <td>ACL Music Festival</td>
+            <td>Very Good+ (Audience)</td>
+            <td>Sony MD RZ-70 > FLAC</td>
+        </tr>
+        <tr>
+            <td>2006-05-14</td>
+            <td>Dundee</td>
+            <td>Camperdown Park</td>
+            <td>Excellent (FM)</td>
+            <td>Digital Satellite Receiver > Yamaha CDR1500 > FLAC</td>
+        </tr>
+        <tr>
+            <td>2006-05-16</td>
+            <td>Cologne</td>
+            <td>Kulturkirche</td>
+            <td>Excellent (FM)</td>
+            <td>FM > WAV > FLAC</td>
+        </tr>
+        <tr>
+            <td>2006-05-17</td>
+            <td>Berlin</td>
+            <td>Kesselhaus</td>
+            <td>Excellent (FM)</td>
+            <td>FM > Sony DAT DTC-60ES w/ SBM > FLAC</td>
+        </tr>
+        <tr>
+            <td>2006-05-23</td>
+            <td>Paris</td>
+            <td>Le Trabendo</td>
+            <td>Excellent (Audience)</td>
+            <td>Sony ECM-719 > Sony MZ-NH900</td>
+        </tr>
+                     <tr>
+              <td>2006-05-25</td>
+              <td>Hilversum</td>
+              <td>3FM Studios</td>
+              <td>Excellent (FM)</td>
+              <td>Digital Satellite Receiver > Yamaha CDR1500 > FLAC</td>
+            </tr>
+        <tr>
+            <td>2006-05-26</td>
+            <td>Amsterdam</td>
+            <td>Paradiso</td>
+            <td>Excellent (Audience)</td>
+            <td>MM-MCSM-4 cardioids > MM-EBM-1 > Nomad Jukebox 3</td>
+        </tr>
+        <tr>
+            <td>2006-05-27</td>
+            <td>Oslo</td>
+            <td>Sentrum Scene</td>
+            <td>Excellent (Audience)</td>
+            <td>Sony ECM-TS125 > Sharp IM-DR420H</td>
+        </tr>
+        <tr>
+            <td>2006-06-04</td>
+            <td>Nürburg</td>
+            <td>Rock am Ring</td>
+            <td>Excellent (FM)</td>
+            <td>FM > CD Spin Doctor > FLAC</td>
+        </tr>
+        <tr>
+            <td>2006-06-05</td>
+            <td>Landgraaf</td>
+            <td>Pinkpop Festival</td>
+            <td>Excellent (SBD)</td>
+            <td>SBD / Webcast > FLAC</td>
+        </tr>
+        <tr>
+            <td>2006-06-09</td>
+            <td>London</td>
+            <td>Astoria</td>
+            <td>Excellent (FM)</td>
+            <td>Digital Satellite Receiver > Yamaha CDR1500 > FLAC</td>
+        </tr>
+        <tr>
+            <td>2006-06-22</td>
+            <td>Los Angeles</td>
+            <td>KCRW Studios</td>
+            <td>Excellent (FM)</td>
+            <td>FM > CDR > FLAC</td>
+        </tr>
+        <tr>
+            <td>2006-07-15</td>
+            <td>Barcelona</td>
+            <td>Parc del Fòrum</td>
+            <td>Excellent (Audience)</td>
+            <td>Sonic Studios DSM6s &gt; PA-6LC &gt; iRiver H-340</td>
+        </tr>
+        <tr>
+            <td>2006-08-18</td>
+            <td>Kiewit</td>
+            <td>Pukkelpop Festival</td>
+            <td>Excellent (FM)</td>
+            <td>Digital Satellite Receiver &gt; Yamaha CDR1500 &gt; FLAC</td>
+        </tr>
+        <tr>
+            <td>2006-08-19</td>
+            <td>Chelmsford</td>
+            <td>V Festival</td>
+            <td>Excellent (FM)</td>
+            <td>Digital Satellite Receiver &gt; Yamaha CDR1500 &gt; FLAC</td>
+        </tr>
+        <tr>
+            <td>2006-11-07</td>
+            <td>Rotterdam</td>
+            <td>Ahoy</td>
+            <td>Good (Audience)</td>
+            <td>Panasonic NV-GS17 &gt; MiniDV-M &gt; FLAC </td>
+        </tr>
+        <tr>
+            <td>2006-11-15</td>
+            <td>Berlin</td>
+            <td>Tempodrom</td>
+            <td>Excellent (Audience)</td>
+            <td>Soundman OKM II Rock &gt; A3 Adapter &gt; M-AUDIO Microtrack</td>
+        </tr>
+        <tr>
+            <td>2007-01-23</td>
+            <td>Paris</td>
+            <td>L'Olympia</td>
+            <td>Excellent (FM)</td>
+            <td>FM &gt; Stereo Receiver &gt; FLAC // svp</td>
+        </tr>
+        <tr>
+            <td>2007-02-23</td>
+            <td>Birmingham</td>
+            <td>NEC Arena</td>
+            <td>Excellent (Audience)</td>
+            <td>SP-CMC-8 &gt; SP-SPSB-7 &gt; Sony MZ-RH10</td>
+        </tr>
+        <tr>
+            <td>2007-03-08</td>
+            <td>Edinburgh</td>
+            <td>Liquid Room</td>
+            <td>Excellent (FM)</td>
+            <td>Digital Satellite Receiver &gt; Yamaha CDR1500 &gt; FLAC</td>
+        </tr>
+        <tr>
+            <td>2007-04-15</td>
+            <td>Santiago</td>
+            <td>Club Hípico</td>
+            <td>Excellent (Audience)</td>
+            <td>AUD &gt; CDR &gt; FLAC</td>
+        </tr>
+                     <tr>
+              <td>2007-06-10</td>
+              <td>Newport</td>
+              <td>Isle of Wight Festival</td>
+              <td>Excellent (FM)</td>
+              <td>Digital Satellite Receiver > Yamaha CDR1500 > FLAC</td>
+            </tr
+        <tr>
+            <td>2007-06-30</td>
+            <td>Werchter</td>
+            <td>Werchter Festival</td>
+            <td>Excellent (FM)</td>
+            <td>Denon FM Tuner &gt; FLAC</td>
+        </tr>
+        <tr>
+            <td>2008-11-15</td>
+            <td>London</td>
+            <td>Union Chapel</td>
+            <td>Good (Audience)</td>
+            <td>Sony ECM-TS125 &gt; Sharp IM-DR420H</td>
+        </tr>
+        <tr>
+            <td>2008-11-20</td>
+            <td>Paris</td>
+            <td>Le Zénith</td>
+            <td>Excellent (Audience)</td>
+            <td>SP-CMC-4 &gt; SP-SPSB-1 &gt; Edirol R-09</td>
+        </tr>
+        <tr>
+            <td>2008-12-04</td>
+            <td>Los Angeles</td>
+            <td>KCRW Studios</td>
+            <td>Excellent (FM)</td>
+            <td>FM &gt; Harman Kardon AVR30</td>
+        </tr>
+        <tr>
+            <td>2008-12-16</td>
+            <td>London</td>
+            <td>The Hub</td>
+            <td>Excellent (FM)</td>
+            <td>Digital Satellite Receiver &gt; Yamaha CDR1500 &gt; FLAC</td>
+        </tr>
+        <tr>
+            <td>2009-02-12</td>
+            <td>London</td>
+            <td>O2 Arena</td>
+            <td>Very Good+ (Audience)</td>
+            <td>Sony ECM-TS125 &gt; Sharp IM-DR420H</td>
+        </tr>
+        <tr>
+            <td>2009-04-24</td>
+            <td>Koto</td>
+            <td>Studio Coast</td>
+            <td>Excellent- (Audience)</td>
+            <td>DPA mics &gt; 9V battery &gt; Sony PCM-D50</td>
+        </tr>
+        <tr>
+            <td>2009-05-20</td>
+            <td>Philadelphia</td>
+            <td>World Cafe Live</td>
+            <td>Excellent (FM)</td>
+            <td>Pre-FM &gt; FLAC</td>
+        </tr>
+        <tr>
+            <td>2009-06-17</td>
+            <td>Berlin</td>
+            <td>Kesselhaus</td>
+            <td>Excellent (FM)</td>
+            <td>Pre-FM &gt; CDR &gt; FLAC</td>
+        </tr>
+        <tr>
+            <td>2009-06-19</td>
+            <td>Neuhausen ob Eck</td>
+            <td>Southside Festival</td>
+            <td>Excellent (FM)</td>
+            <td>Digital Satellite Receiver &gt; Yamaha CDR1500 &gt; FLAC</td>
+        </tr>
+        <tr>
+            <td>2009-07-10</td>
+            <td>Punchestown</td>
+            <td>Oxegen Festival</td>
+            <td>Excellent (FM)</td>
+            <td>FM &gt; Videoton RT7300 &gt; Fostex FR2LE &gt; FLAC</td>
+        </tr>
+        <tr>
+            <td>2009-08-11</td>
+            <td>Hong Kong</td>
+            <td>HITEC Star Hall</td>
+            <td>Excellent (Audience)</td>
+            <td>Sony ECM-719 &gt; Sony MZ-NH1 (Hi-SP)</td>
+        </tr>
+        <tr>
+            <td>2009-09-10</td>
+            <td>Seattle</td>
+            <td>The Moore Theater</td>
+            <td>Excellent (Audience)</td>
+            <td>AT853 &gt; SP-SBSP-11 &gt; iRiver iHP-120</td>
+        </tr>
+                     <tr>
+              <td>2010-05-12</td>
+              <td>London</td>
+              <td>The Fridge</td>
+               <td>Excellent (Audience)</td>
+          <td>Sony ECM-125 &gt; Roland R-09</td>
+            </tr>
+        <tr>
+            <td>2010-05-15</td>
+            <td>London</td>
+            <td>BBC Radio Theatre</td>
+            <td>Excellent (FM)</td>
+            <td>FM &gt; Sansui T60 &gt; Sony MZ-RH1</td>
+        </tr>
+        <tr>
+            <td>2010-06-15</td>
+            <td>London</td>
+            <td>Roundhouse</td>
+            <td>Very Good+ (Audience)</td>
+            <td>Built-in Mics &gt; Zoom H2 &gt; FLAC</td>
+        </tr>
+        <tr>
+            <td>2010-06-27</td>
+            <td>Pilton</td>
+            <td>Glastonbury Festival</td>
+            <td>Excellent (Audience)</td>
+            <td>DPA 4061 &gt; Edirol R-09</td>
+        </tr>
+        <tr>
+            <td>2010-08-07</td>
+            <td>Philadelphia</td>
+            <td>The Mann Center</td>
+            <td>Very Good+ (Audience)</td>
+            <td>Built-in Mics &gt; Edirol R-09</td>
+        </tr>
+        <tr>
+            <td>2010-08-10</td>
+            <td>New York</td>
+            <td>The Living Room</td>
+            <td>Excellent (FM)</td>
+            <td>FM &gt; FLAC</td>
+        </tr>
+        <tr>
+          <td>2012-03-09</td>
+          <td>Bexhill-On-Sea</td>
+          <td>De La Warr Pavilion</td>
+          <td>Excellent (Audience)</td>
+          <td>Sony ECM-125 &gt; Roland R-05</td>
+        </tr>
+        <tr>
+          <td>2012-03-15</td>
+          <td>Austin</td>
+          <td>KCRW Studios</td>
+          <td>Excellent (FM)</td>
+          <td>FM &gt; Onkyo HT-R520 &gt; Zoom H4n</td>
+        </tr>
+        <tr>
+          <td>2012-05-09</td>
+          <td>London</td>
+          <td>BBC Radio Theatre</td>
+          <td>Excellent (FM)</td>
+          <td>FM &gt; PCTV NanoStick T2 &gt; FLAC</td>
+        </tr>
+        <tr>
+          <td>2012-06-02</td>
+          <td>Nürburg</td>
+          <td>Rock am Ring</td>
+          <td>Excellent (FM)</td>
+          <td>Digital Satellite Receiver &gt; Yamaha CDR1500 &gt; FLAC</td>
+        </tr>
+        <tr>
+          <td>2012-06-04</td>
+          <td>Folkestone</td>
+          <td>Leas Cliff Hall</td>
+          <td>Excellent (Audience)</td>
+          <td>Sony ECM-125 &gt; Roland R-09</td>
+        </tr>
+        <tr>
+          <td>2012-09-03</td>
+          <td>Vancouver</td>
+          <td>The Centre in Vancouver for Performing Arts</td>
+          <td>Excellent (Audience)</td>
+          <td>SP-CMC-8 &gt; SP-SPSB-7 battery box &gt; Edirol R-09</td>
+        </tr>
+        <tr>
+          <td>2012-10-15</td>
+          <td>Offenbach</td>
+          <td>Capitol</td>
+          <td>Excellent (Audience)</td>
+          <td>CA-14(c) &gt; Ugly Battery Box &gt; Sony PCM-M10</td>
+        </tr>
+        <tr>
+          <td>2013-01-09</td>
+          <td>Boise</td>
+          <td>Knitting Factory</td>
+          <td>Excellent (Matrix)</td>
+          <td>AUD 1: Sonic Studios DSM6s &gt; PA-6LC &gt; iRiver H120<br>AUD 2: Countryman B3 Omnidirectional &gt; SP-SPSB-8 &gt; Sony PCM-M10</td>
+        </tr>
+        <tr>
+          <td>2013-01-23</td>
+          <td>Nashville</td>
+          <td>Ryman Auditorium</td>
+          <td>Excellent (Audience)</td>
+          <td>Church-Audio Cardoid Mics &gt; STC-9200 Preamp &gt; Edirol R-09</td>
+        </tr>
+        <tr>
+          <td>2013-01-31</td>
+          <td>New York</td>
+          <td>Radio City Music Hall</td>
+          <td>Excellent (Audience)</td>
+          <td>DPA-4060 &gt; Sony PCM-M10</td>
+        </tr>
+        <tr>
+          <td>2013-07-13</td>
+          <td>Werchter</td>
+          <td>TW Classic Festival</td>
+          <td>Excellent (FM)</td>
+          <td>FM &gt; Pioneer F-Z93L &gt; Edirol R-09HR</td>
+        </tr>
+        <tr>
+          <td>2013-11-14</td>
+          <td>London</td>
+          <td>Under the Bridge</td>
+          <td>Excellent (FM)</td>
+          <td>Digital Satellite Receiver &gt; Yamaha CDR1500 &gt; FLAC</td>
+        </tr>
+                     <tr>
+              <td>2013-11-16</td>
+              <td>London</td>
+              <td>BBC Radio 2 Studios</td>
+               <td>Excellent (FM)</td>
+          <td>Digital Satellite Broadcast > DVB-S > TBS 6984</td>
+            </tr>
+        <tr>
+          <td>2019-09-07</td>
+          <td>The Hague</td>
+          <td>Noorderstrand</td>
+          <td>Very Good (Audience)</td>
+          <td>Soundman OKM II &gt; Roland R-07</td>
+        </tr>
+        <tr>
+          <td>2019-10-12</td>
+          <td>London</td>
+          <td>BBC Radio 2 Studios</td>
+          <td>Excellent (FM)</td>
+          <td>FM Broadcast &gt; Harmon Kardon TU980 tuner &gt; TEAC CDRW890 standalone CD recorder</td>
+        </tr>
+        <tr>
+          <td>2020-02-11</td>
+          <td>Amsterdam</td>
+          <td>AFAS Live</td>
+          <td>Excellent (Audience)</td>
+          <td>CA-11(o) &gt; Tascam DR-2d</td>
+        </tr>
+        <tr>
+          <td>2022-06-10</td>
+          <td>Tetbury</td>
+          <td>Westonbirt Arboretum</td>
+          <td>Very Good (Audience)</td>
+          <td>Motorola G7 Power (Internal Mics) &gt; Parrot Audio Recorder Pro</td>
+        </tr>
+        <tr>
+          <td>2022-07-03</td>
+          <td>Werchter</td>
+          <td>Werchter Festival</td>
+          <td>Excellent (FM)</td>
+          <td>Marantz M-CR610 &gt; Edirol R-09</td>
+        </tr>
+        <tr>
+          <td>2024-02-20</td>
+          <td>London</td>
+          <td>Shepherd's Bush Empire</td>
+          <td>Excellent (Matrix)</td>
+          <td>AUD 1: SP-CMC-2 &gt; SP-SPSB-10 &gt; Tascam DR-2d<br>AUD 2: CA-11(c) &gt; Ugly Battery Box &gt; Tascam DR-2d</td>
+        </tr>
+        <tr>
+          <td>2024-04-19</td>
+          <td>Amsterdam</td>
+          <td>AFAS Live</td>
+          <td>Excellent (Audience)</td>
+          <td>DPA 4061 &gt; SP-SPSB-10 &gt; Tascam DR-2d</td>
+        </tr>
+        <tr>
+          <td>2024-04-19</td>
+          <td>Amsterdam</td>
+          <td>AFAS Live</td>
+          <td>Excellent (Audience)</td>
+          <td>Schoeps MK41 &gt; Active Cables &gt; Zoom F3</td>
+        </tr>
+        <tr>
+          <td>2024-04-19</td>
+          <td>Amsterdam</td>
+          <td>AFAS Live</td>
+          <td>Excellent (Audience)</td>
+          <td>CA-11(c) &gt; Ugly Battery Box &gt; Roland R-05</td>
+        </tr>
+        <tr>
+          <td>2024-04-21</td>
+          <td>Cologne</td>
+          <td>Palladium</td>
+          <td>Excellent (Audience)</td>
+          <td>AT853 &gt; SP-SPSB-10 &gt; Roland R-05</td>
+        </tr>
+        <tr>
+          <td>2024-04-21</td>
+          <td>Cologne</td>
+          <td>Palladium</td>
+          <td>Excellent (Audience)</td>
+          <td>CA-11(c) &gt; Ugly Battery Box &gt; Roland R-05</td>
+        </tr>
+        <tr>
+          <td>2024-04-26</td>
+          <td>Paris</td>
+          <td>L’Olympia</td>
+          <td>Excellent (Audience)</td>
+          <td>AT853 &gt; SP-SPSB-10 &gt; Roland R-05</td>
+        </tr>
+        <tr>
+          <td>2024-05-03</td>
+          <td>Leeds</td>
+          <td>First Direct Arena</td>
+          <td>Very Good (Audience)</td>
+          <td>Built-in Mics &gt; Tascam DR-2d</td>
+        </tr>
+        <tr>
+          <td>2024-05-04</td>
+          <td>Birmingham</td>
+          <td>Utilita Arena</td>
+          <td>Excellent (Audience)</td>
+          <td>AT943 &gt; SP-SPSB-1 &gt; Roland R-05</td>
+        </tr>
+        <tr>
+          <td>2024-05-11</td>
+          <td>London</td>
+          <td>02 Arena</td>
+          <td>Excellent (Audience)</td>
+          <td>CA-11(c) &gt; Ugly Battery Box &gt; Edirol R-05</td>
+        </tr>
+        <tr>
+          <td>2024-05-11</td>
+          <td>London</td>
+          <td>02 Arena</td>
+          <td>Excellent (IEM)</td>
+          <td>Receiver &gt; Tascam DR-2d</td>
+        </tr>
+        <tr>
+          <td>2024-05-11</td>
+          <td>London</td>
+          <td>02 Arena</td>
+          <td>Excellent (Matrix)</td>
+          <td>AUD: CA-11(c) &gt; Ugly Battery Box &gt; Edirol R-05<br>IEM: Receiver &gt; Tascam DR-2d</td>
+        </tr>
+        <tr>
+          <td>2024-07-20</td>
+          <td>Nieuwpoort</td>
+          <td>Beach Festival</td>
+          <td>Excellent (Audience)</td>
+          <td>AT853 &gt; SP-SPSB-10 &gt; Roland R-05</td>
+        </tr>
+        <tr>
+          <td>2024-07-20</td>
+          <td>Nieuwpoort</td>
+          <td>Beach Festival</td>
+          <td>Excellent (Audience)</td>
+          <td>AT831 &gt; Tascam DR-2d</td>
+        </tr>
+        <tr>
+          <td>2024-07-20</td>
+          <td>Nieuwpoort</td>
+          <td>Beach Festival</td>
+          <td>Excellent (Matrix)</td>
+          <td>AUD 1: AT853 &gt; SP-SPSB-10 &gt; Roland R-05<br>AUD 2: AT831 &gt; Tascam DR-2d</td>
+        </tr>
+        <tr>
+          <td>2024-08-07</td>
+          <td>Bonn</td>
+          <td>Kunst!rasen</td>
+          <td>Excellent (Audience)</td>
+          <td>Church Audio CA-11(c) &gt; Ugly Battery Box &gt; Roland R-05</td>
+        </tr>        
+    </tbody>
+    </table>
+</main>
+
+<footer>
+    <p>&copy; 2024 Keane Live</p>
+</footer>
+
+<script src="/scripts/scripts.js"></script>
+</body>
+</html>
