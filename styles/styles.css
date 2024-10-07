@@ -7,10 +7,10 @@
 
 /* Body styling */
 body {
-    font-family: 'Montserrat', sans-serif; /* Clean, modern font */
-        background-color: #000;
-    color: #fff;
-    padding: 40px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f7f7; /* Light background */
+    color: #333; /* Dark text for contrast */
+    padding: 20px;
     text-align: center;
 }
 
@@ -19,7 +19,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .logo {
@@ -28,83 +28,80 @@ header {
 }
 
 h1 {
-    font-size: 4rem;
-    color: #ff0000;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    border-bottom: 5px solid #ff0000;
+    font-size: 2.5rem;
+    color: #cc0000;
+    letter-spacing: 0.1em;
+    margin-bottom: 5px;
 }
 
 .tagline {
-    color: #777;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 15px;
 }
 
 /* Filter section */
 .filter-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-bottom: 30px;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .filter-dropdown {
-    padding: 10px;
-    background-color: #222;
-    color: #fff;
-    border: 2px solid #ff0000;
-    font-size: 1rem;
-    text-transform: uppercase;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    color: #333;
 }
 
 /* Counter section */
 .counter-section {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .counter-container {
-    background-color: #ff0000;
-    padding: 15px 30px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    border: 3px solid #fff;
-    text-transform: uppercase;
+    background-color: #cc0000;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 4px;
 }
 
 /* Table styling */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 th, td {
-    padding: 15px;
-    border-bottom: 2px solid #333;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
 th {
-    background-color: #222;
-    color: #ff0000;
-    text-transform: uppercase;
-    font-size: 1.1rem;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 0.9rem;
 }
 
 td {
-    background-color: #111;
-    color: #fff;
+    background-color: #fff;
+    color: #555;
 }
 
 tr:nth-child(even) td {
-    background-color: #222;
+    background-color: #f9f9f9;
 }
 
 /* Footer styling */
 footer {
-    margin-top: 40px;
-    font-size: 0.8rem;
+    margin-top: 20px;
+    font-size: 0.7rem;
     color: #777;
 }
 
