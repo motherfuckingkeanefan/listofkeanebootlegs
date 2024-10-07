@@ -108,3 +108,16 @@ footer {
 .hidden {
     display: none;
 }
+
+#mobile-warning {
+    background-color: #ffcc00; /* Yellow background for visibility */
+    color: #000; /* Black text */
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999; /* Ensure it's above other content */
+}
