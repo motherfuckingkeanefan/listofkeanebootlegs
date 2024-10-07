@@ -58,3 +58,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update recording count initially
     updateRecordingCount();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if the user is on a mobile device
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+        // Show the mobile warning and hide the main content
+        document.getElementById('mobile-warning').classList.remove('hidden');
+
+        // Optionally, hide all other content
+        document.querySelector('header').style.display = 'none';
+        document.querySelector('main').style.display = 'none';
+        document.querySelector('footer').style.display = 'none';
+    }
+});
+
