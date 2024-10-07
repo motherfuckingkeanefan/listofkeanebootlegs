@@ -109,18 +109,4 @@ footer {
     display: none;
 }
 
-#mobile-warning {
-    background-color: #ff0000; /* Use the same red as your header */
-    color: #fff; /* White text for contrast */
-    padding: 20px;
-    text-align: center;
-    font-size: 1rem; /* Smaller font size to match your design */
-    position: fixed; /* Fixed position to stay at the top */
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999; /* Ensure it's above other content */
-    border-bottom: 3px solid #fff; /* White border at the bottom for separation */
-    letter-spacing: 0.1em; /* Similar letter spacing as your header */
-    text-transform: uppercase; /* Make the text uppercase */
-}
+
