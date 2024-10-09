@@ -16,7 +16,7 @@ body {
 
 /* Header styling */
 header {
-    background-color: #ff0000; /* Red background for header */
+    background-color: #3b1b14; /* Dark reddish-brown background for header */
     color: white; /* White text for contrast */
     padding: 20px; /* Added padding for spacing */
     border-radius: 8px; /* Rounded corners */
@@ -50,7 +50,7 @@ h1 {
 
 .filter-dropdown {
     padding: 10px;
-    border: 2px solid #ff0000; /* Red border for dropdown */
+    border: 2px solid #3b1b14; /* Dark reddish-brown border for dropdown */
     border-radius: 5px; /* Rounded corners */
     font-size: 0.9rem;
 }
@@ -61,8 +61,8 @@ h1 {
 }
 
 .counter-container {
-    background-color: #eee; /* Light background for counter */
-    border: 2px solid #ff0000; /* Red border */
+    background-color: #ffffff; /* White background for counter */
+    border: 2px solid #3b1b14; /* Dark reddish-brown border */
     border-radius: 8px; /* Rounded corners */
     padding: 10px;
     font-size: 1.2rem;
@@ -82,14 +82,14 @@ th, td {
 }
 
 th {
-    background-color: #ff0000; /* Red background for headers */
+    background-color: #3b1b14; /* Dark reddish-brown background for headers */
     color: white; /* White text for contrast */
     text-transform: uppercase; /* Uppercase header text */
     font-size: 1rem; /* Header font size */
 }
 
 td {
-    background-color: #f9f9f9; /* Light background for cells */
+    background-color: #ffffff; /* White background for cells */
     color: #333; /* Text color */
 }
 
