@@ -7,10 +7,10 @@
 
 /* Body styling */
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f7f7f7; /* Light background */
+    font-family: 'Montserrat', sans-serif; /* Clean, modern font */
+    background-color: #f9f9f9; /* Light background */
     color: #333; /* Dark text for contrast */
-    padding: 20px;
+    padding: 40px;
     text-align: center;
 }
 
@@ -19,7 +19,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .logo {
@@ -28,85 +28,116 @@ header {
 }
 
 h1 {
-    font-size: 2.5rem;
-    color: #cc0000;
-    letter-spacing: 0.1em;
-    margin-bottom: 5px;
+    font-size: 4rem;
+    color: #ff0000;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 5px solid #ff0000;
 }
 
 .tagline {
-    color: #555;
-    font-size: 1rem;
-    margin-bottom: 15px;
+    color: #777;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 /* Filter section */
 .filter-container {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    gap: 20px;
+    margin-bottom: 30px;
 }
 
 .filter-dropdown {
-    padding: 5px 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    font-size: 0.9rem;
-    border-radius: 4px;
-    color: #333;
+    padding: 10px;
+    background-color: #fff; /* Light background for dropdowns */
+    color: #333; /* Dark text for contrast */
+    border: 2px solid #ff0000;
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 /* Counter section */
 .counter-section {
-    margin-bottom: 15px;
-}
-
-.counter-container {
-    background-color: #cc0000;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    color: #fff;
-    border-radius: 4px;
-}
-
-/* Table styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
     margin-bottom: 30px;
 }
 
+.counter-container {
+    max-width: 600px; /* Consistent width */
+    margin: 0 auto; /* Center the container */
+    padding: 10px; /* Optional padding */
+    background-color: #ff0000; /* Same color for styling */
+    color: #fff; /* Text color */
+    font-size: 1.5rem; /* Adjust font size */
+    border: 3px solid #fff; /* Border style */
+    text-transform: uppercase; /* Text styling */
+}
+
+/* Table styling */
+.recording-table {
+    max-width: 600px; /* Match table width to counter */
+    width: auto; /* Fit table width to content */
+    margin: 0 auto; /* Center the table */
+    border-collapse: collapse; /* Collapse borders for cleaner look */
+}
+
 th, td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    border-bottom: 2px solid #ddd; /* Light border for better visibility */
 }
 
 th {
-    background-color: #f0f0f0;
-    color: #333;
-    font-size: 0.9rem;
+    background-color: #f2f2f2; /* Light background for headers */
+    color: #ff0000; /* Header text color */
+    text-transform: uppercase;
+    font-size: 1.1rem;
 }
 
 td {
-    background-color: #fff;
-    color: #555;
+    background-color: #fff; /* Light background for table cells */
+    color: #333; /* Dark text */
 }
 
 tr:nth-child(even) td {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Light grey for even rows */
 }
 
 /* Footer styling */
 footer {
-    margin-top: 20px;
-    font-size: 0.7rem;
+    margin-top: 40px;
+    font-size: 0.8rem;
     color: #777;
 }
 
-.hidden {
-    display: none;
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Hide specific columns in mobile view */
+    .recording-table th:nth-child(3), /* Hide Venue column */
+    .recording-table th:nth-child(4) { /* Hide Quality column */
+        display: none; /* Hide the column header */
+    }
+
+    .recording-table td:nth-child(3), /* Hide Venue column */
+    .recording-table td:nth-child(4) { /* Hide Quality column */
+        display: none; /* Hide the table cell */
+    }
+
+    /* Optionally adjust font sizes for better mobile viewing */
+    body {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .filter-dropdown {
+        font-size: 0.8rem; /* Smaller font for dropdowns */
+    }
+
+    .counter-container {
+        font-size: 1rem; /* Adjust counter font size */
+    }
 }
 
-
+.hidden {
+    display: none; /* Class for hidden elements */
+}
