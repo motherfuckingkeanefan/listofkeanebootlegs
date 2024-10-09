@@ -77,10 +77,9 @@ h1 {
 
 /* Table styling */
 .recording-table {
-    width: 600px; /* Set fixed width for desktop view */
+    width: 600px; /* Fixed width for desktop view */
     margin: 0 auto; /* Center the table */
     border-collapse: collapse; /* Clean border style */
-    overflow-x: auto; /* Enable horizontal scrolling on small screens */
 }
 
 th, td {
@@ -113,12 +112,11 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    /* Mobile Portrait & Landscape - Ensure horizontal scrolling */
+    /* Mobile Portrait & Landscape */
     .recording-table {
         width: auto; /* Allow full width for mobile */
         max-width: 100%; /* Prevent exceeding mobile screen width */
-        overflow-x: auto; /* Enable horizontal scrolling if necessary */
-        white-space: nowrap; /* Prevent wrapping of table */
+        margin: 0 10px; /* Add margin for spacing on small screens */
     }
 
     th, td {
