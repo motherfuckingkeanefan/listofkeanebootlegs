@@ -109,33 +109,6 @@ footer {
     font-size: 0.8rem; /* Footer font size */
     color: #777; /* Footer text color */
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    /* Mobile Portrait & Landscape */
-    .recording-table {
-        max-width: 100%; /* Prevent exceeding mobile screen width */
-        margin: 0 10px; /* Add margin for spacing on small screens */
-    }
-
-    th, td {
-        padding: 10px; /* Slightly reduce padding for smaller screens */
-        font-size: 0.9rem; /* Slightly smaller font size */
-    }
-
-    body {
-        padding: 20px; /* Reduce padding for smaller screens */
-    }
-
-    .filter-dropdown {
-        font-size: 0.8rem; /* Smaller font for dropdowns */
-    }
-
-    .counter-container {
-        font-size: 1rem; /* Adjust counter font size */
-    }
-}
-
 /* Class for hidden elements */
 .hidden {
     display: none;
