@@ -7,9 +7,9 @@
 
 /* Body styling */
 body {
-    font-family: 'Montserrat', sans-serif; /* Clean, modern font */
-    background-color: #f9f9f9; /* Light background */
-    color: #333; /* Dark text for contrast */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
     padding: 40px;
     text-align: center;
 }
@@ -52,8 +52,8 @@ h1 {
 
 .filter-dropdown {
     padding: 10px;
-    background-color: #fff; /* Light background for dropdowns */
-    color: #333; /* Dark text for contrast */
+    background-color: #fff;
+    color: #333;
     border: 2px solid #ff0000;
     font-size: 1rem;
     text-transform: uppercase;
@@ -65,66 +65,67 @@ h1 {
 }
 
 .counter-container {
-    max-width: 600px; /* Consistent width */
-    margin: 0 auto; /* Center the container */
-    padding: 10px; /* Optional padding */
-    background-color: #ff0000; /* Same color for styling */
-    color: #fff; /* Text color */
-    font-size: 1.5rem; /* Adjust font size */
-    border: 3px solid #fff; /* Border style */
-    text-transform: uppercase; /* Text styling */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 1.5rem;
+    border: 3px solid #fff;
+    text-transform: uppercase;
 }
 
 /* Table styling */
 .recording-table {
-    max-width: 600px; /* Match table width to counter */
-    width: auto; /* Fit table width to content */
+    width: 600px; /* Set fixed width for desktop view */
     margin: 0 auto; /* Center the table */
-    border-collapse: collapse; /* Collapse borders for cleaner look */
+    border-collapse: collapse; /* Clean border style */
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
 }
 
 th, td {
     padding: 15px;
-    border-bottom: 2px solid #ddd; /* Light border for better visibility */
+    border-bottom: 2px solid #ddd; /* Border for table cells */
 }
 
 th {
-    background-color: #f2f2f2; /* Light background for headers */
+    background-color: #f2f2f2; /* Header background color */
     color: #ff0000; /* Header text color */
-    text-transform: uppercase;
-    font-size: 1.1rem;
+    text-transform: uppercase; /* Uppercase header text */
+    font-size: 1.1rem; /* Header font size */
 }
 
 td {
-    background-color: #fff; /* Light background for table cells */
-    color: #333; /* Dark text */
+    background-color: #fff; /* Cell background color */
+    color: #333; /* Cell text color */
 }
 
 tr:nth-child(even) td {
-    background-color: #f9f9f9; /* Light grey for even rows */
+    background-color: #f9f9f9; /* Even row background color */
 }
 
 /* Footer styling */
 footer {
-    margin-top: 40px;
-    font-size: 0.8rem;
-    color: #777;
+    margin-top: 40px; /* Space above footer */
+    font-size: 0.8rem; /* Footer font size */
+    color: #777; /* Footer text color */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    /* Hide specific columns in mobile view */
-    .recording-table th:nth-child(3), /* Hide Venue column */
-    .recording-table th:nth-child(4) { /* Hide Quality column */
-        display: none; /* Hide the column header */
+    /* Mobile Portrait & Landscape - Ensure horizontal scrolling */
+    .recording-table {
+        width: auto; /* Allow full width for mobile */
+        max-width: 100%; /* Prevent exceeding mobile screen width */
+        overflow-x: auto; /* Enable horizontal scrolling if necessary */
+        white-space: nowrap; /* Prevent wrapping of table */
     }
 
-    .recording-table td:nth-child(3), /* Hide Venue column */
-    .recording-table td:nth-child(4) { /* Hide Quality column */
-        display: none; /* Hide the table cell */
+    th, td {
+        padding: 10px; /* Slightly reduce padding for smaller screens */
+        font-size: 0.9rem; /* Slightly smaller font size */
     }
 
-    /* Optionally adjust font sizes for better mobile viewing */
     body {
         padding: 20px; /* Reduce padding for smaller screens */
     }
@@ -138,6 +139,7 @@ footer {
     }
 }
 
+/* Class for hidden elements */
 .hidden {
-    display: none; /* Class for hidden elements */
+    display: none;
 }
