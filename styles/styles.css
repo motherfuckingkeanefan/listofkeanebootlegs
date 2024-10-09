@@ -114,7 +114,6 @@ footer {
 @media (max-width: 768px) {
     /* Mobile Portrait & Landscape */
     .recording-table {
-        width: auto; /* Allow full width for mobile */
         max-width: 100%; /* Prevent exceeding mobile screen width */
         margin: 0 10px; /* Add margin for spacing on small screens */
     }
