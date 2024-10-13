@@ -141,28 +141,6 @@ footer {
     text-align: center;
 }
 
-/* Contact Webmaster button styling */
-footer .contact-webmaster {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 24px; /* Comfortable padding for button */
-    background-color: transparent; /* Transparent to blend in with the footer background */
-    color: #dde4e6; /* Light grey-blue text */
-    font-size: 1rem;
-    text-transform: uppercase; /* Matching the footer's text style */
-    text-decoration: none; /* Remove underline */
-    border: 2px solid #dde4e6; /* Light grey-blue border to define the button */
-    border-radius: 4px; /* Softer button corners to match the overall theme */
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-}
-
-/* Hover effect for Contact Webmaster button */
-footer .contact-webmaster:hover {
-    background-color: #dde4e6; /* Soft grey-blue background on hover */
-    color: #04232b; /* Dark teal text for contrast */
-    border-color: #657277; /* Neutral grey border on hover */
-    transform: scale(1.03); /* Subtle zoom on hover */
-}
 /* Responsive styles */
 @media (max-width: 600px) {
     h1 {
