@@ -21,7 +21,7 @@ body {
 
 /* Header styling with background image */
 header {
-    background-image: url('https://themetphilly.com/wp-content/uploads/2023/09/RG_MetPhilly_0921_Keane_W_1900x900.jpg');
+background-image: url('/Keane-bg.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -88,7 +88,7 @@ header a {
 
 /* Counter container with background image */
 .counter-container {
-    background-image: url('https://themetphilly.com/wp-content/uploads/2023/09/RG_MetPhilly_0921_Keane_W_1900x900.jpg');
+background-image: url('/Keane-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -148,7 +148,7 @@ tr:hover td {
 footer {
     margin-top: 60px;
     font-size: 1rem;
-    background-image: url('https://themetphilly.com/wp-content/uploads/2023/09/RG_MetPhilly_0921_Keane_W_1900x900.jpg');
+background-image: url('/Keane-bg.jpg');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
