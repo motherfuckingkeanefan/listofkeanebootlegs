@@ -67,7 +67,7 @@ header h1 {
     padding: 10px;
     text-align: center;
     font-weight: bold;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 0px;
 }
 
 /* Recordings grid */
