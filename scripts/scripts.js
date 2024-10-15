@@ -144,12 +144,15 @@ const cityFilter = document.getElementById("cityFilter");
 
 function populateFilters() {
     const years = new Set();
-    const cities = new Set();
+    const citiesSet = new Set(); // Use a Set to avoid duplicates
 
     recordings.forEach(recording => {
         years.add(recording.date.split("-")[0]); // Extract year from date
-        cities.add(recording.city);
+        citiesSet.add(recording.city); // Add city to the Set
     });
+
+    // Convert the Set of cities to an array and sort it
+    const cities = Array.from(citiesSet).sort();
 
     // Populate year filter
     years.forEach(year => {
@@ -219,3 +222,4 @@ document.addEventListener("DOMContentLoaded", function() {
     cityFilter.addEventListener("change", filterRecordings);
     document.getElementById("searchInput").addEventListener("input", filterRecordings);
 });
+
