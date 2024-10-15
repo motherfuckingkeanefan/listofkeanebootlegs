@@ -4,7 +4,6 @@ const recordings = [
     { date: "2003-11-11", city: "Los Angeles", venue: "KCRW Studios", source: "Excellent (FM)", length: 30, equipment: "FM > FLAC" },
     { date: "2004-02-05", city: "London", venue: "Astoria", source: "Very Good (Audience)", length: 25, equipment: "Sony ECM-TS125 > Sharp IM-DR420H" },
     { date: "2004-02-10", city: "Northampton", venue: "Soundhaus", source: "Excellent (Soundboard)", length: 50, equipment: "SBD > CDR > FLAC" },
-    { date: "2004-02-05", city: "London", venue: "Astoria", source: "Very Good (Audience)", length: 25, equipment: "Sony ECM-TS125 > Sharp IM-DR420H" },
     { date: "2004-02-05", city: "London", venue: "Villiers Theatre", source: "Very Good (Audience)", length: 50, equipment: "Sony ECM-TS125 > Sharp IM-DR420H" },
     { date: "2004-02-12", city: "Sheffield", venue: "Coffee Revolution", source: "Very Good (Audience)", length: 20, equipment: "AUD > CDR > FLAC" },
     { date: "2004-02-26", city: "London", venue: "The Basement Club", source: "Very Good (Audience)", length: 50, equipment: "Sony ECM-TS125 > Sharp IM-DR420H" },
