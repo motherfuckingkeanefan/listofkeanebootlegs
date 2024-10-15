@@ -5,56 +5,63 @@
     box-sizing: border-box;
 }
 
-/* Body styling with background image */
+/* Body styling with background color and refined color palette */
 body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #04232b; /* Dark teal for primary text color */
+    background-color: #4c2728; /* Deep brown as primary background */
+    color: #c1c6c7; /* Light text color for contrast */
     padding: 20px;
     text-align: center;
-    background-color: #dde4e6; /* Fallback color */
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4); /* Subtle overlay for legibility */
+    box-shadow: inset 0 0 0 1000px rgba(76, 39, 40, 0.5); /* Subtle brown overlay */
+    background-blend-mode: overlay;
 }
 
-/* Header styling with background image */
+/* Header with background image and bold brown overlay */
 header {
-background-image: url('/Keane-bg.jpg');
+    background-image: url('/Keane-bg.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    color: #dde4e6;
-    padding: 40px;
-    border-radius: 8px;
+    color: #c1c6c7;
+    padding: 60px 20px;
+    border-radius: 10px;
     margin-bottom: 50px;
-    border-bottom: 5px solid #657277;
+    border-bottom: 5px solid #c1c6c7; /* Lighter color for contrast */
     text-transform: uppercase;
-    background-color: #04232b;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); /* Dark overlay */
+    position: relative;
+    background-color: rgba(76, 39, 40, 0.8); /* Darker brown overlay for a strong effect */
+    background-blend-mode: overlay;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); /* Dark overlay for better text contrast */
 }
 
 h1 {
-    font-size: 3.5rem;
-    letter-spacing: 0.15em;
+    font-size: 4rem;
+    letter-spacing: 0.25em;
     font-weight: 900;
-    color: #dde4e6;
+    color: #c1c6c7;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* Bold text shadow for extra emphasis */
 }
 
 .tagline {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
     font-style: italic;
-    color: #dde4e6;
+    color: #c1c6c7;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 header a {
     text-decoration: none;
     color: inherit;
+    transition: color 0.3s ease-in-out;
 }
 
-/* Filter section */
+header a:hover {
+    color: #f2f2f2; /* Lighter hover effect for links */
+}
+
+/* Filter section with bold hover effect */
 .filter-container {
     display: flex;
     flex-wrap: wrap;
@@ -65,43 +72,43 @@ header a {
 
 .filter-dropdown {
     padding: 15px;
-    border: 3px solid #04232b;
-    border-radius: 4px;
-    font-size: 1.1rem;
-    background-color: #dde4e6;
-    color: #04232b;
+    border: 3px solid #c1c6c7; /* Light border to match color palette */
+    border-radius: 6px;
+    font-size: 1.2rem;
+    background-color: #4c2728;
+    color: #c1c6c7;
     text-transform: uppercase;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     cursor: pointer;
 }
 
 .filter-dropdown:hover {
-    background-color: #657277;
-    color: #dde4e6;
-    transform: scale(1.05);
+    background-color: #c1c6c7; /* Lighter hover effect */
+    color: #4c2728;
+    transform: scale(1.05); /* Subtle scale for interactivity */
 }
 
 /* Counter section */
 .counter-section {
-    margin: 30px 0;
+    margin: 40px 0;
 }
 
-/* Counter container with background image */
+/* Counter container with bold background and overlay */
 .counter-container {
-background-image: url('/Keane-bg.jpg');
+    background-image: url('/Keane-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 3px solid #657277;
-    border-radius: 8px;
-    padding: 20px;
+    border: 3px solid #c1c6c7;
+    border-radius: 10px;
+    padding: 30px;
     font-size: 1.6rem;
-    color: #dde4e6;
+    color: #c1c6c7;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); /* Dark overlay */
-    position: relative;
-    background-color: #04232b;
+    letter-spacing: 0.1em;
+    background-color: rgba(76, 39, 40, 0.8); /* Dark brown overlay */
+    background-blend-mode: overlay;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); /* Enhanced shadow for text contrast */
 }
 
 /* Table styling */
@@ -109,67 +116,77 @@ background-image: url('/Keane-bg.jpg');
     width: 100%;
     margin: 30px auto;
     border-collapse: collapse;
-    border: 2px solid #657277;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #4c2728;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 th, td {
     padding: 15px;
-    border: 1px solid #dde4e6;
+    border: 1px solid #c1c6c7;
     text-align: left;
 }
 
 th {
-    background-color: #04232b;
-    color: #dde4e6;
+    background-color: #4c2728;
+    color: #c1c6c7;
     text-transform: uppercase;
-    font-size: 1.1rem;
-    letter-spacing: 0.05em;
-    border-bottom: 4px solid #657277;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    border-bottom: 4px solid #c1c6c7;
 }
 
 td {
-    background-color: #dde4e6;
-    color: #04232b;
-    font-weight: 500;
+    background-color: #c1c6c7;
+    color: #4c2728;
+    font-weight: 600;
 }
 
 tr:nth-child(even) td {
-    background-color: #f5f5f5;
+    background-color: #f2f2f2; /* Subtle contrast on even rows */
 }
 
 tr:hover td {
-    background-color: #657277;
-    color: #dde4e6;
-    transition: background-color 0.2s ease-in-out;
+    background-color: #4c2728;
+    color: #c1c6c7;
+    transition: background-color 0.3s ease-in-out;
 }
 
-/* Footer styling with background image */
+/* Footer with bold background and text styling */
 footer {
     margin-top: 60px;
-    font-size: 1rem;
-background-image: url('/Keane-bg.jpg');
+    font-size: 1.2rem;
+    background-image: url('/Keane-bg.jpg');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    color: #dde4e6;
-    padding: 25px;
+    color: #c1c6c7;
+    padding: 30px;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    border-top: 5px solid #657277;
+    letter-spacing: 0.1em;
+    border-top: 5px solid #c1c6c7;
     text-align: center;
-    background-color: #04232b;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    background-color: rgba(76, 39, 40, 0.8); /* Bold brown overlay */
+    background-blend-mode: overlay;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); /* Stronger shadow for text contrast */
+}
+
+footer a {
+    color: #c1c6c7;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #f2f2f2; /* Light hover effect for footer links */
 }
 
 /* Responsive footer adjustments */
 @media (max-width: 600px) {
     footer {
-        padding: 30px 15px;
+        padding: 30px 20px;
     }
 
     footer .contact-webmaster {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
 
@@ -180,7 +197,7 @@ background-image: url('/Keane-bg.jpg');
     }
 
     .tagline {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .filter-container {
@@ -194,7 +211,7 @@ background-image: url('/Keane-bg.jpg');
     }
 
     .counter-container {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     th, td {
