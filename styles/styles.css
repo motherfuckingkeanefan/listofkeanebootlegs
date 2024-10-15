@@ -1,202 +1,131 @@
-/* Universal reset */
+/* Add this CSS to your existing styles.css */
+
+/* Basic reset */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Body styling with background color and refined color palette */
+/* Global styles */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #4e3b3b; /* A softer brown for the body */
-    color: #e5d3d3; /* Soft light text for better readability */
-    padding: 0;
-    text-align: center;
+    background-color: #fffffd; /* Soft white background */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6; /* Improved readability */
 }
 
-/* Header styling with background image and improved readability */
+/* Header styles */
 header {
-    position: relative;
-    background-image: url('/Keane-band.jpg'); /* Background image for header */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 100px 20px; /* Adjusted padding for a balanced look */
-    color: #ffffff; /* White text for contrast */
-    text-transform: uppercase;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6); /* Soft shadow for depth */
+    background: #435e2b; /* Dark green header */
+    color: #fffffd; /* Soft white for contrast */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
 }
 
-/* Text overlay for better readability */
-.text-overlay {
-    background-color: rgba(0, 0, 0, 0.5); /* Darker overlay for improved contrast */
-    padding: 20px; /* Padding for the text overlay */
-    border-radius: 8px; /* Slightly rounded corners */
-    max-width: 800px; /* Max width for centered alignment */
-    margin: 0 auto; /* Center alignment */
+header h1 {
+    font-size: 2.5rem; /* Adjusted font size for better visibility */
+    font-weight: bold; /* Make it bold */
+    margin-bottom: 10px; /* Space below the header */
 }
 
-/* Header text styles */
-h1 {
-    font-size: 4rem; /* Large font size for main title */
-    letter-spacing: 0.05em; /* Subtle letter spacing */
-    font-weight: 700; /* Medium bold font weight */
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
-}
-
+/* Tagline styling */
 .tagline {
-    font-size: 1.5rem; /* Slightly smaller font size for tagline */
-    margin: 10px 0; /* Margins for spacing */
-    font-style: italic; /* Italic style for tagline */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Shadow for emphasis */
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #889678; /* Muted green for the tagline */
 }
 
-/* Link styles in header */
-header a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s, text-shadow 0.3s; /* Smooth transition for effects */
-}
-
-header a:hover {
-    color: #ffeb8c; /* Soft yellow hover effect for links */
-    text-shadow: 0 0 10px rgba(255, 235, 140, 0.8); /* Glow effect on hover */
-}
-
-/* Filter section with flexible layout */
+/* Filter container */
 .filter-container {
+    margin: 20px 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px; /* Space between elements */
-    margin-top: 30px; /* Margin above filter section */
+    justify-content: center; /* Center the filters */
+    gap: 15px; /* Space between dropdowns */
 }
 
+/* Filter dropdown styles */
 .filter-dropdown {
-    padding: 12px 20px; /* Padding for dropdown */
-    border: 2px solid #e5d3d3; /* Light border to match color palette */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 1rem; /* Font size for dropdown */
-    background-color: #6b4e4e; /* Muted brown background */
-    color: #ffffff; /* White text for readability */
-    cursor: pointer; /* Pointer cursor for dropdown */
-    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    padding: 10px;
+    border: 1px solid #889678; /* Muted green border */
+    border-radius: 5px;
+    background-color: #fffffd; /* White for dropdown background */
+    cursor: pointer; /* Pointer for dropdown */
+    transition: border-color 0.3s; /* Smooth border color change */
 }
 
 .filter-dropdown:hover {
-    background-color: #e5d3d3; /* Light background on hover */
-    color: #4e3b3b; /* Dark text on hover */
-    transform: scale(1.05); /* Slight scale for interactivity */
+    border-color: #435e2b; /* Change border to dark green on hover */
 }
 
-/* Counter section styling */
+/* Counter section */
 .counter-section {
-    margin: 40px 0; /* Spacing around counter section */
+    background: #889678; /* Muted green background */
+    color: #fffffd; /* Soft white text */
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
 }
 
-/* Counter container styling */
-.counter-container {
-    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
-    border: 2px solid #c8bfbf; /* Light gray border */
-    border-radius: 10px; /* Rounded corners */
-    padding: 30px; /* Padding for counter */
-    font-size: 1.4rem; /* Font size for counter */
-    color: #4e3b3b; /* Dark text for readability */
-    text-transform: uppercase;
-    letter-spacing: 0.05em; /* Subtle letter spacing */
+/* Recordings grid */
+.recordings-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
-/* Table styling */
-.recording-table {
-    width: 100%;
-    margin: 30px auto; /* Center table */
-    border-collapse: collapse;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+/* Recording card styles */
+.recording-card {
+    background-color: #fffffd; /* Soft white for card background */
+    border: 1px solid #435e2b; /* Dark green border */
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px; /* Fixed width for consistency */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+    cursor: pointer; /* Pointer for cards */
 }
 
-th, td {
-    padding: 15px; /* Padding for cells */
-    border: 1px solid #c8bfbf; /* Light gray border for cells */
-    text-align: left; /* Left align text */
+.recording-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
 }
 
-th {
-    background-color: #6b4e4e; /* Muted brown for header */
-    color: #e5d3d3; /* Light gray text for header */
-    text-transform: uppercase; /* Uppercase for headers */
-    font-size: 1.2rem; /* Font size for header */
+/* Recording card title */
+.recording-card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #435e2b; /* Dark green for titles */
 }
 
-td {
-    background-color: #f7f7f7; /* Very light gray for cells */
-    color: #4e3b3b; /* Dark text for cells */
-    font-weight: 500; /* Semi-bold text for cells */
+/* Paragraph styles within cards */
+.recording-card p {
+    margin: 5px 0;
+    color: #333; /* Dark text for readability */
 }
 
-tr:nth-child(even) td {
-    background-color: #ececec; /* Light background on even rows */
-}
-
-tr:hover td {
-    background-color: #c8bfbf; /* Soft gray highlight on row hover */
-    color: #2e1c1c; /* Dark text color on hover */
-    transition: background-color 0.3s ease-in-out; /* Smooth transition */
-}
-
-/* Footer styling */
+/* Footer styles */
 footer {
-    margin-top: 60px; /* Margin above footer */
-    font-size: 1.2rem; /* Font size for footer */
-    background-color: #4e3b3b; /* Dark brown background */
-    color: #e5d3d3; /* Light gray text color */
-    padding: 30px; /* Padding for footer */
-    text-transform: uppercase; /* Uppercase text for footer */
-    letter-spacing: 0.1em; /* Letter spacing for footer */
-    border-top: 3px solid #c8bfbf; /* Light gray border on top */
-    text-align: center; /* Center align text */
+    text-align: center;
+    padding: 10px;
+    background: #435e2b; /* Dark green for footer */
+    color: #fffffd; /* Soft white text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #889678; /* Muted green border on top */
 }
 
-/* Footer link styles */
-footer a {
-    color: #e5d3d3; /* Light text color for links */
-    transition: color 0.3s; /* Smooth transition */
+a {
+    color: inherit; /* Inherit the text color from the parent element */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Smooth transition for color change on hover */
 }
 
-footer a:hover {
-    color: #ffeb8c; /* Soft yellow hover effect for footer links */
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2.5rem; /* Adjust header size */
-    }
-
-    .tagline {
-        font-size: 1.2rem; /* Adjust tagline size */
-    }
-
-    .filter-container {
-        flex-direction: column; /* Stack dropdowns vertically */
-        align-items: center; /* Center align */
-    }
-
-    .filter-dropdown {
-        width: 100%; /* Full width for dropdowns */
-        max-width: 300px; /* Limit width */
-    }
-
-    .counter-container {
-        font-size: 1.3rem; /* Adjust counter size */
-    }
-
-    th, td {
-        font-size: 0.9rem; /* Smaller font size for table */
-        padding: 10px; /* Smaller padding */
-    }
-}
-
-/* Class for hidden elements */
-.hidden {
-    display: none; /* Hidden class for elements */
+a:hover {
+    color: inherit; /* Keep the same color on hover */
 }
