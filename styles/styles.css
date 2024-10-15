@@ -43,6 +43,7 @@ header h1 {
     display: flex;
     justify-content: center; /* Center the filters */
     gap: 15px; /* Space between dropdowns */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 /* Filter dropdown styles */
@@ -120,6 +121,7 @@ footer {
     border-top: 2px solid #889678; /* Muted green border on top */
 }
 
+/* Link styles */
 a {
     color: inherit; /* Inherit the text color from the parent element */
     text-decoration: none; /* Remove underline from links */
@@ -128,4 +130,47 @@ a {
 
 a:hover {
     color: inherit; /* Keep the same color on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    .filter-container {
+        flex-direction: column; /* Stack filters vertically */
+        gap: 10px; /* Reduce space between dropdowns */
+    }
+
+    .recordings-grid {
+        padding: 10px; /* Less padding on mobile */
+    }
+
+    .recording-card {
+        width: 90%; /* Make cards responsive */
+        margin: 0 auto; /* Center the cards */
+    }
+
+    .counter-section {
+        font-size: 1rem; /* Adjust font size for counter */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px; /* Less padding in header */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Even smaller font size for very small screens */
+    }
+
+    .tagline {
+        font-size: 1rem; /* Smaller tagline font */
+    }
+
+    .recording-card h3 {
+        font-size: 1.2rem; /* Smaller title size */
+    }
 }
