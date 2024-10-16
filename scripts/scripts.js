@@ -100,6 +100,7 @@ const recordings = [
 { date: "2012-03-09", city: "Bexhill-on-Sea", venue: "De La Warr Pavilion", source: "Excellent (Audience)", length: 60, equipment: "Sony ECM-125 > Roland R-05" },
 { date: "2012-03-15", city: "Los Angeles", venue: "KCRW Studios", source: "Excellent (FM)", length: 60, equipment: "FM > Onkyo HT-R520 > Zoom H4n" },
 { date: "2012-05-09", city: "London", venue: "BBC Radio Theatre", source: "Excellent (FM)", length: 60, equipment: "FM > PCTV NanoStick T2 > FLAC" },
+{ date: "2012-05-14", city: "Paris", venue: "Oui FM Studios", source: "Excellent (FM)", length: 15, equipment: "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
 { date: "2012-06-02", city: "Nürburg", venue: "Rock am Ring", source: "Excellent (FM)", length: 60, equipment: "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
 { date: "2012-06-04", city: "Folkestone", venue: "Leas Cliff Hall", source: "Excellent (Audience)", length: 60, equipment: "Sony ECM-125 > Edirol R-09" },
 { date: "2012-09-03", city: "Vancouver", venue: "The Centre in Vancouver for Performing Arts", source: "Excellent (Audience)", length: 60, equipment: "SP-CMC-8 > SP-SPSB-7 battery box > Edirol R-09" },
