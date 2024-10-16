@@ -174,3 +174,41 @@ a:hover {
         font-size: 1.4rem; /* Smaller text for titles on mobile */
     }
 }
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #222; /* Dark background for content */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #333;
+    width: 80%; /* Could be more or less, depending on screen size */
+    color: #fff; /* White text */
+    border-radius: 8px; /* Soft rounded corners */
+}
+
+.close-button {
+    color: #aaa; /* Gray close button */
+    float: right; /* Right align */
+    font-size: 28px; /* Bigger font for close */
+    font-weight: bold; /* Bold */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #fff; /* Change color on hover/focus */
+    text-decoration: none; /* No underline */
+    cursor: pointer; /* Pointer cursor */
+}
