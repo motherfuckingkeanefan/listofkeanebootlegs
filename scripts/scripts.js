@@ -31,7 +31,7 @@ const recordings = [
     { date: "2004-08-18", city: "Battle", venue: "Battle Memorial Hall", source: "Very Good (Audience)", length: 30, equipment: "Sony ECM-TS125 > Sharp IM-DR420H" },
     { date: "2004-08-18", city: "Battle", venue: "Battle Memorial Hall", source: "Excellent (FM)", length: 40, equipment: "FM > CDR > FLAC" },
     { date: "2004-08-19", city: "Hasselt-Kiewit", venue: "Pukkelpop Festival", source: "Excellent (FM)", length: 55, equipment: "Digital Satellite Receiver > CDR > FLAC" },
-    { date: "2004-08-20", city: "Biddinghuizen", venue: "Lowlands Festival", source: "Excellent (SBD)", length: 30, equipment: "SBD > CDR > FLAC" }
+    { date: "2004-08-20", city: "Biddinghuizen", venue: "Lowlands Festival", source: "Excellent (SBD)", length: 30, equipment: "SBD > CDR > FLAC" },
     { date: "2004-08-21", city: "Chelmsford", venue: "V Festival", source: "Excellent (FM)", length: 50, equipment: "Digital Satellite Receiver > CDR > FLAC" },
     { date: "2004-08-26", city: "Inverness", venue: "Up Close Festival", source: "Excellent (FM)", length: 45, equipment: "FM > CDR > FLAC" },
     { date: "2004-08-29", city: "Dublin", venue: "HMV", source: "Excellent (Audience)", length: 30, equipment: "AT831b > Sony MZ-G75" },
