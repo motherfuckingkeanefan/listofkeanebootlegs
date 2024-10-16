@@ -10,19 +10,24 @@
 /* Global styles */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #fffffd; /* Soft white background */
+            background-color: #fffffd; /* Soft white background */
     color: #333; /* Dark text for readability */
     line-height: 1.6; /* Improved readability */
 }
 
 /* Header styles */
 header {
-    background: #435e2b; /* Dark green header */
+    background: #435e2b; /* Fallback color in case the image doesn't load */
+    background-image: url('/Keane-BG.JPG'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
     color: #fffffd; /* Soft white for contrast */
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
 }
+
 
 header h1 {
     font-size: 2.5rem; /* Adjusted font size for better visibility */
@@ -34,7 +39,7 @@ header h1 {
 .tagline {
     font-size: 1.2rem;
     margin-top: 10px;
-    color: #889678; /* Muted green for the tagline */
+    color: #fffffd; /* Muted green for the tagline */
 }
 
 /* Filter container */
@@ -62,12 +67,12 @@ header h1 {
 
 /* Counter section */
 .counter-section {
-    background: #889678; /* Muted green background */
+    background: #435e2b; /* Muted green background */
     color: #fffffd; /* Soft white text */
     padding: 10px;
     text-align: center;
     font-weight: bold;
-    border-radius: 0px;
+    border-radius: 5px; /* Rounded corners */
 }
 
 /* Recordings grid */
