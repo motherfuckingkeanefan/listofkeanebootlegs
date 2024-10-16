@@ -64,6 +64,35 @@
 <footer>
     <p>&copy; 2024 Keane Live</p>
 </footer>
+<div id="submissionModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Help Us Expand Our Collection!</h2>
+        <p>If you have recordings of Keane live performances that are not available on our site, please share them with us!</p>
+        <p>Email us at: <a href="mailto:info@keanelive.com">info@keanelive.com</a></p>
+    </div>
+</div>
 
+<script>
+// Script to handle the modal
+document.addEventListener("DOMContentLoaded", function() {
+    // Show the modal
+    setTimeout(() => {
+        document.getElementById("submissionModal").style.display = "block";
+    }, 1000); // Show after 1 second
+
+    // Close the modal when the close button is clicked
+    document.querySelector(".close-button").onclick = function() {
+        document.getElementById("submissionModal").style.display = "none";
+    }
+
+    // Close the modal when clicking outside of it
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("submissionModal")) {
+            document.getElementById("submissionModal").style.display = "none";
+        }
+    }
+});
+</script>
 </body>
 </html>
