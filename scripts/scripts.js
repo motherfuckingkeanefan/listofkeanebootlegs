@@ -66,7 +66,7 @@ const recordings = [
     { date: "2006-05-23", city: "Paris", venue: "Le Trabendo", source: "Excellent (Audience)", length: 60, equipment: "Sony ECM-719 > Sony MZ-NH900" },
     { date: "2006-05-25", city: "Hilversum", venue: "3FM Studios", source: "Excellent (FM)", length: 60, equipment: "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
     { date: "2006-05-26", city: "Amsterdam", venue: "Paradiso", source: "Excellent (Audience)", length: 75, equipment: "MM-MCSM-4 cardioids > MM-EBM-1 > Nomad Jukebox 3" },
-    { date: "2006-05-27", city: "Oslo", venue: "Sentrum Scene", source: "Excellent (Audience)", length: 75, equipment: "Sony ECM-TS125 > Sharp IM-DR420H" },
+    { date: "2006-05-27", city: "Oslo", venue: "Sentrum Scene", source: "Excellent (Audience)", length: 70, equipment: "Sony ECM-TS125 > Sharp IM-DR420H" },
     { date: "2006-06-04", city: "Nürburg", venue: "Rock am Ring", source: "Excellent (FM)", length: 60, equipment: "FM > CD Spin Doctor > FLAC" },
     { date: "2006-06-05", city: "Landgraaf", venue: "Pinkpop Festival", source: "Excellent (Soundboard)", length: 60, equipment: "SBD > CDR > FLAC" },
     { date: "2006-06-09", city: "London", venue: "Astoria", source: "Excellent (FM)", length: 60, equipment: "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
