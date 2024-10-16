@@ -16,7 +16,7 @@ const recordings = [
     { date: "2004-04-24", city: "Leeds", venue: "Metropolitan University", source: "Very Good (Audience)", length: 60, equipment: "Sony ECM-TS125 > Sharp IM-DR420H" },
     { date: "2004-04-28", city: "Newcastle", venue: "Newcastle University", source: "Excellent (Audience)", length: 60, equipment: "SP-CMC-8 > SP-SPSB-3 > JB3" },
     { date: "2004-05-08", city: "Eastbourne", venue: "Winter Gardens", source: "Very Good (Audience)", length: 60, equipment: "Sony ECM-TS125 > Sharp IM-DR420H" },
-    { date: "2004-05-09", city: "London", venue: "Virgin Megastore", source: "Very Good (Audience)", length: 60, equipment: "Sony ECM-TS125 > Sharp IM-DR420H" },
+    { date: "2004-05-09", city: "London", venue: "Virgin Megastore", source: "Very Good (Audience)", length: 30, equipment: "Sony ECM-TS125 > Sharp IM-DR420H" },
     { date: "2004-05-10", city: "London", venue: "Forum Kentish Town", source: "Very Good (Audience)", length: 60, equipment: "Sony ECM-TS125 > Sharp IM-DR420H" },
     { date: "2004-05-19", city: "Berlin", venue: "Columbia Fritz", source: "Excellent (FM)", length: 60, equipment: "FM > CDR > FLAC" },
     { date: "2004-06-01", city: "San Francisco", venue: "Cafe Du Nord", source: "Excellent (Audience)", length: 60, equipment: "Sonic Studio mics > Sony TCD-D100" },
