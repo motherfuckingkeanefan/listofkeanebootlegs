@@ -82,6 +82,7 @@ const recordings = [
     { date: "2008-11-20", city: "Paris", venue: "Le Zénith", source: "Excellent (Audience)", length: 60, equipment: "SP-CMC-4 > SP-SPSB-1 > Edirol R-09" },
     { date: "2008-12-04", city: "Los Angeles", venue: "KCRW Studios", source: "Excellent (FM)", length: 60, equipment: "FM > Harman Kardon AVR30" },
     { date: "2008-12-16", city: "London", venue: "The Hub", source: "Excellent (FM)", length: 60, equipment: "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
+    { date: "2008-12-16", city: "London", venue: "229 Club", source: "Excellent (FM)", length: 90, equipment: "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
     { date: "2009-02-12", city: "London", venue: "O2 Arena", source: "Very Good (Audience)", length: 60, equipment: "Sony ECM-TS125 > Sharp IM-DR420H" },
     { date: "2009-04-24", city: "Koto", venue: "Studio Coast", source: "Excellent (Audience)", length: 60, equipment: "DPA mics > 9V battery > Sony PCM-D50" },
     { date: "2009-05-20", city: "Philadelphia", venue: "World Cafe Live", source: "Excellent (FM)", length: 60, equipment: "Pre-FM > FLAC" },
