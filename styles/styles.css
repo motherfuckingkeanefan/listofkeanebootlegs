@@ -1,181 +1,176 @@
-/* Add this CSS to your existing styles.css */
-
-/* Basic reset */
+/* Reset */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-smooth: always; /* Enhance readability */
 }
 
-/* Global styles */
+/* Global Styles */
 body {
     font-family: 'Montserrat', sans-serif;
-            background-color: #fffffd; /* Soft white background */
-    color: #333; /* Dark text for readability */
-    line-height: 1.6; /* Improved readability */
+    background-color: #000; /* Full black background for contrast */
+    color: #fff; /* White text for readability */
+    line-height: 1.8;
+    font-size: 18px; /* Clean, balanced font size */
+    text-transform: uppercase; /* Commanding tone */
+    letter-spacing: 0.05em; /* Subtle spacing for modern feel */
 }
 
-/* Header styles */
+/* Header Styles */
 header {
-    background: #435e2b; /* Fallback color in case the image doesn't load */
-    background-image: url('/Keane-BG.JPG'); /* Path to your background image */
-    background-size: cover; /* Ensures the image covers the entire header */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    color: #fffffd; /* Soft white for contrast */
-    padding: 20px;
+    background-color: #111; /* Slightly lighter black for header */
+    background-image: url('/Keane-BG.JPG'); /* Add background image */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Parallax effect */
+    filter: grayscale(100%); /* Black and white filter for the image */
+    padding: 60px 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    position: relative;
+    border-bottom: 2px solid #333; /* Subtle gray border */
 }
-
 
 header h1 {
-    font-size: 2.5rem; /* Adjusted font size for better visibility */
-    font-weight: bold; /* Make it bold */
-    margin-bottom: 10px; /* Space below the header */
+    font-size: 3.5rem; /* Large, impactful text */
+    font-weight: 900; /* Extremely bold */
+    color: #fff; /* White text */
+    letter-spacing: 0.1em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Soft shadow for readability over image */
+    transition: color 0.3s ease; /* Smooth transitions for clean effects */
 }
 
-/* Tagline styling */
+header h1:hover {
+    color: #aaa; /* Slight change on hover for subtle effect */
+}
+
 .tagline {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    color: #ccc; /* Lighter gray for tagline */
     margin-top: 10px;
-    color: #fffffd; /* Muted green for the tagline */
+    text-transform: none; /* Regular casing for a relaxed feel */
 }
 
-/* Filter container */
+/* Filter Container */
 .filter-container {
-    margin: 20px 0;
+    margin: 30px 0;
     display: flex;
-    justify-content: center; /* Center the filters */
-    gap: 15px; /* Space between dropdowns */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-/* Filter dropdown styles */
 .filter-dropdown {
-    padding: 10px;
-    border: 1px solid #889678; /* Muted green border */
-    border-radius: 5px;
-    background-color: #fffffd; /* White for dropdown background */
-    cursor: pointer; /* Pointer for dropdown */
-    transition: border-color 0.3s; /* Smooth border color change */
+    padding: 12px 20px;
+    background: #000;
+    border: 2px solid #555; /* Subtle gray borders */
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
 }
 
 .filter-dropdown:hover {
-    border-color: #435e2b; /* Change border to dark green on hover */
+    background: #fff; /* Flip to white background */
+    color: #000; /* Black text for contrast */
 }
 
-/* Counter section */
+/* Counter Section */
 .counter-section {
-    background: #435e2b; /* Muted green background */
-    color: #fffffd; /* Soft white text */
-    padding: 10px;
-    text-align: center;
+    background-color: #333; /* Mid-gray background */
+    color: #fff; /* White text */
+    padding: 20px;
+    font-size: 1.5rem;
     font-weight: bold;
-    border-radius: 0px; /* Rounded corners */
+    text-align: center;
+    letter-spacing: 0.08em;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Recordings grid */
+.counter-section:hover {
+    background-color: #fff; /* White background on hover */
+    color: #000; /* Black text */
+}
+
+/* Recordings Grid */
 .recordings-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 40px; /* Large gaps for clean spacing */
+    padding: 40px;
 }
 
-/* Recording card styles */
 .recording-card {
-    background-color: #fffffd; /* Soft white for card background */
-    border: 1px solid #435e2b; /* Dark green border */
-    border-radius: 8px;
-    padding: 15px;
-    width: 300px; /* Fixed width for consistency */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
-    cursor: pointer; /* Pointer for cards */
+    background-color: #111; /* Slightly off-black for cards */
+    border: 1px solid #333; /* Thin gray border for a minimal look */
+    color: #fff;
+    width: 350px; /* Clean and balanced size */
+    padding: 20px;
+    border-radius: 8px; /* Soft, subtle rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .recording-card:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+    transform: translateY(-5px); /* Gentle lift on hover */
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.1); /* Soft shadow */
 }
 
-/* Recording card title */
 .recording-card h3 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #435e2b; /* Dark green for titles */
+    font-size: 1.8rem; /* Bold but not overwhelming */
+    color: #fff;
+    margin-bottom: 15px;
 }
 
-/* Paragraph styles within cards */
 .recording-card p {
-    margin: 5px 0;
-    color: #333; /* Dark text for readability */
+    color: #aaa; /* Light gray for softer text */
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
-/* Footer styles */
+/* Footer Styles */
 footer {
+    padding: 30px;
+    background-color: #111; /* Slightly lighter black for footer */
+    color: #888; /* Medium gray text */
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-top: 2px solid #333; /* Subtle border at the top */
+    letter-spacing: 0.05em; /* Slightly wide for a clean look */
     text-align: center;
-    padding: 10px;
-    background: #435e2b; /* Dark green for footer */
-    color: #fffffd; /* Soft white text */
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    border-top: 2px solid #889678; /* Muted green border on top */
 }
 
-/* Link styles */
+/* Links */
 a {
-    color: inherit; /* Inherit the text color from the parent element */
-    text-decoration: none; /* Remove underline from links */
-    transition: color 0.3s; /* Smooth transition for color change on hover */
+    color: #fff; /* White links */
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: inherit; /* Keep the same color on hover */
+    color: #aaa; /* Gray on hover */
 }
 
-/* Media Queries for Responsiveness */
+/* Media Queries */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2rem; /* Smaller font size for mobile */
-    }
-
-    .filter-container {
-        flex-direction: column; /* Stack filters vertically */
-        gap: 10px; /* Reduce space between dropdowns */
-    }
-
-    .recordings-grid {
-        padding: 10px; /* Less padding on mobile */
+        font-size: 3rem; /* Adjust for smaller screens */
     }
 
     .recording-card {
-        width: 90%; /* Make cards responsive */
-        margin: 0 auto; /* Center the cards */
-    }
-
-    .counter-section {
-        font-size: 1rem; /* Adjust font size for counter */
+        width: 90%; /* Responsive card width */
+        margin: 0 auto;
     }
 }
 
 @media (max-width: 480px) {
-    header {
-        padding: 15px; /* Less padding in header */
-    }
-
     header h1 {
-        font-size: 1.5rem; /* Even smaller font size for very small screens */
-    }
-
-    .tagline {
-        font-size: 1rem; /* Smaller tagline font */
+        font-size: 2.5rem; /* Further adjustments for mobile */
     }
 
     .recording-card h3 {
-        font-size: 1.2rem; /* Smaller title size */
+        font-size: 1.4rem; /* Smaller text for titles on mobile */
     }
 }
