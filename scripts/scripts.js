@@ -137,6 +137,8 @@ const recordings = [
 { date: "2024-05-11", city: "London", venue: "02 Arena", source: "Excellent (Audience)", length: 60, equipment: "CA-11(c) > Ugly Battery Box > Edirol R-05" },
 { date: "2024-05-11", city: "London", venue: "02 Arena", source: "Excellent (IEM)", length: 60, equipment: "Receiver > Tascam DR-2d" },
 { date: "2024-05-11", city: "London", venue: "02 Arena", source: "Excellent (Matrix)", length: 60, equipment: "AUD: CA-11(c) > Ugly Battery Box > Edirol R-05<br>IEM: Receiver > Tascam DR-2d" },
+{ date: "2024-06-21", city: "Landgraaf", venue: "Megaland", source: "Excellent (FM)", length: 75, equipment: "Digital Radio Broadcast > WAV > FLAC" },
+    { date: "2024-06-22", city: "Newport", venue: "Isle of Wight Festival", source: "Excellent (FM)", length: 70, equipment: "Digital Radio Broadcast > WAV > FLAC" },
 { date: "2024-07-20", city: "Nieuwpoort", venue: "Beach Festival", source: "Excellent (Audience)", length: 60, equipment: "AT853 > SP-SPSB-10 > Roland R-05" },
 { date: "2024-07-20", city: "Nieuwpoort", venue: "Beach Festival", source: "Excellent (Audience)", length: 60, equipment: "AT831 > Tascam DR-2d" },
 { date: "2024-07-20", city: "Nieuwpoort", venue: "Beach Festival", source: "Excellent (Matrix)", length: 60, equipment: "AUD 1: AT853 > SP-SPSB-10 > Roland R-05<br>AUD 2: AT831 > Tascam DR-2d" },
