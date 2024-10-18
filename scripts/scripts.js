@@ -21,7 +21,7 @@ const recordings = [
     { date: "2004-05-19", city: "Berlin", venue: "Columbia Fritz", source: "Excellent (FM)", length: 60, equipment: "FM > CDR > FLAC" },
     { date: "2004-06-01", city: "San Francisco", venue: "Cafe Du Nord", source: "Excellent (Audience)", length: 60, equipment: "Sonic Studio mics > Sony TCD-D100" },
     { date: "2004-06-02", city: "Los Angeles", venue: "KCRW Studios", source: "Excellent (FM)", length: 40, equipment: "FM > FLAC" },
-    { date: "2004-06-24", city: "New York", venue: "WXRK Studios", source: "Excellent (FM)", length: 60, equipment: "FM > WAV > FLAC" },
+    { date: "2004-06-24", city: "New York", venue: "WXRK Studios", source: "Excellent (FM)", length: 5, equipment: "FM > WAV > FLAC" },
     { date: "2004-06-26", city: "Pilton", venue: "Glastonbury Festival", source: "Excellent (FM)", length: 60, equipment: "Digital Satellite Receiver > CDR > FLAC" },
     { date: "2004-07-04", city: "Herzogenrath", venue: "Eins Live Konigstreffen", source: "Excellent (FM)", length: 60, equipment: "FM > DAT > FLAC" },
     { date: "2004-07-11", city: "Punchestown", venue: "Oxegen Festival", source: "Poor (Audience)", length: 60, equipment: "MD > CDR > FLAC" },
