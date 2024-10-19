@@ -76,7 +76,7 @@ const recordings = [
     { date: "2006-06-22", city: "Los Angeles", venue: "KCRW Studios", source: "Excellent (FM)", length: 60, equipment: "FM > CDR > FLAC" },
     { date: "2006-07-15", city: "Barcelona", venue: "Parc del Fòrum", source: "Excellent (Audience)", length: 60, equipment: "Sonic Studios DSM6s > PA-6LC > iRiver H-340" },
     { date: "2006-08-18", city: "Kiewit", venue: "Pukkelpop Festival", source: "Excellent (FM)", length: 60, equipment: "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
-    { date: "2006-08-19", city: "Chelmsford", venue: "Backstage at V Festival", source: "Excellent (FM)", length: 10, equipment: "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
+    { date: "2006-08-19", city: "Chelmsford", venue: "V Festival", source: "Excellent (FM)", length: 25, equipment: "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
     { date: "2006-11-07", city: "Rotterdam", venue: "Ahoy", source: "Good (Audience)", length: 60, equipment: "Panasonic NV-GS17 > MiniDV-M > FLAC" },
     { date: "2006-11-15", city: "Berlin", venue: "Tempodrom", source: "Excellent (Audience)", length: 60, equipment: "Soundman OKM II Rock > A3 Adapter > M-AUDIO Microtrack" },
     { date: "2007-01-23", city: "Paris", venue: "L'Olympia", source: "Excellent (FM)", length: 60, equipment: "FM > Stereo Receiver > FLAC" },
