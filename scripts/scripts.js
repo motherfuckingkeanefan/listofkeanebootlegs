@@ -87,7 +87,6 @@ const recordings = [
     { date: "2007-06-30", city: "Werchter", venue: "Werchter Festival", source: "Excellent (FM)", length: 60, equipment: "Denon FM Tuner > FLAC" },
     { date: "2008-11-15", city: "London", venue: "Union Chapel", source: "Good (Audience)", length: 60, equipment: "Sony ECM-TS125 > Sharp IM-DR420H" },
     { date: "2008-11-20", city: "Paris", venue: "Le Zénith", source: "Excellent (Audience)", length: 60, equipment: "SP-CMC-4 > SP-SPSB-1 > Edirol R-09" },
-        { date: "2008-11-26", city: "London", venue: "Indigo at The O2", source: "Excellent (FM)", length: 30, equipment: "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
     { date: "2008-12-04", city: "Los Angeles", venue: "KCRW Studios", source: "Excellent (FM)", length: 60, equipment: "FM > Harman Kardon AVR30" },
     { date: "2008-12-16", city: "London", venue: "The Hub", source: "Excellent (FM)", length: 60, equipment: "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
     { date: "2008-12-16", city: "London", venue: "229 Club", source: "Excellent (FM)", length: 90, equipment: "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
