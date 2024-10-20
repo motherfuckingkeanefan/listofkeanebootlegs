@@ -3,94 +3,73 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-smooth: always; /* Enhance readability */
 }
 
 /* Global Styles */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #000; /* Full black background for contrast */
-    color: #fff; /* White text for readability */
-    line-height: 1.8;
-    font-size: 18px; /* Clean, balanced font size */
-    text-transform: uppercase; /* Commanding tone */
-    letter-spacing: 0.05em; /* Subtle spacing for modern feel */
+    background-color: #000; /* Deep black background */
+    color: #fff; /* White text for clarity */
+    line-height: 1.5; /* Slightly tighter line-height for readability */
+    font-size: 16px; /* Adjusted font size for balance */
+    text-transform: none; /* Regular casing for a more casual feel */
+    letter-spacing: 0.05em; /* Subtle spacing */
 }
 
 /* Header Styles */
 header {
-    background-color: #111; /* Slightly lighter black for header */
-    background-image: url('/Keane-BG.JPG'); /* Add background image */
+    background: url('/Keane-BG.JPG') no-repeat center center; /* Background image */
     background-size: cover; /* Cover the entire header */
-    background-position: center; /* Center the image */
-    background-attachment: fixed; /* Parallax effect */
-    filter: grayscale(100%); /* Black and white filter for the image */
-    padding: 60px 0;
+    padding: 80px 0; /* Increased padding for a grand look */
     text-align: center;
-    position: relative;
-    border-bottom: 2px solid #333; /* Subtle gray border */
+    border-bottom: 5px solid #444; /* Dark border */
 }
 
 header h1 {
-    font-size: 3.5rem; /* Large, impactful text */
-    font-weight: 900; /* Extremely bold */
+    font-size: 4rem; /* Large, bold text */
+    font-weight: 700; /* Bold but not too overwhelming */
     color: #fff; /* White text */
-    letter-spacing: 0.1em;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Soft shadow for readability over image */
-    transition: color 0.3s ease; /* Smooth transitions for clean effects */
-}
-
-header h1:hover {
-    color: #aaa; /* Slight change on hover for subtle effect */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Soft shadow for readability */
 }
 
 .tagline {
-    font-size: 1.4rem;
+    font-size: 1.2rem; /* Smaller than the header */
     color: #ccc; /* Lighter gray for tagline */
     margin-top: 10px;
-    text-transform: none; /* Regular casing for a relaxed feel */
 }
 
 /* Filter Container */
 .filter-container {
-    margin: 30px 0;
+    margin: 40px 0;
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .filter-dropdown {
-    padding: 12px 20px;
-    background: #000;
-    border: 2px solid #555; /* Subtle gray borders */
+    padding: 10px 15px;
+    background: #222; /* Darker background for dropdown */
+    border: 1px solid #444; /* Dark gray border */
     color: #fff;
     font-weight: bold;
     cursor: pointer;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
+    transition: background 0.3s, color 0.3s;
 }
 
 .filter-dropdown:hover {
-    background: #fff; /* Flip to white background */
-    color: #000; /* Black text for contrast */
+    background: #fff; /* White background on hover */
+    color: #000; /* Black text */
 }
 
 /* Counter Section */
 .counter-section {
-    background-color: #333; /* Mid-gray background */
+    background-color: #333; /* Dark gray background */
     color: #fff; /* White text */
     padding: 20px;
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    letter-spacing: 0.08em;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.counter-section:hover {
-    background-color: #fff; /* White background on hover */
-    color: #000; /* Black text */
+    border-radius: 5px; /* Slightly rounded corners */
 }
 
 /* Recordings Grid */
@@ -98,48 +77,46 @@ header h1:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px; /* Large gaps for clean spacing */
+    gap: 30px; /* Adequate spacing */
     padding: 40px;
 }
 
 .recording-card {
-    background-color: #111; /* Slightly off-black for cards */
-    border: 1px solid #333; /* Thin gray border for a minimal look */
+    background-color: #222; /* Darker card background */
+    border: 1px solid #444; /* Dark gray border */
     color: #fff;
-    width: 350px; /* Clean and balanced size */
+    width: 300px; /* Fixed width for cards */
     padding: 20px;
-    border-radius: 8px; /* Soft, subtle rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
 }
 
 .recording-card:hover {
-    transform: translateY(-5px); /* Gentle lift on hover */
-    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.1); /* Soft shadow */
+    transform: translateY(-3px); /* Subtle lift */
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); /* Light shadow */
 }
 
 .recording-card h3 {
-    font-size: 1.8rem; /* Bold but not overwhelming */
+    font-size: 1.6rem; /* Adjusted heading size */
     color: #fff;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .recording-card p {
-    color: #aaa; /* Light gray for softer text */
-    font-size: 1.1rem;
-    line-height: 1.6;
+    color: #aaa; /* Softer text */
+    font-size: 1rem; /* Balanced size */
+    line-height: 1.4; /* More compact line height */
 }
 
 /* Footer Styles */
 footer {
-    padding: 30px;
-    background-color: #111; /* Slightly lighter black for footer */
+    padding: 20px;
+    background-color: #111; /* Dark background for footer */
     color: #888; /* Medium gray text */
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    border-top: 2px solid #333; /* Subtle border at the top */
-    letter-spacing: 0.05em; /* Slightly wide for a clean look */
+    font-size: 1rem; /* Adjusted font size */
     text-align: center;
+    border-top: 2px solid #444; /* Dark border */
 }
 
 /* Links */
@@ -150,7 +127,7 @@ a {
 }
 
 a:hover {
-    color: #aaa; /* Gray on hover */
+    color: #ccc; /* Light gray on hover */
 }
 
 /* Media Queries */
@@ -167,11 +144,11 @@ a:hover {
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 2.5rem; /* Further adjustments for mobile */
+        font-size: 2.5rem; /* Smaller for mobile */
     }
 
     .recording-card h3 {
-        font-size: 1.4rem; /* Smaller text for titles on mobile */
+        font-size: 1.3rem; /* Smaller titles */
     }
 }
 
@@ -179,7 +156,7 @@ a:hover {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 1000; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -189,26 +166,25 @@ a:hover {
 }
 
 .modal-content {
-    background-color: #222; /* Dark background for content */
-    margin: 15% auto; /* 15% from the top and centered */
+    background-color: #333; /* Dark background */
+    margin: 15% auto; /* Centered */
     padding: 20px;
-    border: 1px solid #333;
-    width: 80%; /* Could be more or less, depending on screen size */
+    border: 1px solid #444; /* Dark border */
+    width: 80%; /* Responsive width */
     color: #fff; /* White text */
     border-radius: 8px; /* Soft rounded corners */
 }
 
 .close-button {
-    color: #aaa; /* Gray close button */
+    color: #ccc; /* Gray close button */
     float: right; /* Right align */
-    font-size: 28px; /* Bigger font for close */
+    font-size: 24px; /* Bigger font */
     font-weight: bold; /* Bold */
     cursor: pointer; /* Pointer on hover */
 }
 
 .close-button:hover,
 .close-button:focus {
-    color: #fff; /* Change color on hover/focus */
+    color: #fff; /* White on hover */
     text-decoration: none; /* No underline */
-    cursor: pointer; /* Pointer cursor */
 }
