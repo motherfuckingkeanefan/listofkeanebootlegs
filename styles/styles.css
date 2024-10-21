@@ -172,6 +172,16 @@ footer p {
     font-size: 1rem; /* Default font size */
 }
 
+footer .disclaimer {
+    font-size: 0.85rem; /* Smaller font for disclaimer */
+    color: #d0d0d0; /* Lighter color for subtlety */
+    margin-top: 10px; /* Space above the disclaimer */
+}
+
+footer .contact {
+    font-size: 1rem; /* Default font size for contact */
+}
+
 footer a {
     color: #ebe019; /* Yellow links */
     text-decoration: none; /* Remove underline */
@@ -183,7 +193,6 @@ footer a:hover {
     text-decoration: underline; /* Underline on hover for better visibility */
 }
 
-
 .social-links a {
     color: #f0f0f0;
     margin: 0 10px;
@@ -192,7 +201,6 @@ footer a:hover {
 .social-links a:hover {
     color: #ebe019;
 }
-
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
     header h1 {
