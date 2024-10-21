@@ -13,10 +13,10 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'OLRoundGothic Regular', sans-serif;
+    font-family: 'OLRoundGothic Regular', Arial, sans-serif;
     background: url('/Keane-BG.JPG.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-color: #010101; /* Dark background for fallback */
+    background-color: #010101; /* Dark background fallback */
     color: #f0f0f0; /* Light text for readability */
     display: flex;
     flex-direction: column;
@@ -27,6 +27,10 @@ body {
 a {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit surrounding text color */
+}
+
+a:hover {
+    color: #ebe019; /* Yellow on hover */
 }
 
 /* Header Styles */
@@ -43,11 +47,13 @@ header h1 {
     margin: 0;
     text-transform: uppercase;
     color: #ebe019; /* Yellow for header text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add subtle shadow for legibility */
 }
 
 .tagline {
     font-size: 1.2rem; /* Tagline font size */
     color: #f0f0f0; /* Light text for tagline */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add shadow */
 }
 
 /* Filter Container */
@@ -56,6 +62,7 @@ header h1 {
     justify-content: center;
     gap: 20px;
     margin: 20px 0;
+    transition: all 0.3s ease-in-out;
 }
 
 .filter-dropdown,
@@ -80,6 +87,25 @@ header h1 {
     font-family: 'ITC Machine Bold', sans-serif; /* Bold font for dropdown */
 }
 
+/* Filter Toggle (for Mobile) */
+.filter-toggle {
+    display: none;
+    justify-content: center;
+    color: #ebe019;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.collapsed {
+    display: none;
+}
+
+.show-filters {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Counter Section */
 .counter-section {
     background-color: #010101; /* Dark background */
@@ -91,6 +117,7 @@ header h1 {
 .counter-container {
     font-size: 1.5rem; /* Larger font for counter */
     font-weight: bold;
+    transition: all 0.5s ease-in-out;
 }
 
 /* Recordings Grid */
@@ -130,17 +157,41 @@ header h1 {
     color: #f0f0f0; /* Light text for descriptions */
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
     padding: 20px;
-    background-color: #010101; /* Dark background */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
     text-align: center;
     color: #f0f0f0; /* Light text for footer */
     margin-top: auto; /* Push footer to the bottom */
+    border-top: 2px solid #ebe019; /* Yellow border at the top */
+}
+
+footer p {
+    margin: 5px 0; /* Spacing between paragraphs */
+    font-size: 1rem; /* Default font size */
+}
+
+footer a {
+    color: #ebe019; /* Yellow links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+footer a:hover {
+    color: #f0f0f0; /* Change to light color on hover */
+    text-decoration: underline; /* Underline on hover for better visibility */
 }
 
 
+.social-links a {
+    color: #f0f0f0;
+    margin: 0 10px;
+}
 
+.social-links a:hover {
+    color: #ebe019;
+}
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
@@ -148,16 +199,20 @@ footer {
         font-size: 3rem; /* Adjust header size for tablets */
     }
 
+    .filter-toggle {
+        display: flex; /* Show filter toggle for mobile */
+    }
+
     .filter-container {
-        display: none; /* Hide filters on mobile */
+        display: none; /* Hide filters initially on mobile */
+    }
+
+    .filter-container.show-filters {
+        display: flex; /* Show filters when toggled */
     }
 
     .recordings-grid {
         display: none; /* Hide recordings grid on mobile */
-    }
-
-    .mobile-warning {
-        display: flex; /* Show warning on mobile */
     }
 }
 
