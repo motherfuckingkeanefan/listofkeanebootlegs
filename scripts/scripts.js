@@ -220,21 +220,6 @@ document.getElementById("sourceFilter").addEventListener("change", filterRecordi
 cityFilter.addEventListener("change", filterRecordings);
 document.getElementById("searchInput").addEventListener("input", filterRecordings);
 
-// Function to check screen size and toggle visibility
-function checkScreenSize() {
-    const mobileWarning = document.querySelector('.mobile-warning');
-    
-    if (window.innerWidth <= 768) {
-        mobileWarning.style.display = 'flex'; // Show warning on mobile
-        document.body.classList.add('mobile-warning-active'); // Add class to hide other content
-        recordingsGrid.style.display = 'none'; // Hide recordings grid
-    } else {
-        mobileWarning.style.display = 'none'; // Hide warning on desktop
-        document.body.classList.remove('mobile-warning-active'); // Remove class to show other content
-        recordingsGrid.style.display = 'flex'; // Show recordings grid
-    }
-}
-
 
 // Initialize the page
 window.onload = () => {
