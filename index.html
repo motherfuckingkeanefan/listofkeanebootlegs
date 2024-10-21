@@ -6,12 +6,16 @@
     <meta name="description" content="Your go-to source for Keane live recordings.">
     <meta name="keywords" content="Keane, bootlegs, live recordings, music, concerts, fan site">
     <meta name="author" content="Pieteker">
-    <meta name="email" content="info@keanelive.com">
     <title>Keane Live: Your go-to source for Keane live recordings</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <div class="mobile-warning">
+        <h1>Mobile Access Restricted</h1>
+        <p>This site is only available on desktop devices.</p>
+    </div>
+    
 
 <header>
     <a href="/" class="logo">
@@ -23,7 +27,6 @@
         <label for="yearFilter">Year:</label>
         <select id="yearFilter" class="filter-dropdown">
             <option value="all">All Years</option>
-            <!-- Year options will be populated dynamically -->
         </select>
 
         <label for="sourceFilter">Source:</label>
@@ -39,7 +42,6 @@
         <label for="cityFilter">City:</label>
         <select id="cityFilter" class="filter-dropdown">
             <option value="all">All Cities</option>
-            <!-- City options will be populated dynamically -->
         </select>
 
         <label for="searchInput">Search:</label>
@@ -59,31 +61,11 @@
     </div>
 </main>
 
-<script src="scripts/scripts.js"></script>
-
 <footer>
     <p>&copy; 2024 Keane Live</p>
 </footer>
-<script>
-// Script to handle the modal
-document.addEventListener("DOMContentLoaded", function() {
-    // Show the modal
-    setTimeout(() => {
-        document.getElementById("submissionModal").style.display = "block";
-    }, 1000); // Show after 1 second
 
-    // Close the modal when the close button is clicked
-    document.querySelector(".close-button").onclick = function() {
-        document.getElementById("submissionModal").style.display = "none";
-    }
+<script src="scripts/scripts.js"></script>
 
-    // Close the modal when clicking outside of it
-    window.onclick = function(event) {
-        if (event.target == document.getElementById("submissionModal")) {
-            document.getElementById("submissionModal").style.display = "none";
-        }
-    }
-});
-</script>
 </body>
 </html>
