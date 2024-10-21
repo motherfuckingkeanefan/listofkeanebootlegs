@@ -1,65 +1,65 @@
 // Sample recordings data
 const recordings = [
 
-        { "date": "2004-02-10", "city": "Northampton", "venue": "Soundhaus", "source": "Soundboard", "length": 50, "equipment": "SBD > CDR > FLAC" },
-        { "date": "2004-02-12", "city": "Sheffield", "venue": "Sheffield University SU", "source": "Audience", "length": 20, "equipment": "AUD > CDR > FLAC" },
-        { "date": "2004-03-03", "city": "Birmingham", "venue": "TC's", "source": "Soundboard", "length": 50, "equipment": "SBD > Logic Pro X > FLAC" },
-                { "date": "2004-03-03", "city": "Birmingham", "venue": "TC's", "source": "Audience", "length": 50, "equipment": "AUD > CDR > FLAC" },
-        { "date": "2004-03-09", "city": "London", "venue": "ULU", "source": "Audience", "length": 50, "equipment": "AUD > CDR > FLAC" },
-        { "date": "2004-03-28", "city": "London", "venue": "Hammersmith Apollo", "source": "Audience", "length": 30, "equipment": "AUD > CDR > FLAC" },
-        { "date": "2004-04-05", "city": "London", "venue": "Maida Vale Studios", "source": "FM", "length": 35, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
-        { "date": "2004-04-23", "city": "Liverpool", "venue": "Academy 4", "source": "Audience", "length": 60, "equipment": "AUD > CDR > FLAC" },
-        { "date": "2004-04-24", "city": "Leeds", "venue": "Metropolitan University", "source": "Audience", "length": 60, "equipment": "Sony ECM-TS125 > Sharp IM-DR420H" },
-        { "date": "2004-04-28", "city": "Newcastle", "venue": "Newcastle University", "source": "Audience", "length": 60, "equipment": "SP-CMC-8 > SP-SPSB-3 > JB3" },
-        { "date": "2004-05-08", "city": "Eastbourne", "venue": "Winter Gardens", "source": "Audience", "length": 60, "equipment": "Sony ECM-TS125 > Sharp IM-DR420H" },
-        { "date": "2004-05-09", "city": "London", "venue": "Virgin Megastore", "source": "Audience", "length": 30, "equipment": "Sony ECM-TS125 > Sharp IM-DR420H" },
-        { "date": "2004-05-10", "city": "London", "venue": "Forum Kentish Town", "source": "Audience", "length": 60, "equipment": "Sony ECM-TS125 > Sharp IM-DR420H" },
-        { "date": "2004-05-19", "city": "Berlin", "venue": "Columbia Fritz", "source": "FM", "length": 60, "equipment": "FM > CDR > FLAC" },
-        { "date": "2004-06-01", "city": "San Francisco", "venue": "Cafe Du Nord", "source": "Audience", "length": 60, "equipment": "Sonic Studio mics > Sony TCD-D100" },
-        { "date": "2004-06-02", "city": "Los Angeles", "venue": "KCRW Studios", "source": "FM", "length": 40, "equipment": "FM > FLAC" },
-        { "date": "2004-06-24", "city": "New York", "venue": "WXRK Studios", "source": "FM", "length": 5, "equipment": "FM > WAV > FLAC" },
-        { "date": "2004-06-26", "city": "Pilton", "venue": "Glastonbury Festival (Other Stage)", "source": "FM", "length": 40, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
-        { "date": "2004-06-26", "city": "Pilton", "venue": "Glastonbury Festival (Backstage Session)", "source": "FM", "length": 10, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
-        { "date": "2004-07-04", "city": "Herzogenrath", "venue": "Eins Live Konigstreffen", "source": "FM", "length": 40, "equipment": "FM > DAT > FLAC" },
-        { "date": "2004-07-11", "city": "Punchestown", "venue": "Oxegen Festival", "source": "Audience", "length": 40, "equipment": "AUD > CDR > FLAC" },
-        { "date": "2004-07-11", "city": "Punchestown", "venue": "Oxegen Festival", "source": "FM", "length": 30, "equipment": "FM > CDR > FLAC" },
-        { "date": "2004-07-16", "city": "Arvika", "venue": "Arvikafestivalen", "source": "FM", "length": 50, "equipment": "Analogue Cable FM > WAV > FLAC" },
-        { "date": "2004-08-07", "city": "Rees-Haldern", "venue": "Haldern Pop-Festival", "source": "Audience", "length": 50, "equipment": "DPA 4060 > MPS6020 > Sony TCD-D100" },
-        { "date": "2004-08-14", "city": "Salzburg", "venue": "Frequency Festival", "source": "FM", "length": 15, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
-        { "date": "2004-08-18", "city": "Battle", "venue": "Battle Memorial Hall", "source": "Audience", "length": 35, "equipment": "Sony ECM-TS125 > Sharp IM-DR420H" },
-        { "date": "2004-08-18", "city": "Battle", "venue": "Battle Memorial Hall", "source": "Soundboard", "length": 35, "equipment": "SBD > CDR > FLAC" },
-        { "date": "2004-08-19", "city": "Hasselt-Kiewit", "venue": "Pukkelpop Festival", "source": "FM", "length": 40, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
-        { "date": "2004-08-20", "city": "Biddinghuizen", "venue": "Lowlands Festival", "source": "Soundboard", "length": 25, "equipment": "SBD > CDR > FLAC" },
-        { "date": "2004-08-21", "city": "Chelmsford", "venue": "V Festival (Backstage Session)", "source": "FM", "length": 10, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
-        { "date": "2004-08-26", "city": "Inverness", "venue": "Up Close Festival", "source": "FM", "length": 45, "equipment": "FM > CDR > FLAC" },
-        { "date": "2004-08-29", "city": "Dublin", "venue": "HMV", "source": "Audience", "length": 30, "equipment": "AT831b > Sony MZ-G75" },
-        { "date": "2004-08-29", "city": "Dublin", "venue": "Olympia Theatre", "source": "Audience", "length": 35, "equipment": "AT831b > Sony MZ-G755" },
-        { "date": "2004-09-08", "city": "Portland", "venue": "Berbati's Pan", "source": "Soundboard", "length": 50, "equipment": "SBD > CDR > FLAC" },
-        { "date": "2004-09-11", "city": "West Hollywood", "venue": "Virgin Megastore", "source": "Audience", "length": 40, "equipment": "Built-in Mics > Sony DCR-TRV22 > Master MiniDV" },
-        { "date": "2004-10-16", "city": "Stuttgart", "venue": "Villa Berg", "source": "FM", "length": 45, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
-        { "date": "2004-10-17", "city": "Cologne", "venue": "Live Music Hall", "source": "Audience", "length": 55, "equipment": "Soundman OKM II Rock > A3 Adapter > Sony MZ-N910" },
-        { "date": "2004-11-08", "city": "Nottingham", "venue": "Rock City", "source": "Audience", "length": 40, "equipment": "AUD > CDR > FLAC" },
-        { "date": "2004-11-16", "city": "London", "venue": "The Hub", "source": "FM", "length": 45, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
-        { "date": "2004-11-17", "city": "London", "venue": "Brixton Academy", "source": "FM", "length": 50, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
-        { "date": "2004-11-19", "city": "Lyon", "venue": "Hall Tony Garnier", "source": "FM", "length": 45, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
-        { "date": "2004-12-11", "city": "Los Angeles", "venue": "Gibson Amphitheater", "source": "Audience", "length": 55, "equipment": "Sonic Studios DSM6s > PA-6LC > Sony D8 DAT" },
-        { "date": "2004-12-11", "city": "Los Angeles", "venue": "Gibson Amphitheater", "source": "FM", "length": 50, "equipment": "FM > FLAC" },
-        { "date": "2005-02-17", "city": "Chicago", "venue": "Riviera Theater", "source": "FM", "length": 60, "equipment": "FM > Onkyo TX8511 > SoundBlaster > FLAC" },
-        { "date": "2005-02-25", "city": "Atlanta", "venue": "99X", "source": "FM", "length": 45, "equipment": "FM > CDR > FLAC" },
-        { "date": "2005-03-19", "city": "Vienna", "venue": "Gasometer", "source": "Audience", "length": 60, "equipment": "AUD > CDR > FLAC" },
-        { "date": "2005-03-22", "city": "Paris", "venue": "L'Olympia", "source": "Audience", "length": 60, "equipment": "AT831b > Sony MZ-G755" },
-        { "date": "2005-03-23", "city": "Amsterdam", "venue": "Heineken Music Hall", "source": "Soundboard", "length": 75, "equipment": "SBD > CDR > FLAC" },
-        { "date": "2005-04-30", "city": "Indio", "venue": "Coachella Festival", "source": "Audience", "length": 60, "equipment": "AT853 > Denecke PS-2 > Nomad JB3" },
-        { "date": "2005-05-09", "city": "Seattle", "venue": "Paramount Theatre", "source": "Audience", "length": 60, "equipment": "AUD > FLAC" },
-        { "date": "2005-06-25", "city": "Pilton", "venue": "Glastonbury Festival", "source": "FM", "length": 25, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
-        { "date": "2005-06-29", "city": "London", "venue": "Wireless Festival", "source": "FM", "length": 60, "equipment": "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
-        { "date": "2005-07-03", "city": "Werchter", "venue": "Werchter Festival", "source": "FM", "length": 60, "equipment": "Denon FM Tuner > FLAC" },
-        { "date": "2005-07-10", "city": "Naas", "venue": "Oxegen Festival", "source": "FM", "length": 60, "equipment": "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
-        { "date": "2005-08-01", "city": "Cornwall", "venue": "Eden Project", "source": "Audience", "length": 60, "equipment": "AUD > CDR > FLAC" },
-        { "date": "2005-08-01", "city": "Cornwall", "venue": "Eden Project", "source": "FM", "length": 60, "equipment": "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
-        { "date": "2005-08-05", "city": "Nice", "venue": "Stade Charles-Ehrmann", "source": "Audience", "length": 60, "equipment": "Sony ECM-719 > Sony MZ-NH900" },
-        { "date": "2005-09-23", "city": "Austin", "venue": "ACL Music Festival", "source": "Audience", "length": 60, "equipment": "Sony MD RZ-70 > FLAC" },
-        { "date": "2006-05-14", "city": "Dundee", "venue": "Camperdown Park", "source": "FM", "length": 60, "equipment": "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
+    { "date": "2004-02-10", "city": "Northampton", "venue": "Soundhaus", "source": "Soundboard", "length": 50, "equipment": "SBD > CDR > FLAC" },
+    { "date": "2004-02-12", "city": "Sheffield", "venue": "Sheffield University SU", "source": "Audience", "length": 20, "equipment": "AUD > CDR > FLAC" },
+    { "date": "2004-03-03", "city": "Birmingham", "venue": "TC's", "source": "Soundboard", "length": 50, "equipment": "SBD > Logic Pro X > FLAC" },
+            { "date": "2004-03-03", "city": "Birmingham", "venue": "TC's", "source": "Audience", "length": 50, "equipment": "AUD > CDR > FLAC" },
+    { "date": "2004-03-09", "city": "London", "venue": "ULU", "source": "Audience", "length": 50, "equipment": "AUD > CDR > FLAC" },
+    { "date": "2004-03-28", "city": "London", "venue": "Hammersmith Apollo", "source": "Audience", "length": 30, "equipment": "AUD > CDR > FLAC" },
+    { "date": "2004-04-05", "city": "London", "venue": "Maida Vale Studios", "source": "FM", "length": 35, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
+    { "date": "2004-04-23", "city": "Liverpool", "venue": "Academy 4", "source": "Audience", "length": 60, "equipment": "AUD > CDR > FLAC" },
+    { "date": "2004-04-24", "city": "Leeds", "venue": "Metropolitan University", "source": "Audience", "length": 60, "equipment": "Sony ECM-TS125 > Sharp IM-DR420H" },
+    { "date": "2004-04-28", "city": "Newcastle", "venue": "Newcastle University", "source": "Audience", "length": 60, "equipment": "SP-CMC-8 > SP-SPSB-3 > JB3" },
+    { "date": "2004-05-08", "city": "Eastbourne", "venue": "Winter Gardens", "source": "Audience", "length": 60, "equipment": "Sony ECM-TS125 > Sharp IM-DR420H" },
+    { "date": "2004-05-09", "city": "London", "venue": "Virgin Megastore", "source": "Audience", "length": 30, "equipment": "Sony ECM-TS125 > Sharp IM-DR420H" },
+    { "date": "2004-05-10", "city": "London", "venue": "Forum Kentish Town", "source": "Audience", "length": 60, "equipment": "Sony ECM-TS125 > Sharp IM-DR420H" },
+    { "date": "2004-05-19", "city": "Berlin", "venue": "Columbia Fritz", "source": "FM", "length": 60, "equipment": "FM > CDR > FLAC" },
+    { "date": "2004-06-01", "city": "San Francisco", "venue": "Cafe Du Nord", "source": "Audience", "length": 60, "equipment": "Sonic Studio mics > Sony TCD-D100" },
+    { "date": "2004-06-02", "city": "Los Angeles", "venue": "KCRW Studios", "source": "FM", "length": 40, "equipment": "FM > FLAC" },
+    { "date": "2004-06-24", "city": "New York", "venue": "WXRK Studios", "source": "FM", "length": 5, "equipment": "FM > WAV > FLAC" },
+    { "date": "2004-06-26", "city": "Pilton", "venue": "Glastonbury Festival (Other Stage)", "source": "FM", "length": 40, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
+    { "date": "2004-06-26", "city": "Pilton", "venue": "Glastonbury Festival (Backstage Session)", "source": "FM", "length": 10, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
+    { "date": "2004-07-04", "city": "Herzogenrath", "venue": "Eins Live Konigstreffen", "source": "FM", "length": 40, "equipment": "FM > DAT > FLAC" },
+    { "date": "2004-07-11", "city": "Punchestown", "venue": "Oxegen Festival", "source": "Audience", "length": 40, "equipment": "AUD > CDR > FLAC" },
+    { "date": "2004-07-11", "city": "Punchestown", "venue": "Oxegen Festival", "source": "FM", "length": 30, "equipment": "FM > CDR > FLAC" },
+    { "date": "2004-07-16", "city": "Arvika", "venue": "Arvikafestivalen", "source": "FM", "length": 50, "equipment": "Analogue Cable FM > WAV > FLAC" },
+    { "date": "2004-08-07", "city": "Rees-Haldern", "venue": "Haldern Pop-Festival", "source": "Audience", "length": 50, "equipment": "DPA 4060 > MPS6020 > Sony TCD-D100" },
+    { "date": "2004-08-14", "city": "Salzburg", "venue": "Frequency Festival", "source": "FM", "length": 15, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
+    { "date": "2004-08-18", "city": "Battle", "venue": "Battle Memorial Hall", "source": "Audience", "length": 35, "equipment": "Sony ECM-TS125 > Sharp IM-DR420H" },
+    { "date": "2004-08-18", "city": "Battle", "venue": "Battle Memorial Hall", "source": "Soundboard", "length": 35, "equipment": "SBD > CDR > FLAC" },
+    { "date": "2004-08-19", "city": "Hasselt-Kiewit", "venue": "Pukkelpop Festival", "source": "FM", "length": 40, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
+    { "date": "2004-08-20", "city": "Biddinghuizen", "venue": "Lowlands Festival", "source": "Soundboard", "length": 25, "equipment": "SBD > CDR > FLAC" },
+    { "date": "2004-08-21", "city": "Chelmsford", "venue": "V Festival (Backstage Session)", "source": "FM", "length": 10, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
+    { "date": "2004-08-26", "city": "Inverness", "venue": "Up Close Festival", "source": "FM", "length": 45, "equipment": "FM > CDR > FLAC" },
+    { "date": "2004-08-29", "city": "Dublin", "venue": "HMV", "source": "Audience", "length": 30, "equipment": "AT831b > Sony MZ-G75" },
+    { "date": "2004-08-29", "city": "Dublin", "venue": "Olympia Theatre", "source": "Audience", "length": 35, "equipment": "AT831b > Sony MZ-G755" },
+    { "date": "2004-09-08", "city": "Portland", "venue": "Berbati's Pan", "source": "Soundboard", "length": 50, "equipment": "SBD > CDR > FLAC" },
+    { "date": "2004-09-11", "city": "West Hollywood", "venue": "Virgin Megastore", "source": "Audience", "length": 40, "equipment": "Built-in Mics > Sony DCR-TRV22 > Master MiniDV" },
+    { "date": "2004-10-16", "city": "Stuttgart", "venue": "Villa Berg", "source": "FM", "length": 45, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
+    { "date": "2004-10-17", "city": "Cologne", "venue": "Live Music Hall", "source": "Audience", "length": 55, "equipment": "Soundman OKM II Rock > A3 Adapter > Sony MZ-N910" },
+    { "date": "2004-11-08", "city": "Nottingham", "venue": "Rock City", "source": "Audience", "length": 40, "equipment": "AUD > CDR > FLAC" },
+    { "date": "2004-11-16", "city": "London", "venue": "The Hub", "source": "FM", "length": 45, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
+    { "date": "2004-11-17", "city": "London", "venue": "Brixton Academy", "source": "FM", "length": 50, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
+    { "date": "2004-11-19", "city": "Lyon", "venue": "Hall Tony Garnier", "source": "FM", "length": 45, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
+    { "date": "2004-12-11", "city": "Los Angeles", "venue": "Gibson Amphitheater", "source": "Audience", "length": 55, "equipment": "Sonic Studios DSM6s > PA-6LC > Sony D8 DAT" },
+    { "date": "2004-12-11", "city": "Los Angeles", "venue": "Gibson Amphitheater", "source": "FM", "length": 50, "equipment": "FM > FLAC" },
+    { "date": "2005-02-17", "city": "Chicago", "venue": "Riviera Theater", "source": "FM", "length": 60, "equipment": "FM > Onkyo TX8511 > SoundBlaster > FLAC" },
+    { "date": "2005-02-25", "city": "Atlanta", "venue": "99X", "source": "FM", "length": 45, "equipment": "FM > CDR > FLAC" },
+    { "date": "2005-03-19", "city": "Vienna", "venue": "Gasometer", "source": "Audience", "length": 60, "equipment": "AUD > CDR > FLAC" },
+    { "date": "2005-03-22", "city": "Paris", "venue": "L'Olympia", "source": "Audience", "length": 60, "equipment": "AT831b > Sony MZ-G755" },
+    { "date": "2005-03-23", "city": "Amsterdam", "venue": "Heineken Music Hall", "source": "Soundboard", "length": 75, "equipment": "SBD > CDR > FLAC" },
+    { "date": "2005-04-30", "city": "Indio", "venue": "Coachella Festival", "source": "Audience", "length": 60, "equipment": "AT853 > Denecke PS-2 > Nomad JB3" },
+    { "date": "2005-05-09", "city": "Seattle", "venue": "Paramount Theatre", "source": "Audience", "length": 60, "equipment": "AUD > FLAC" },
+    { "date": "2005-06-25", "city": "Pilton", "venue": "Glastonbury Festival", "source": "FM", "length": 25, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
+    { "date": "2005-06-29", "city": "London", "venue": "Wireless Festival", "source": "FM", "length": 60, "equipment": "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
+    { "date": "2005-07-03", "city": "Werchter", "venue": "Werchter Festival", "source": "FM", "length": 60, "equipment": "Denon FM Tuner > FLAC" },
+    { "date": "2005-07-10", "city": "Naas", "venue": "Oxegen Festival", "source": "FM", "length": 60, "equipment": "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
+    { "date": "2005-08-01", "city": "Cornwall", "venue": "Eden Project", "source": "Audience", "length": 60, "equipment": "AUD > CDR > FLAC" },
+    { "date": "2005-08-01", "city": "Cornwall", "venue": "Eden Project", "source": "FM", "length": 60, "equipment": "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
+    { "date": "2005-08-05", "city": "Nice", "venue": "Stade Charles-Ehrmann", "source": "Audience", "length": 60, "equipment": "Sony ECM-719 > Sony MZ-NH900" },
+    { "date": "2005-09-23", "city": "Austin", "venue": "ACL Music Festival", "source": "Audience", "length": 60, "equipment": "Sony MD RZ-70 > FLAC" },
+    { "date": "2006-05-14", "city": "Dundee", "venue": "Camperdown Park", "source": "FM", "length": 60, "equipment": "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
 { "date": "2006-05-16", "city": "Cologne", "venue": "Kulturkirche", "source": "FM", "length": 60, "equipment": "FM > WAV > FLAC" },
 { "date": "2006-05-17", "city": "Berlin", "venue": "Kesselhaus", "source": "FM", "length": 60, "equipment": "FM > Sony DAT DTC-60ES w/ SBM > FLAC" },
 { "date": "2006-05-23", "city": "Paris", "venue": "Le Trabendo", "source": "Audience", "length": 60, "equipment": "Sony ECM-719 > Sony MZ-NH900" },
@@ -141,13 +141,19 @@ const recordings = [
 { "date": "2024-07-20", "city": "Nieuwpoort", "venue": "Beach Festival", "source": "Matrix", "length": 60, "equipment": "AUD 1: AT853 > SP-SPSB-10 > Roland R-05<br>AUD 2: AT831 > Tascam DR-2d" },
 { "date": "2024-08-07", "city": "Bonn", "venue": "Kunst!rasen", "source": "Audience", "length": 60, "equipment": "Church Audio CA-11(c) > Ugly Battery Box > Roland R-05" },
 { "date": "2024-09-26", "city": "Washington", "venue": "The Anthem", "source": "Audience", "length": 60, "equipment": "LG V60 > RecForge II Pro > FLAC" }
-    
+
 ];
 
 // Get DOM elements
 const recordingsGrid = document.getElementById("recordingsGrid");
 const yearFilter = document.getElementById("yearFilter");
 const cityFilter = document.getElementById("cityFilter");
+const filterContainer = document.querySelector(".filter-container");
+
+// Function to toggle filter visibility (for mobile view)
+function toggleFilters() {
+    filterContainer.classList.toggle("collapsed");
+}
 
 // Populate year and city filters dynamically
 function populateFilters() {
@@ -221,7 +227,6 @@ document.getElementById("sourceFilter").addEventListener("change", filterRecordi
 cityFilter.addEventListener("change", filterRecordings);
 document.getElementById("searchInput").addEventListener("input", filterRecordings);
 
-
 // Initialize the page
 window.onload = () => {
     populateFilters();
@@ -229,5 +234,15 @@ window.onload = () => {
     checkScreenSize(); // Check screen size on page load
 };
 
-// Check on resize
+// Check on resize to toggle filter visibility based on screen size
 window.addEventListener('resize', checkScreenSize);
+
+// Function to check screen size and automatically adjust filter visibility
+function checkScreenSize() {
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+        filterContainer.classList.add("collapsed");
+    } else {
+        filterContainer.classList.remove("collapsed");
+    }
+}
