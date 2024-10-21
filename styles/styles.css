@@ -1,75 +1,96 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Font Faces */
+@font-face {
+    font-family: 'ITC Machine Bold';
+    src: url('/fonts/ITC Machine Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OLRoundGothic Regular';
+    src: url('/fonts/OLRoundGothic Regular.ttf') format('truetype');
 }
 
 /* Global Styles */
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #000; /* Deep black background */
-    color: #fff; /* White text for clarity */
-    line-height: 1.5; /* Slightly tighter line-height for readability */
-    font-size: 16px; /* Adjusted font size for balance */
-    text-transform: none; /* Regular casing for a more casual feel */
-    letter-spacing: 0.05em; /* Subtle spacing */
+    margin: 0;
+    padding: 0;
+    font-family: 'OLRoundGothic Regular', sans-serif;
+    background: url('/Keane-BG.JPG.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #010101; /* Dark background for fallback */
+    color: #f0f0f0; /* Light text for readability */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Link Styles */
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit surrounding text color */
 }
 
 /* Header Styles */
 header {
-    background: url('/Keane-BG.JPG') no-repeat center center; /* Background image */
-    background-size: cover; /* Cover the entire header */
-    padding: 80px 0; /* Increased padding for a grand look */
+    font-family: 'ITC Machine Bold', sans-serif;
     text-align: center;
-    border-bottom: 5px solid #444; /* Dark border */
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent */
+    border-bottom: 2px solid #ebe019; /* Yellow border */
 }
 
 header h1 {
-    font-size: 4rem; /* Large, bold text */
-    font-weight: 700; /* Bold but not too overwhelming */
-    color: #fff; /* White text */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Soft shadow for readability */
+    font-size: 4rem; /* Large font for desktop */
+    margin: 0;
+    text-transform: uppercase;
+    color: #ebe019; /* Yellow for header text */
 }
 
 .tagline {
-    font-size: 1.2rem; /* Smaller than the header */
-    color: #ccc; /* Lighter gray for tagline */
-    margin-top: 10px;
+    font-size: 1.2rem; /* Tagline font size */
+    color: #f0f0f0; /* Light text for tagline */
 }
 
 /* Filter Container */
 .filter-container {
-    margin: 40px 0;
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin: 20px 0;
+}
+
+.filter-dropdown,
+#searchInput {
+    padding: 10px 15px;
+    background: #010101; /* Dark background */
+    border: 1px solid #ebe019; /* Yellow border */
+    color: #f0f0f0; /* Light text */
+    font-family: 'OLRoundGothic Regular', sans-serif;
+    font-size: 1rem; /* Default font size */
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-dropdown:hover,
+#searchInput:hover {
+    background: #ebe019; /* Yellow on hover */
+    color: #010101; /* Dark text on yellow background */
 }
 
 .filter-dropdown {
-    padding: 10px 15px;
-    background: #222; /* Darker background for dropdown */
-    border: 1px solid #444; /* Dark gray border */
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s;
-}
-
-.filter-dropdown:hover {
-    background: #fff; /* White background on hover */
-    color: #000; /* Black text */
+    font-family: 'ITC Machine Bold', sans-serif; /* Bold font for dropdown */
 }
 
 /* Counter Section */
 .counter-section {
-    background-color: #333; /* Dark gray background */
-    color: #fff; /* White text */
+    background-color: #010101; /* Dark background */
+    color: #ebe019; /* Yellow text */
     padding: 20px;
-    font-size: 1.5rem;
-    font-weight: bold;
     text-align: center;
-    border-radius: 5px; /* Slightly rounded corners */
+}
+
+.counter-container {
+    font-size: 1.5rem; /* Larger font for counter */
+    font-weight: bold;
 }
 
 /* Recordings Grid */
@@ -77,78 +98,121 @@ header h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px; /* Adequate spacing */
-    padding: 40px;
+    gap: 20px; /* Spacing between cards */
+    padding: 20px;
 }
 
 .recording-card {
-    background-color: #222; /* Darker card background */
-    border: 1px solid #444; /* Dark gray border */
-    color: #fff;
-    width: 300px; /* Fixed width for cards */
+    background-color: #010101; /* Dark background */
+    border: 1px solid #ebe019; /* Yellow border */
+    color: #f0f0f0; /* Light text */
+    width: 300px; /* Fixed width for desktop */
     padding: 20px;
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
 }
 
 .recording-card:hover {
-    transform: translateY(-3px); /* Subtle lift */
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); /* Light shadow */
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
 }
 
 .recording-card h3 {
-    font-size: 1.6rem; /* Adjusted heading size */
-    color: #fff;
+    font-family: 'ITC Machine Bold', sans-serif;
+    font-size: 1.5rem; /* Font size for card header */
     margin-bottom: 10px;
+    color: #ebe019; /* Yellow for headers */
 }
 
 .recording-card p {
-    color: #aaa; /* Softer text */
-    font-size: 1rem; /* Balanced size */
-    line-height: 1.4; /* More compact line height */
+    font-family: 'OLRoundGothic Regular', sans-serif;
+    color: #f0f0f0; /* Light text for descriptions */
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
     padding: 20px;
-    background-color: #111; /* Dark background for footer */
-    color: #888; /* Medium gray text */
-    font-size: 1rem; /* Adjusted font size */
+    background-color: #010101; /* Dark background */
     text-align: center;
-    border-top: 2px solid #444; /* Dark border */
+    color: #f0f0f0; /* Light text for footer */
+    margin-top: auto; /* Push footer to the bottom */
 }
 
-/* Links */
-a {
-    color: #fff; /* White links */
-    text-decoration: none;
-    transition: color 0.3s ease;
+/* Full-Screen Warning for Mobile */
+/* Full-Screen Warning for Mobile */
+.mobile-warning {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position to cover entire screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Keane-BG.JPG.jpg'); /* Background image */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the background image */
+    color: #fff; /* White text for visibility */
+    font-family: 'OLRoundGothic Regular', sans-serif; /* Use regular font */
+    text-align: center; /* Center text */
+    z-index: 1000; /* Ensure it appears above all other elements */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px; /* Padding for inner text */
+    backdrop-filter: blur(5px); /* Optional: add a blur effect to the background */
 }
 
-a:hover {
-    color: #ccc; /* Light gray on hover */
+/* Style for the warning text */
+.mobile-warning h1 {
+    font-size: 3rem; /* Large font size for header */
+    margin: 0; /* No margin */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better contrast */
 }
 
-/* Media Queries */
+.mobile-warning p {
+    font-size: 1.5rem; /* Readable size for the message */
+    margin-top: 20px; /* Space above paragraph */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better contrast */
+}
+
+
+
+/* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 3rem; /* Adjust for smaller screens */
+        font-size: 3rem; /* Adjust header size for tablets */
     }
 
-    .recording-card {
-        width: 90%; /* Responsive card width */
-        margin: 0 auto;
+    .filter-container {
+        display: none; /* Hide filters on mobile */
+    }
+
+    .recordings-grid {
+        display: none; /* Hide recordings grid on mobile */
+    }
+
+    .mobile-warning {
+        display: flex; /* Show warning on mobile */
     }
 }
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 2.5rem; /* Smaller for mobile */
+        font-size: 2.5rem; /* Smaller header size for mobile */
+    }
+
+    .tagline {
+        font-size: 1rem; /* Smaller tagline for mobile */
     }
 
     .recording-card h3 {
-        font-size: 1.3rem; /* Smaller titles */
+        font-size: 1.3rem; /* Adjusted font size for card headers */
+    }
+
+    .filter-dropdown,
+    #searchInput {
+        width: 100%; /* Full width for inputs on mobile */
+        font-size: 0.9rem; /* Slightly smaller font size for inputs */
     }
 }
-
