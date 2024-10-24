@@ -16,22 +16,26 @@ body {
     font-family: 'OLRoundGothic Regular', Arial, sans-serif;
     background: url('/Keane-BG.JPG.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-color: #010101; /* Fallback dark background */
-    color: #f0f0f0; /* Light text for readability */
+    background-color: #010101;
+    color: #f0f0f0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    transition: background 0.5s ease;
 }
 
 /* Link Styles */
 a {
     text-decoration: none;
-    color: inherit; /* Inherit surrounding text color */
-    transition: color 0.3s ease;
+    color: inherit;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 a:hover {
-    color: #ebe019; /* Yellow on hover */
+    color: #ebe019;
+    transform: scale(1.1);
 }
 
 /* Header Styles */
@@ -39,8 +43,9 @@ header {
     font-family: 'ITC Machine Bold', sans-serif;
     text-align: center;
     padding: 20px 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.85); /* Slightly more transparency */
     border-bottom: 2px solid #ebe019;
+    transition: background 0.3s ease;
 }
 
 header h1 {
@@ -48,40 +53,48 @@ header h1 {
     margin: 0;
     text-transform: uppercase;
     color: #ebe019;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.9); /* Deeper shadow */
+    transition: transform 0.3s ease;
+}
+
+header h1:hover {
+    transform: translateY(-3px);
 }
 
 .tagline {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #f0f0f0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    margin-top: 10px;
 }
 
 /* Filter Container */
 .filter-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
+    gap: 25px;
+    margin: 30px 0;
+    padding: 0 20px;
     transition: all 0.3s ease;
 }
 
 .filter-dropdown,
 #searchInput {
-    padding: 10px 15px;
+    padding: 12px 18px;
     background: #010101;
     border: 1px solid #ebe019;
     color: #f0f0f0;
     font-family: 'OLRoundGothic Regular', sans-serif;
     font-size: 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s ease;
 }
 
 .filter-dropdown:hover,
 #searchInput:hover {
     background: #ebe019;
     color: #010101;
+    transform: scale(1.1); /* More noticeable hover effect */
 }
 
 .filter-dropdown {
@@ -111,12 +124,12 @@ header h1 {
 .counter-section {
     background-color: #010101;
     color: #ebe019;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
 }
 
 .counter-container {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     transition: all 0.5s ease-in-out;
 }
@@ -126,87 +139,63 @@ header h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 30px;
+    padding: 40px;
 }
 
 .recording-card {
-    background-color: #010101;
+    background: linear-gradient(135deg, #010101 50%, #181818);
     border: 1px solid #ebe019;
     color: #f0f0f0;
-    width: 300px;
-    padding: 20px;
-    border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    width: 320px;
+    padding: 30px;
+    border-radius: 12px;
+    transition: transform 0.4s, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
 .recording-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
 }
 
 .recording-card h3 {
     font-family: 'ITC Machine Bold', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.7rem;
+    margin-bottom: 18px;
     color: #ebe019;
 }
 
 .recording-card p {
     font-family: 'OLRoundGothic Regular', sans-serif;
     color: #f0f0f0;
+    font-size: 1rem;
 }
 
 /* Footer Styles */
 footer {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+    padding: 45px 20px;
+    background-color: rgba(0, 0, 0, 0.9);
     text-align: center;
     color: #f0f0f0;
     margin-top: auto;
     border-top: 2px solid #ebe019;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 footer p {
-    margin: 5px 0;
-    font-size: 1rem;
-}
-
-footer .disclaimer {
-    font-size: 0.85rem;
-    color: #d0d0d0;
-    margin-top: 10px;
-}
-
-footer .contact {
-    font-size: 1rem;
-}
-
-footer a {
-    color: #ebe019;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-footer a:hover {
-    color: #f0f0f0;
-    text-decoration: underline;
-}
-
-.social-links a {
-    color: #f0f0f0;
-    margin: 0 10px;
-}
-
-.social-links a:hover {
-    color: #ebe019;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 3rem;
+        font-size: 3.4rem;
     }
 
     .filter-toggle {
@@ -227,14 +216,14 @@ footer a:hover {
     }
 
     .recording-card {
-        width: 100%; /* Full width for cards on smaller screens */
+        width: 100%;
         max-width: 350px;
     }
 }
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 2.5rem;
+        font-size: 2.7rem;
     }
 
     .tagline {
@@ -242,12 +231,14 @@ footer a:hover {
     }
 
     .recording-card h3 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
     .filter-dropdown,
     #searchInput {
-        width: 100%; /* Full width for inputs on mobile */
+        width: 100%;
         font-size: 0.9rem;
     }
+
+
 }
