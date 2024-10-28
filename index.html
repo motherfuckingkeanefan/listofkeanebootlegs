@@ -3,71 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore an extensive archive of Keane bootlegs and live recordings. Find rare performances and concert audios.">
-    <meta name="keywords" content="Keane, bootlegs, live recordings, music, concerts, fan site">
-    <meta name="author" content="Pieteker">
-    <title>Keane Live: Live Recordings Archive</title>
-    <link rel="preload" href="/fonts/ITC Machine Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/OLRoundGothic Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <title>Keane Live Archive</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
-<header>
-    <a href="/" class="logo">
-        <h1>Keane Live</h1>
-    </a>
-    <p class="tagline">Your go-to source for Keane live recordings</p>
+    <header>
+        <!-- Logo and Title -->
+        <a href="/" class="logo">
+            <h1>Keane Live</h1>
+        </a>
+        <p class="tagline">Your go-to source for Keane live recordings</p>
+    
+        <!-- Mobile Filter Toggle Button for Responsive Filter Visibility -->
+        <div class="filter-controls">
+            <button class="filter-toggle" onclick="toggleFilters()">Show Filters</button>
+        </div>
+    </header>
+    
 
-    <!-- Mobile Filter Toggle -->
-    <div class="filter-toggle" onclick="toggleFilters()">Show Filters</div>
+<div class="filter-container collapsed">
+    <label for="yearFilter">Year:</label>
+    <select id="yearFilter">
+        <option value="all">All Years</option>
+    </select>
 
-    <!-- Filter Container -->
-    <div class="filter-container collapsed">
-        <label for="yearFilter">Year:</label>
-        <select id="yearFilter" class="filter-dropdown">
-            <option value="all">All Years</option>
-        </select>
+    <label for="sourceFilter">Source:</label>
+    <select id="sourceFilter">
+        <option value="all">All Sources</option>
+        <option value="Audience">Audience</option>
+        <option value="FM">FM</option>
+        <option value="Soundboard">Soundboard</option>
+        <option value="Matrix">Matrix</option>
+        <option value="IEM">IEM</option>
+    </select>
 
-        <label for="sourceFilter">Source:</label>
-        <select id="sourceFilter" class="filter-dropdown">
-            <option value="all">All Sources</option>
-            <option value="Audience">AUD</option>
-            <option value="FM">FM</option>
-            <option value="Soundboard">SBD</option>
-            <option value="Matrix">MTX</option>
-            <option value="IEM">IEM</option>
-        </select>
+    <label for="cityFilter">City:</label>
+    <select id="cityFilter">
+        <option value="all">All Cities</option>
+    </select>
 
-        <label for="cityFilter">City:</label>
-        <select id="cityFilter" class="filter-dropdown">
-            <option value="all">All Cities</option>
-        </select>
+    <input type="text" id="searchInput" placeholder="Search by city or venue" />
 
-        <label for="searchInput">Search:</label>
-        <input type="text" id="searchInput" placeholder="Search for a city or venue" />
-    </div>
-</header>
+    <button id="resetFilters">Reset Filters</button>
+</div>
 
-<section class="counter-section">
-    <div class="counter-container">
-        <span id="recording-count">Total Recordings: 0</span>
-    </div>
-</section>
+<section id="recording-count">Total Recordings: 0</section>
 
 <main>
-    <div id="recordingsGrid" class="recordings-grid">
-        <!-- Recording cards will be populated dynamically -->
-    </div>
+    <div id="recordingsGrid" class="recordings-grid"></div>
 </main>
 
-<footer>
-    <p>&copy; 2024 Keane Live</p>
-</footer>
-
-
-
 <script src="scripts/scripts.js"></script>
-
 </body>
 </html>
