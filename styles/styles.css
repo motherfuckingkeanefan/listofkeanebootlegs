@@ -1,19 +1,11 @@
-/* Font Faces */
-@font-face {
-    font-family: 'ITC Machine Bold';
-    src: url('/fonts/ITC Machine Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'OLRoundGothic Regular';
-    src: url('/fonts/OLRoundGothic Regular.ttf') format('truetype');
-}
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Montserrat:wght@400;500&display=swap');
 
 /* Global Styles */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'OLRoundGothic Regular', Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     background: url('/Keane-BG.JPG.jpg') no-repeat center center fixed;
     background-size: cover;
     background-color: #010101;
@@ -23,7 +15,6 @@ body {
     min-height: 100vh;
     line-height: 1.6;
     letter-spacing: 0.5px;
-    transition: background 0.5s ease;
 }
 
 /* Link Styles */
@@ -35,37 +26,50 @@ a {
 
 a:hover {
     color: #ebe019;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Header Styles */
 header {
-    font-family: 'ITC Machine Bold', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-align: center;
     padding: 20px 0;
-    background-color: rgba(0, 0, 0, 0.85); /* Slightly more transparency */
+    background-color: rgba(0, 0, 0, 0.85);
     border-bottom: 2px solid #ebe019;
-    transition: background 0.3s ease;
 }
 
-header h1 {
+header .logo h1 {
     font-size: 4rem;
     margin: 0;
-    text-transform: uppercase;
     color: #ebe019;
-    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.9); /* Deeper shadow */
+    text-transform: uppercase;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.9);
     transition: transform 0.3s ease;
-}
-
-header h1:hover {
-    transform: translateY(-3px);
 }
 
 .tagline {
     font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
     color: #f0f0f0;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
     margin-top: 10px;
+}
+
+/* Filter Toggle for Mobile */
+.filter-toggle {
+    display: none;
+    background-color: #ebe019;
+    color: #010101;
+    border: none;
+    padding: 8px 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.filter-toggle:hover {
+    background-color: #d4c010;
 }
 
 /* Filter Container */
@@ -73,9 +77,10 @@ header h1:hover {
     display: flex;
     justify-content: center;
     gap: 25px;
-    margin: 30px 0;
-    padding: 0 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
     transition: all 0.3s ease;
+    border-radius: 5px;
 }
 
 .filter-dropdown,
@@ -84,7 +89,7 @@ header h1:hover {
     background: #010101;
     border: 1px solid #ebe019;
     color: #f0f0f0;
-    font-family: 'OLRoundGothic Regular', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     border-radius: 6px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s ease;
@@ -94,30 +99,7 @@ header h1:hover {
 #searchInput:hover {
     background: #ebe019;
     color: #010101;
-    transform: scale(1.1); /* More noticeable hover effect */
-}
-
-.filter-dropdown {
-    font-family: 'ITC Machine Bold', sans-serif;
-}
-
-/* Filter Toggle (for Mobile) */
-.filter-toggle {
-    display: none;
-    justify-content: center;
-    color: #ebe019;
-    font-size: 1.2rem;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-
-.collapsed {
-    display: none;
-}
-
-.show-filters {
-    display: flex;
-    flex-direction: column;
+    transform: scale(1.05);
 }
 
 /* Counter Section */
@@ -138,38 +120,50 @@ header h1:hover {
 .recordings-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 40px;
+    justify-content: space-evenly; /* Evenly spread cards horizontally */
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px; /* Optional: limits the grid width on larger screens */
+    margin: 0 auto; /* Centers the grid */
 }
 
+/* Recording Card */
 .recording-card {
     background: linear-gradient(135deg, #010101 50%, #181818);
     border: 1px solid #ebe019;
     color: #f0f0f0;
-    width: 320px;
-    padding: 30px;
-    border-radius: 12px;
-    transition: transform 0.4s, box-shadow 0.3s ease;
+    width: 280px; /* Card width */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
 .recording-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
 }
 
 .recording-card h3 {
-    font-family: 'ITC Machine Bold', sans-serif;
-    font-size: 1.7rem;
-    margin-bottom: 18px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
     color: #ebe019;
 }
 
 .recording-card p {
-    font-family: 'OLRoundGothic Regular', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #f0f0f0;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .recordings-grid {
+        justify-content: center; /* Center cards on smaller screens */
+    }
 }
 
 /* Footer Styles */
@@ -192,14 +186,14 @@ footer p {
     line-height: 1.6;
 }
 
-/* Media Queries for Mobile Responsiveness */
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
-    header h1 {
+    header .logo h1 {
         font-size: 3.4rem;
     }
 
     .filter-toggle {
-        display: flex;
+        display: inline-block;
     }
 
     .filter-container {
@@ -222,7 +216,7 @@ footer p {
 }
 
 @media (max-width: 480px) {
-    header h1 {
+    header .logo h1 {
         font-size: 2.7rem;
     }
 
@@ -239,6 +233,4 @@ footer p {
         width: 100%;
         font-size: 0.9rem;
     }
-
-
 }
