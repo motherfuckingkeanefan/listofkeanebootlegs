@@ -147,34 +147,34 @@ const recordings = [
 // Get DOM elements
 const recordingsGrid = document.getElementById("recordingsGrid");
 const yearFilter = document.getElementById("yearFilter");
+const sourceFilter = document.getElementById("sourceFilter");
 const cityFilter = document.getElementById("cityFilter");
+const searchInput = document.getElementById("searchInput");
 const filterContainer = document.querySelector(".filter-container");
 
-// Function to toggle filter visibility (for mobile view)
+// Toggle filter visibility for mobile view
 function toggleFilters() {
     filterContainer.classList.toggle("collapsed");
 }
 
-// Populate year and city filters dynamically
+// Populate filters dynamically from recordings data
 function populateFilters() {
     const years = new Set();
-    const citiesSet = new Set();
+    const cities = new Set();
 
     recordings.forEach(recording => {
         years.add(recording.date.split("-")[0]);
-        citiesSet.add(recording.city);
+        cities.add(recording.city);
     });
 
-    const cities = Array.from(citiesSet).sort();
-
-    years.forEach(year => {
+    Array.from(years).sort().forEach(year => {
         const option = document.createElement("option");
         option.value = year;
         option.textContent = year;
         yearFilter.appendChild(option);
     });
 
-    cities.forEach(city => {
+    Array.from(cities).sort().forEach(city => {
         const option = document.createElement("option");
         option.value = city;
         option.textContent = city;
@@ -182,62 +182,66 @@ function populateFilters() {
     });
 }
 
-// Load recordings into the grid
-function loadRecordings(recordingsToLoad = recordings) {
-    recordingsGrid.innerHTML = "";
+// Display recordings as cards in the grid
+function loadRecordings(records = recordings) {
+    recordingsGrid.innerHTML = records.length
+        ? records.map(rec => `
+            <div class="recording-card">
+                <h3>${rec.city}, ${rec.date}</h3>
+                <p><strong>Venue:</strong> ${rec.venue}</p>
+                <p><strong>Source:</strong> ${rec.source}</p>
+                <p><strong>Length:</strong> ${rec.length} mins</p>
+                <p><strong>Equipment:</strong> ${rec.equipment}</p>
+            </div>
+        `).join("")
+        : `<p>No recordings match the selected filters.</p>`;
 
-    recordingsToLoad.forEach(recording => {
-        const card = document.createElement("div");
-        card.className = "recording-card";
-        card.innerHTML = `
-            <h3>${recording.city}, ${recording.date}</h3>
-            <p><strong>Venue:</strong> ${recording.venue}</p>
-            <p><strong>Source:</strong> ${recording.source}</p>
-            <p><strong>Length:</strong> ${recording.length} minutes</p>
-            <p><strong>Equipment:</strong> ${recording.equipment}</p>
-        `;
-        recordingsGrid.appendChild(card);
-    });
-
-    document.getElementById("recording-count").innerText = `Total Recordings: ${recordingsToLoad.length}`;
+    document.getElementById("recording-count").innerText = `Total Recordings: ${records.length}`;
 }
 
-// Filter recordings
+// Apply filters to recordings
 function filterRecordings() {
-    const yearFilterValue = yearFilter.value;
-    const sourceFilterValue = document.getElementById("sourceFilter").value;
-    const cityFilterValue = cityFilter.value;
-    const searchInputValue = document.getElementById("searchInput").value.toLowerCase();
+    const yearValue = yearFilter.value;
+    const sourceValue = sourceFilter.value;
+    const cityValue = cityFilter.value;
+    const searchValue = searchInput.value.toLowerCase();
 
-    const filteredRecordings = recordings.filter(recording => {
-        const matchesYear = yearFilterValue === "all" || recording.date.includes(yearFilterValue);
-        const matchesSource = sourceFilterValue === "all" || recording.source.includes(sourceFilterValue);
-        const matchesCity = cityFilterValue === "all" || recording.city.includes(cityFilterValue);
-        const matchesSearch = searchInputValue === "" || recording.city.toLowerCase().includes(searchInputValue) || recording.venue.toLowerCase().includes(searchInputValue);
-
-        return matchesYear && matchesSource && matchesCity && matchesSearch;
+    const filtered = recordings.filter(recording => {
+        const matchYear = yearValue === "all" || recording.date.includes(yearValue);
+        const matchSource = sourceValue === "all" || recording.source.includes(sourceValue);
+        const matchCity = cityValue === "all" || recording.city.includes(cityValue);
+        const matchSearch = !searchValue || recording.city.toLowerCase().includes(searchValue) || recording.venue.toLowerCase().includes(searchValue);
+        return matchYear && matchSource && matchCity && matchSearch;
     });
 
-    loadRecordings(filteredRecordings);
+    loadRecordings(filtered);
 }
 
-// Event listeners for filtering
-yearFilter.addEventListener("change", filterRecordings);
-document.getElementById("sourceFilter").addEventListener("change", filterRecordings);
-cityFilter.addEventListener("change", filterRecordings);
-document.getElementById("searchInput").addEventListener("input", filterRecordings);
+// Reset filters to default
+function resetFilters() {
+    yearFilter.value = "all";
+    sourceFilter.value = "all";
+    cityFilter.value = "all";
+    searchInput.value = "";
+    loadRecordings();
+}
 
-// Initialize the page
+// Event Listeners
+yearFilter.addEventListener("change", filterRecordings);
+sourceFilter.addEventListener("change", filterRecordings);
+cityFilter.addEventListener("change", filterRecordings);
+searchInput.addEventListener("input", filterRecordings);
+document.getElementById("resetFilters").addEventListener("click", resetFilters);
+
 window.onload = () => {
     populateFilters();
     loadRecordings();
-    checkScreenSize(); // Check screen size on page load
+    checkScreenSize();
 };
 
-// Check on resize to toggle filter visibility based on screen size
+// Automatically adjust filter visibility based on screen size
 window.addEventListener('resize', checkScreenSize);
 
-// Function to check screen size and automatically adjust filter visibility
 function checkScreenSize() {
     const isMobile = window.innerWidth <= 768;
     if (isMobile) {
