@@ -1,4 +1,3 @@
-// Sample recordings data
 const recordings = [
 
     { "date": "2004-02-10", "city": "Northampton", "venue": "Soundhaus", "source": "Soundboard", "length": 50, "equipment": "SBD > CDR > FLAC" },
@@ -144,20 +143,14 @@ const recordings = [
 
 ];
 
-// Get DOM elements
-const recordingsGrid = document.getElementById("recordingsGrid");
+const tableBody = document.getElementById("tableBody");
 const yearFilter = document.getElementById("yearFilter");
 const sourceFilter = document.getElementById("sourceFilter");
 const cityFilter = document.getElementById("cityFilter");
 const searchInput = document.getElementById("searchInput");
-const filterContainer = document.querySelector(".filter-container");
+let currentSort = { key: 'date', ascending: true };
 
-// Toggle filter visibility for mobile view
-function toggleFilters() {
-    filterContainer.classList.toggle("collapsed");
-}
-
-// Populate filters dynamically from recordings data
+// Helper function to populate filters
 function populateFilters() {
     const years = new Set();
     const cities = new Set();
@@ -182,71 +175,70 @@ function populateFilters() {
     });
 }
 
-// Display recordings as cards in the grid
-function loadRecordings(records = recordings) {
-    recordingsGrid.innerHTML = records.length
+// Function to load and display recordings in the table
+function loadTable(records = recordings) {
+    tableBody.innerHTML = records.length
         ? records.map(rec => `
-            <div class="recording-card">
-                <h3>${rec.city}, ${rec.date}</h3>
-                <p><strong>Venue:</strong> ${rec.venue}</p>
-                <p><strong>Source:</strong> ${rec.source}</p>
-                <p><strong>Length:</strong> ${rec.length} mins</p>
-                <p><strong>Equipment:</strong> ${rec.equipment}</p>
-            </div>
+            <tr>
+                <td>${rec.date}</td>
+                <td>${rec.city}</td>
+                <td>${rec.venue}</td>
+                <td>${rec.source}</td>
+                <td>${rec.length}</td>
+                <td>${rec.equipment}</td>
+            </tr>
         `).join("")
-        : `<p>No recordings match the selected filters.</p>`;
-
-    document.getElementById("recording-count").innerText = `Total Recordings: ${records.length}`;
+        : `<tr><td colspan="6">No recordings match the selected filters.</td></tr>`;
 }
 
-// Apply filters to recordings
-function filterRecordings() {
-    const yearValue = yearFilter.value;
-    const sourceValue = sourceFilter.value;
-    const cityValue = cityFilter.value;
-    const searchValue = searchInput.value.toLowerCase();
+// Function to sort the table
+function sortTable(key) {
+    currentSort.ascending = currentSort.key === key ? !currentSort.ascending : true;
+    currentSort.key = key;
+
+    const sorted = [...recordings].sort((a, b) => {
+        if (a[key] > b[key]) return currentSort.ascending ? 1 : -1;
+        if (a[key] < b[key]) return currentSort.ascending ? -1 : 1;
+        return 0;
+    });
+
+    loadTable(sorted);
+}
+
+// Filter function
+function filterTable() {
+    const year = yearFilter.value;
+    const source = sourceFilter.value;
+    const city = cityFilter.value;
+    const search = searchInput.value.toLowerCase();
 
     const filtered = recordings.filter(recording => {
-        const matchYear = yearValue === "all" || recording.date.includes(yearValue);
-        const matchSource = sourceValue === "all" || recording.source.includes(sourceValue);
-        const matchCity = cityValue === "all" || recording.city.includes(cityValue);
-        const matchSearch = !searchValue || recording.city.toLowerCase().includes(searchValue) || recording.venue.toLowerCase().includes(searchValue);
+        const matchYear = year === "all" || recording.date.startsWith(year);
+        const matchSource = source === "all" || recording.source === source;
+        const matchCity = city === "all" || recording.city === city;
+        const matchSearch = !search || recording.city.toLowerCase().includes(search) || recording.venue.toLowerCase().includes(search);
         return matchYear && matchSource && matchCity && matchSearch;
     });
 
-    loadRecordings(filtered);
+    loadTable(filtered);
 }
 
-// Reset filters to default
+// Reset all filters
 function resetFilters() {
     yearFilter.value = "all";
     sourceFilter.value = "all";
     cityFilter.value = "all";
     searchInput.value = "";
-    loadRecordings();
+    filterTable();
 }
 
-// Event Listeners
-yearFilter.addEventListener("change", filterRecordings);
-sourceFilter.addEventListener("change", filterRecordings);
-cityFilter.addEventListener("change", filterRecordings);
-searchInput.addEventListener("input", filterRecordings);
+// Event listeners for filters
+yearFilter.addEventListener("change", filterTable);
+sourceFilter.addEventListener("change", filterTable);
+cityFilter.addEventListener("change", filterTable);
+searchInput.addEventListener("input", filterTable);
 document.getElementById("resetFilters").addEventListener("click", resetFilters);
 
-window.onload = () => {
-    populateFilters();
-    loadRecordings();
-    checkScreenSize();
-};
-
-// Automatically adjust filter visibility based on screen size
-window.addEventListener('resize', checkScreenSize);
-
-function checkScreenSize() {
-    const isMobile = window.innerWidth <= 768;
-    if (isMobile) {
-        filterContainer.classList.add("collapsed");
-    } else {
-        filterContainer.classList.remove("collapsed");
-    }
-}
+// Initialize table and filters on load
+populateFilters();
+loadTable();
