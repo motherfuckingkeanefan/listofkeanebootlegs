@@ -17,18 +17,6 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Link Styles */
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-a:hover {
-    color: #ebe019;
-    transform: scale(1.05);
-}
-
 /* Header Styles */
 header {
     font-family: 'Oswald', sans-serif;
@@ -55,23 +43,6 @@ header .logo h1 {
     margin-top: 10px;
 }
 
-/* Filter Toggle for Mobile */
-.filter-toggle {
-    display: none;
-    background-color: #ebe019;
-    color: #010101;
-    border: none;
-    padding: 8px 15px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    border-radius: 5px;
-}
-
-.filter-toggle:hover {
-    background-color: #d4c010;
-}
-
 /* Filter Container */
 .filter-container {
     display: flex;
@@ -79,12 +50,11 @@ header .logo h1 {
     gap: 25px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.75);
-    transition: all 0.3s ease;
     border-radius: 5px;
+    margin-top: 15px;
 }
 
-.filter-dropdown,
-#searchInput {
+.filter-dropdown, #searchInput, button {
     padding: 12px 18px;
     background: #010101;
     border: 1px solid #ebe019;
@@ -95,123 +65,65 @@ header .logo h1 {
     transition: background-color 0.3s, color 0.3s, transform 0.3s ease;
 }
 
-.filter-dropdown:hover,
-#searchInput:hover {
+.filter-dropdown:hover, #searchInput:hover, button:hover {
     background: #ebe019;
     color: #010101;
     transform: scale(1.05);
 }
 
-/* Counter Section */
-.counter-section {
-    background-color: #010101;
-    color: #ebe019;
-    padding: 25px;
-    text-align: center;
-}
-
-.counter-container {
-    font-size: 1.8rem;
-    font-weight: bold;
-    transition: all 0.5s ease-in-out;
-}
-
-/* Recordings Grid */
-.recordings-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; /* Evenly spread cards horizontally */
-    gap: 20px;
-    padding: 30px;
-    max-width: 1200px; /* Optional: limits the grid width on larger screens */
-    margin: 0 auto; /* Centers the grid */
-}
-
-/* Recording Card */
-.recording-card {
-    background: linear-gradient(135deg, #010101 50%, #181818);
+/* Table Styling */
+.recordings-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f0f0f0;
     border: 1px solid #ebe019;
-    color: #f0f0f0;
-    width: 280px; /* Card width */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: 'Montserrat', Arial, sans-serif;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Table Header */
+.recordings-table th {
+    background-color: #ebe019; /* Gold header background */
+    color: #010101; /* Black text */
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.recording-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+.recordings-table th:hover {
+    background-color: #d4c010; /* Slightly darker gold on hover */
 }
 
-.recording-card h3 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 12px;
-    color: #ebe019;
+/* Table Body */
+.recordings-table td {
+    padding: 12px;
+    border-bottom: 1px solid #333;
+    text-align: left;
 }
 
-.recording-card p {
-    font-family: 'Montserrat', sans-serif;
-    color: #f0f0f0;
-    font-size: 0.9rem;
-    line-height: 1.4;
+.recordings-table tr:hover {
+    background-color: rgba(235, 224, 25, 0.1); /* Subtle gold highlight on hover */
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
-    .recordings-grid {
-        justify-content: center; /* Center cards on smaller screens */
-    }
-}
-
-/* Footer Styles */
-footer {
-    padding: 45px 20px;
-    background-color: rgba(0, 0, 0, 0.9);
-    text-align: center;
-    color: #f0f0f0;
-    margin-top: auto;
-    border-top: 2px solid #ebe019;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-footer p {
-    margin: 10px 0;
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-/* Responsive Design for Mobile */
 @media (max-width: 768px) {
     header .logo h1 {
         font-size: 3.4rem;
     }
 
-    .filter-toggle {
-        display: inline-block;
-    }
-
     .filter-container {
-        display: none;
-    }
-
-    .filter-container.show-filters {
-        display: flex;
-    }
-
-    .recordings-grid {
         flex-direction: column;
-        align-items: center;
+        gap: 15px;
     }
 
-    .recording-card {
+    .recordings-table {
         width: 100%;
-        max-width: 350px;
     }
 }
 
@@ -224,13 +136,27 @@ footer p {
         font-size: 1rem;
     }
 
-    .recording-card h3 {
-        font-size: 1.4rem;
-    }
-
-    .filter-dropdown,
-    #searchInput {
+    .filter-dropdown, #searchInput, button {
         width: 100%;
         font-size: 0.9rem;
     }
 }
+
+/* Link Styles */
+a {
+    text-decoration: none; /* Removes underline */
+    color: #ebe019; /* Gold color for links */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #d4c010; /* Slightly darker gold on hover */
+    transform: scale(1.05); /* Subtle scale effect on hover */
+}
+
+/* Remove purple underline on visited links */
+a:visited {
+    color: #ebe019; /* Keep the same gold color for visited links */
+    text-decoration: none;
+}
+
