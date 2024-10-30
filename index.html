@@ -8,21 +8,14 @@
 </head>
 <body>
 
-    <header>
-        <!-- Logo and Title -->
-        <a href="/" class="logo">
-            <h1>Keane Live</h1>
-        </a>
-        <p class="tagline">Your go-to source for Keane live recordings</p>
-    
-        <!-- Mobile Filter Toggle Button for Responsive Filter Visibility -->
-        <div class="filter-controls">
-            <button class="filter-toggle" onclick="toggleFilters()">Show Filters</button>
-        </div>
-    </header>
-    
+<header>
+    <a href="/" class="logo">
+        <h1>Keane Live</h1>
+    </a>
+    <p class="tagline">Your go-to source for Keane live recordings</p>
+</header>
 
-<div class="filter-container collapsed">
+<div class="filter-container">
     <label for="yearFilter">Year:</label>
     <select id="yearFilter">
         <option value="all">All Years</option>
@@ -44,14 +37,28 @@
     </select>
 
     <input type="text" id="searchInput" placeholder="Search by city or venue" />
-
     <button id="resetFilters">Reset Filters</button>
 </div>
 
 <main>
-    <div id="recordingsGrid" class="recordings-grid"></div>
+    <table id="recordingsTable" class="recordings-table">
+        <thead>
+            <tr>
+                <th onclick="sortTable('date')">Date</th>
+                <th onclick="sortTable('city')">City</th>
+                <th onclick="sortTable('venue')">Venue</th>
+                <th onclick="sortTable('source')">Source</th>
+                <th onclick="sortTable('length')">Length (min)</th>
+                <th onclick="sortTable('equipment')">Equipment</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Dynamic content will be populated here -->
+        </tbody>
+    </table>
 </main>
 
 <script src="scripts/scripts.js"></script>
+
 </body>
 </html>
