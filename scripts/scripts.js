@@ -139,8 +139,8 @@ const recordings = [
 { "date": "2024-07-20", "city": "Nieuwpoort", "venue": "Beach Festival", "source": "Audience", "length": 60, "equipment": "AT831 > Tascam DR-2d" },
 { "date": "2024-07-20", "city": "Nieuwpoort", "venue": "Beach Festival", "source": "Matrix", "length": 60, "equipment": "AUD 1: AT853 > SP-SPSB-10 > Roland R-05<br>AUD 2: AT831 > Tascam DR-2d" },
 { "date": "2024-08-07", "city": "Bonn", "venue": "Kunst!rasen", "source": "Audience", "length": 60, "equipment": "Church Audio CA-11(c) > Ugly Battery Box > Roland R-05" },
-{ "date": "2024-09-26", "city": "Washington", "venue": "The Anthem", "source": "Audience", "length": 60, "equipment": "LG V60 > RecForge II Pro > FLAC" }
-
+{ "date": "2024-09-26", "city": "Washington", "venue": "The Anthem", "source": "Audience", "length": 60, "equipment": "LG V60 > RecForge II Pro > FLAC" },
+    { "date": "2024-11-09", "city": "São Paulo", "venue": "Espaço Unimed", "source": "Audience", "length": 130, "equipment": "SP-CMC-8 > Edirol R-09" }
 ];
 
 const tableBody = document.getElementById("tableBody");
