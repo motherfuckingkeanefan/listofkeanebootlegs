@@ -184,7 +184,6 @@ function loadTable(records = recordings) {
                 <td>${rec.city}</td>
                 <td>${rec.venue}</td>
                 <td>${rec.source}</td>
-                <td>${rec.length}</td>
                 <td>${rec.equipment}</td>
             </tr>
         `).join("")
