@@ -78,7 +78,7 @@ header .logo h1 {
     border-collapse: collapse;
     background-color: rgba(0, 0, 0, 0.8);
     color: #f0f0f0;
-    border: 1px solid #ebe019;
+    border: 0px solid #ebe019;
     border-radius: 8px;
     overflow: hidden;
     font-family: 'Montserrat', Arial, sans-serif;
