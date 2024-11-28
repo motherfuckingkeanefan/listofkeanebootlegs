@@ -110,7 +110,7 @@ const recordings = [
 { "date": "2012-10-17", "city": "Paris", "venue": "L'Olympia", "source": "Matrix", "length": 60, "equipment": "IEM: WSMA-889 > Icom IC-RX7 > Edirol R-09<br>AUD: SP-CMC-4 > SP-SPSB-11 > Olympus LS-10" },
 { "date": "2013-01-09", "city": "Boise", "venue": "Knitting Factory", "source": "Matrix", "length": 60, "equipment": "AUD 1: Sonic Studios DSM6s > PA-6LC > iRiver H120<br>AUD 2: Countryman B3 Omnidirectional > Edirol R-09" },
 { "date": "2013-01-23", "city": "Nashville", "venue": "Ryman Auditorium", "source": "Audience", "length": 60, "equipment": "Church-Audio Cardoid Mics > STC-9200 Preamp > Edirol R-09" },
-{ "date": "2013-01-31", "city": "New York", "venue": "Radio City Music Hall", "source": "Audience", "length": 60, "equipment": "DPA-4060 > Sony PCM-M10" },
+{ "date": "2013-01-31", "city": "New York", "venue": "Radio City Music Hall", "source": "Audience", "length": 60, "equipment": "DPA 4060 > Sony PCM-M10" },
 { "date": "2013-07-13", "city": "Werchter", "venue": "TW Classic Festival", "source": "FM", "length": 60, "equipment": "FM > Pioneer F-Z93L > Edirol R-09HR" },
 { "date": "2013-11-14", "city": "London", "venue": "Under the Bridge", "source": "FM", "length": 60, "equipment": "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
 { "date": "2013-11-16", "city": "London", "venue": "BBC Radio 2 Studios", "source": "FM", "length": 60, "equipment": "Digital Satellite Broadcast > DVB-S > TBS 6984" },
