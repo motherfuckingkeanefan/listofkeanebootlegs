@@ -97,6 +97,7 @@ const recordings = [
 { "date": "2010-05-15", "city": "London", "venue": "BBC Radio Theatre", "source": "FM", "length": 60, "equipment": "FM > Sansui T60 > Sony MZ-RH1" },
 { "date": "2010-06-15", "city": "London", "venue": "Roundhouse", "source": "Audience", "length": 60, "equipment": "Built-in Mics > Zoom H2 > FLAC" },
 { "date": "2010-06-27", "city": "Pilton", "venue": "Glastonbury Festival", "source": "Audience", "length": 60, "equipment": "DPA 4061 > Edirol R-09" },
+   { "date": "2010-07-30", "city": "Toronto", "venue": "Molson Canadian Amphitheatre", "source": "Audience", "length": 100, "equipment": "Church Audio CA-14 > Church Audio ST-9100 Preamp > Edirol R-09" },
 { "date": "2010-08-07", "city": "Philadelphia", "venue": "The Mann Center", "source": "Audience", "length": 60, "equipment": "Built-in Mics > Edirol R-09" },
 { "date": "2010-08-10", "city": "New York", "venue": "The Living Room", "source": "FM", "length": 60, "equipment": "FM > FLAC" },
 { "date": "2012-03-09", "city": "Bexhill-on-Sea", "venue": "De La Warr Pavilion", "source": "Audience", "length": 60, "equipment": "Sony ECM-125 > Roland R-05" },
@@ -139,6 +140,7 @@ const recordings = [
 { "date": "2024-07-20", "city": "Nieuwpoort", "venue": "Beach Festival", "source": "Audience", "length": 60, "equipment": "AT831 > Tascam DR-2d" },
 { "date": "2024-07-20", "city": "Nieuwpoort", "venue": "Beach Festival", "source": "Matrix", "length": 60, "equipment": "AUD 1: AT853 > SP-SPSB-10 > Roland R-05<br>AUD 2: AT831 > Tascam DR-2d" },
 { "date": "2024-08-07", "city": "Bonn", "venue": "Kunst!rasen", "source": "Audience", "length": 60, "equipment": "Church Audio CA-11(c) > Ugly Battery Box > Roland R-05" },
+   { "date": "2024-09-20", "city": "Toronto", "venue": "Queen Elizabeth Theatre", "source": "Audience", "length": 100, "equipment": "Naiant AKG CK61 Actives > XLR > Zoom F3" },
 { "date": "2024-09-26", "city": "Washington", "venue": "The Anthem", "source": "Audience", "length": 60, "equipment": "LG V60 > RecForge II Pro > FLAC" },
     { "date": "2024-11-09", "city": "São Paulo", "venue": "Espaço Unimed", "source": "Audience", "length": 130, "equipment": "SP-CMC-8 > Edirol R-09" }
 ];
