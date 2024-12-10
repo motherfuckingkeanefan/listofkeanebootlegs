@@ -105,7 +105,7 @@ const recordings = [
 { "date": "2012-05-14", "city": "Paris", "venue": "Oui FM Studios", "source": "FM", "length": 15, "equipment": "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
 { "date": "2012-06-02", "city": "Nürburg", "venue": "Rock am Ring", "source": "FM", "length": 60, "equipment": "Digital Satellite Receiver > Yamaha CDR1500 > FLAC" },
 { "date": "2012-06-04", "city": "Folkestone", "venue": "Leas Cliff Hall", "source": "Audience", "length": 60, "equipment": "Sony ECM-125 > Edirol R-09" },
-{ "date": "2012-09-03", "city": "Vancouver", "venue": "The Centre in Vancouver for Performing Arts", "source": "Audience", "length": 60, "equipment": "SP-CMC-8 > SP-SPSB-7 battery box > Edirol R-09" },
+{ "date": "2012-09-03", "city": "Vancouver", "venue": "The Centre in Vancouver for Performing Arts", "source": "Audience", "length": 60, "equipment": "SP-CMC-8 > SP-SPSB-7 > Edirol R-09" },
 { "date": "2012-10-15", "city": "Offenbach", "venue": "Capitol", "source": "Audience", "length": 60, "equipment": "CA-14(c) > Ugly Battery Box > Sony PCM-M10" },
 { "date": "2012-10-17", "city": "Paris", "venue": "L'Olympia", "source": "Matrix", "length": 60, "equipment": "IEM: WSMA-889 > Icom IC-RX7 > Edirol R-09<br>AUD: SP-CMC-4 > SP-SPSB-11 > Olympus LS-10" },
 { "date": "2013-01-09", "city": "Boise", "venue": "Knitting Factory", "source": "Matrix", "length": 60, "equipment": "AUD 1: Sonic Studios DSM6s > PA-6LC > iRiver H120<br>AUD 2: Countryman B3 Omnidirectional > Edirol R-09" },
