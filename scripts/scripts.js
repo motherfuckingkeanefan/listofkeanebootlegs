@@ -2,7 +2,7 @@ const recordings = [
 
     { "date": "2004-02-10", "city": "Northampton", "venue": "Soundhaus", "source": "Soundboard", "length": 50, "equipment": "SBD > CDR > FLAC" },
     { "date": "2004-02-12", "city": "Sheffield", "venue": "Sheffield University SU", "source": "Audience", "length": 20, "equipment": "AUD > CDR > FLAC" },
-    { "date": "2004-03-03", "city": "Birmingham", "venue": "TC's", "source": "Soundboard", "length": 50, "equipment": "SBD > Logic Pro X > FLAC" },
+    { "date": "2004-03-03", "city": "Birmingham", "venue": "TC's", "source": "Soundboard", "length": 50, "equipment": "SBD > FLAC" },
             { "date": "2004-03-03", "city": "Birmingham", "venue": "TC's", "source": "Audience", "length": 50, "equipment": "AUD > CDR > FLAC" },
     { "date": "2004-03-09", "city": "London", "venue": "ULU", "source": "Audience", "length": 50, "equipment": "AUD > CDR > FLAC" },
     { "date": "2004-03-28", "city": "London", "venue": "Hammersmith Apollo", "source": "Audience", "length": 30, "equipment": "AUD > CDR > FLAC" },
