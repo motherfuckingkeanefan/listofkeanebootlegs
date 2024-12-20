@@ -111,37 +111,6 @@ header .logo h1 {
     background-color: rgba(235, 224, 25, 0.1); /* Subtle gold highlight on hover */
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    header .logo h1 {
-        font-size: 3.4rem;
-    }
-
-    .filter-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .recordings-table {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    header .logo h1 {
-        font-size: 2.7rem;
-    }
-
-    .tagline {
-        font-size: 1rem;
-    }
-
-    .filter-dropdown, #searchInput, button {
-        width: 100%;
-        font-size: 0.9rem;
-    }
-}
-
 /* Link Styles */
 a {
     text-decoration: none; /* Removes underline */
