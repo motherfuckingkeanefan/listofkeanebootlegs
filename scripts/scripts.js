@@ -30,7 +30,7 @@ const recordings = [
     { "date": "2004-08-20", "city": "Biddinghuizen", "venue": "Lowlands Festival", "source": "Soundboard", "length": 25, "equipment": "SBD > CDR > FLAC" },
     { "date": "2004-08-21", "city": "Chelmsford", "venue": "V Festival", "source": "FM", "length": 10, "equipment": "Digital Satellite Receiver > CDR > FLAC" },
     { "date": "2004-08-26", "city": "Inverness", "venue": "Up Close Festival", "source": "FM", "length": 40, "equipment": "FM > CDR > FLAC" },
-    { "date": "2004-08-29", "city": "Dublin", "venue": "HMV Records", "source": "Audience", "length": 30, "equipment": "AT831b > Sony MZ-G75" },
+    { "date": "2004-08-29", "city": "Dublin", "venue": "HMV Records", "source": "Audience", "length": 30, "equipment": "AT831b > Sony MZ-G755" },
     { "date": "2004-08-29", "city": "Dublin", "venue": "Olympia Theatre", "source": "Audience", "length": 60, "equipment": "AT831b > Sony MZ-G755" },
     { "date": "2004-09-08", "city": "Portland", "venue": "Berbati's Pan", "source": "Soundboard", "length": 50, "equipment": "SBD > CDR > FLAC" },
     { "date": "2004-09-11", "city": "West Hollywood", "venue": "Virgin Megastore", "source": "Audience", "length": 40, "equipment": "Built-in Mics > Sony DCR-TRV22 > Master MiniDV" },
